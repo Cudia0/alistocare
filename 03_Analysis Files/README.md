@@ -23,6 +23,8 @@ All files use a verified real-world dataset — no synthetic or fabricated recor
 | `analysis_results.json` | Computed summary statistics and key metrics |
 | `AlistoCare_Analysis.xlsx` | Excel workbook (6 sheets: Source_Metadata, Data_Dictionary, QA_Checklist, KPI_Definitions, Findings_Log, Recommendations) |
 | `AlistoCare_Analysis.py` | Standalone Python analysis script |
+| `AlistoCare_Dashboard.py` | Dashboard builder script (Colab compatible) |
+| `AlistoCare_Dashboard.xlsx` | Interactive Excel dashboard |
 | `AlistoCare.ipynb` | Jupyter notebook with the same workflow |
 
 ## Dataset Source

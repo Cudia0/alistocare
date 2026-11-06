@@ -81,6 +81,8 @@ All Markdown files in this project are cross-linked below for easy navigation:
 
 ## Code Compatibility
 
+- **`AlistoCare_Dashboard.py`** — Dashboard builder (Colab compatible)
+- **`AlistoCare_Dashboard.xlsx`** — Interactive Excel dashboard
 - **`AlistoCare_Transform.py`** — Data transformation (original → anonymized → cleaned), Google Colab compatible
 - **`AlistoCare_Analysis.py`** — Analysis script, Google Colab compatible (file upload helper, no `__file__` dependency)
 - **`AlistoCare.ipynb`** — Analysis notebook, Google Colab compatible (upload cell at setup)
