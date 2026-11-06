@@ -116,15 +116,15 @@ def validate_types_and_enums(df: pd.DataFrame) -> dict:
     """Validate data types and allowed values."""
     issues = {}
     issues["invalid_genders"] = (
-        int(~df["gender"].isin(VALID_GENDERS).fillna(False))
+        int((~df["gender"].isin(VALID_GENDERS)).fillna(False).sum())
         if "gender" in df.columns else None
     )
     issues["invalid_admission_flags"] = (
-        int(~df["admission_flag"].isin(VALID_ADMISSION_FLAGS).fillna(False))
+        int((~df["admission_flag"].isin(VALID_ADMISSION_FLAGS)).fillna(False).sum())
         if "admission_flag" in df.columns else None
     )
     issues["invalid_departments"] = (
-        int(~df["department"].dropna().isin(VALID_DEPARTMENTS))
+        int((~df["department"].dropna().isin(VALID_DEPARTMENTS)).sum())
         if "department" in df.columns else None
     )
     issues["non_positive_wait_time"] = (
