@@ -1,0 +1,21 @@
+{
+  "total_encounters": 9216,
+  "date_range_start": "2023-01-04",
+  "date_range_end": "2024-12-10",
+  "avg_wait_time": 35.26,
+  "median_wait_time": 35.0,
+  "min_wait_time": 10,
+  "max_wait_time": 60,
+  "std_wait_time": 14.74,
+  "avg_age": 39.9,
+  "admission_rate": 50.0,
+  "satisfaction_records": 2517,
+  "satisfaction_pct": 27.3,
+  "department_records": 3816,
+  "department_pct": 41.4,
+  "peak_hour": 3,
+  "peak_hour_wait": 37.22,
+  "low_hour": 12,
+  "low_hour_wait": 33.88,
+  "wait_correlation_satisfaction": -0.021
+}

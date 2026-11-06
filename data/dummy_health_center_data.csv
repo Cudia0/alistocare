@@ -1,0 +1,1201 @@
+record_id,date,facility_name,city,service_type,patients_served,staff_count,operating_hours,capacity_estimate,demand_level
+SYN-0001,2024-01-02,Balingasa Health Center,Quezon City,Consultation,48,4,8,60,Moderate
+SYN-0002,2024-01-02,Balingasa Health Center,Quezon City,Immunization,32,3,8,50,Low
+SYN-0003,2024-01-02,Balingasa Health Center,Quezon City,Prenatal,18,2,8,30,Low
+SYN-0004,2024-01-02,Balingasa Health Center,Quezon City,Pediatric,24,2,8,40,Low
+SYN-0005,2024-01-02,Balingasa Health Center,Quezon City,Senior Care,12,2,6,25,Low
+SYN-0006,2024-01-02,Balingasa Health Center,Quezon City,Pharmacy Dispensing,44,3,8,55,Moderate
+SYN-0007,2024-01-02,Balingasa Health Center,Quezon City,Dental,16,2,6,30,Low
+SYN-0008,2024-01-02,Balingasa Health Center,Quezon City,Consultation,52,5,8,70,Moderate
+SYN-0009,2024-01-02,Balingasa Health Center,Quezon City,Immunization,28,3,8,45,Low
+SYN-0010,2024-01-02,Balingasa Health Center,Quezon City,Prenatal,20,2,8,35,Low
+SYN-0011,2024-01-02,Barangay Commonwealth Clinic,Quezon City,Consultation,61,5,8,75,High
+SYN-0012,2024-01-02,Barangay Commonwealth Clinic,Quezon City,Immunization,38,4,8,55,Moderate
+SYN-0013,2024-01-02,Barangay Commonwealth Clinic,Quezon City,Prenatal,22,2,8,40,Low
+SYN-0014,2024-01-02,Barangay Commonwealth Clinic,Quezon City,Pediatric,30,3,8,50,Moderate
+SYN-0015,2024-01-02,Barangay Commonwealth Clinic,Quezon City,Senior Care,14,2,6,28,Low
+SYN-0016,2024-01-02,Barangay Commonwealth Clinic,Quezon City,Pharmacy Dispensing,55,4,8,65,Moderate
+SYN-0017,2024-01-02,Barangay Commonwealth Clinic,Quezon City,Dental,18,2,6,32,Low
+SYN-0018,2024-01-02,Barangay Commonwealth Clinic,Quezon City,Consultation,67,6,8,80,High
+SYN-0019,2024-01-02,Barangay Commonwealth Clinic,Quezon City,Immunization,42,4,8,60,Moderate
+SYN-0020,2024-01-02,Barangay Commonwealth Clinic,Quezon City,Prenatal,26,2,8,45,Low
+SYN-0021,2024-01-02,Batasan Hills Health Center,Quezon City,Consultation,44,4,8,58,Moderate
+SYN-0022,2024-01-02,Batasan Hills Health Center,Quezon City,Immunization,30,3,8,48,Low
+SYN-0023,2024-01-02,Batasan Hills Health Center,Quezon City,Prenatal,20,2,8,35,Low
+SYN-0024,2024-01-02,Batasan Hills Health Center,Quezon City,Pediatric,26,2,8,42,Low
+SYN-0025,2024-01-02,Batasan Hills Health Center,Quezon City,Senior Care,10,2,6,22,Low
+SYN-0026,2024-01-02,Batasan Hills Health Center,Quezon City,Pharmacy Dispensing,40,3,8,52,Moderate
+SYN-0027,2024-01-02,Batasan Hills Health Center,Quezon City,Dental,14,2,6,28,Low
+SYN-0028,2024-01-02,Batasan Hills Health Center,Quezon City,Consultation,49,5,8,65,Moderate
+SYN-0029,2024-01-02,Batasan Hills Health Center,Quezon City,Immunization,34,3,8,52,Moderate
+SYN-0030,2024-01-02,Batasan Hills Health Center,Quezon City,Prenatal,18,2,8,30,Low
+SYN-0031,2024-01-02,Cubao Health Center,Quezon City,Consultation,73,6,8,85,High
+SYN-0032,2024-01-02,Cubao Health Center,Quezon City,Immunization,48,5,8,70,Moderate
+SYN-0033,2024-01-02,Cubao Health Center,Quezon City,Prenatal,30,3,8,48,Low
+SYN-0034,2024-01-02,Cubao Health Center,Quezon City,Pediatric,36,3,8,55,Moderate
+SYN-0035,2024-01-02,Cubao Health Center,Quezon City,Senior Care,18,3,6,35,Low
+SYN-0036,2024-01-02,Cubao Health Center,Quezon City,Pharmacy Dispensing,68,5,8,78,Moderate
+SYN-0037,2024-01-02,Cubao Health Center,Quezon City,Dental,24,3,6,42,Low
+SYN-0038,2024-01-02,Cubao Health Center,Quezon City,Consultation,79,7,8,95,High
+SYN-0039,2024-01-02,Cubao Health Center,Quezon City,Immunization,54,5,8,75,High
+SYN-0040,2024-01-02,Cubao Health Center,Quezon City,Prenatal,34,3,8,52,Moderate
+SYN-0041,2024-01-02,Project 4 Health Center,Quezon City,Consultation,56,5,8,68,Moderate
+SYN-0042,2024-01-02,Project 4 Health Center,Quezon City,Immunization,40,4,8,58,Moderate
+SYN-0043,2024-01-02,Project 4 Health Center,Quezon City,Prenatal,26,2,8,42,Low
+SYN-0044,2024-01-02,Project 4 Health Center,Quezon City,Pediatric,30,3,8,48,Low
+SYN-0045,2024-01-02,Project 4 Health Center,Quezon City,Senior Care,16,2,6,30,Low
+SYN-0046,2024-01-02,Project 4 Health Center,Quezon City,Pharmacy Dispensing,52,4,8,62,Moderate
+SYN-0047,2024-01-02,Project 4 Health Center,Quezon City,Dental,20,2,6,36,Low
+SYN-0048,2024-01-02,Project 4 Health Center,Quezon City,Consultation,60,6,8,72,Moderate
+SYN-0049,2024-01-02,Project 4 Health Center,Quezon City,Immunization,44,4,8,60,Moderate
+SYN-0050,2024-01-02,Project 4 Health Center,Quezon City,Prenatal,28,2,8,45,Low
+SYN-0051,2024-01-03,Balingasa Health Center,Quezon City,Consultation,50,4,8,60,Moderate
+SYN-0052,2024-01-03,Balingasa Health Center,Quezon City,Immunization,34,3,8,50,Low
+SYN-0053,2024-01-03,Balingasa Health Center,Quezon City,Prenatal,20,2,8,35,Low
+SYN-0054,2024-01-03,Balingasa Health Center,Quezon City,Pediatric,26,2,8,42,Low
+SYN-0055,2024-01-03,Balingasa Health Center,Quezon City,Senior Care,14,2,6,28,Low
+SYN-0056,2024-01-03,Balingasa Health Center,Quezon City,Pharmacy Dispensing,46,3,8,58,Moderate
+SYN-0057,2024-01-03,Balingasa Health Center,Quezon City,Dental,18,2,6,32,Low
+SYN-0058,2024-01-03,Balingasa Health Center,Quezon City,Consultation,54,5,8,70,Moderate
+SYN-0059,2024-01-03,Balingasa Health Center,Quezon City,Immunization,30,3,8,48,Low
+SYN-0060,2024-01-03,Balingasa Health Center,Quezon City,Prenatal,22,2,8,40,Low
+SYN-0061,2024-01-03,Barangay Commonwealth Clinic,Quezon City,Consultation,65,5,8,78,High
+SYN-0062,2024-01-03,Barangay Commonwealth Clinic,Quezon City,Immunization,40,4,8,58,Moderate
+SYN-0063,2024-01-03,Barangay Commonwealth Clinic,Quezon City,Prenatal,24,2,8,42,Low
+SYN-0064,2024-01-03,Barangay Commonwealth Clinic,Quezon City,Pediatric,32,3,8,52,Moderate
+SYN-0065,2024-01-03,Barangay Commonwealth Clinic,Quezon City,Senior Care,16,2,6,30,Low
+SYN-0066,2024-01-03,Barangay Commonwealth Clinic,Quezon City,Pharmacy Dispensing,58,4,8,70,Moderate
+SYN-0067,2024-01-03,Barangay Commonwealth Clinic,Quezon City,Dental,20,2,6,36,Low
+SYN-0068,2024-01-03,Barangay Commonwealth Clinic,Quezon City,Consultation,70,6,8,84,High
+SYN-0069,2024-01-03,Barangay Commonwealth Clinic,Quezon City,Immunization,44,4,8,62,Moderate
+SYN-0070,2024-01-03,Barangay Commonwealth Clinic,Quezon City,Prenatal,28,2,8,48,Low
+SYN-0071,2024-01-03,Batasan Hills Health Center,Quezon City,Consultation,46,4,8,60,Moderate
+SYN-0072,2024-01-03,Batasan Hills Health Center,Quezon City,Immunization,32,3,8,50,Low
+SYN-0073,2024-01-03,Batasan Hills Health Center,Quezon City,Prenatal,22,2,8,40,Low
+SYN-0074,2024-01-03,Batasan Hills Health Center,Quezon City,Pediatric,28,2,8,45,Low
+SYN-0075,2024-01-03,Batasan Hills Health Center,Quezon City,Senior Care,12,2,6,25,Low
+SYN-0076,2024-01-03,Batasan Hills Health Center,Quezon City,Pharmacy Dispensing,42,3,8,55,Moderate
+SYN-0077,2024-01-03,Batasan Hills Health Center,Quezon City,Dental,16,2,6,30,Low
+SYN-0078,2024-01-03,Batasan Hills Health Center,Quezon City,Consultation,52,5,8,65,Moderate
+SYN-0079,2024-01-03,Batasan Hills Health Center,Quezon City,Immunization,36,3,8,52,Moderate
+SYN-0080,2024-01-03,Batasan Hills Health Center,Quezon City,Prenatal,20,2,8,35,Low
+SYN-0081,2024-01-03,Cubao Health Center,Quezon City,Consultation,76,6,8,90,High
+SYN-0082,2024-01-03,Cubao Health Center,Quezon City,Immunization,50,5,8,75,High
+SYN-0083,2024-01-03,Cubao Health Center,Quezon City,Prenatal,32,3,8,50,Moderate
+SYN-0084,2024-01-03,Cubao Health Center,Quezon City,Pediatric,38,3,8,58,Moderate
+SYN-0085,2024-01-03,Cubao Health Center,Quezon City,Senior Care,20,3,6,38,Low
+SYN-0086,2024-01-03,Cubao Health Center,Quezon City,Pharmacy Dispensing,70,5,8,82,High
+SYN-0087,2024-01-03,Cubao Health Center,Quezon City,Dental,26,3,6,44,Low
+SYN-0088,2024-01-03,Cubao Health Center,Quezon City,Consultation,82,7,8,98,High
+SYN-0089,2024-01-03,Cubao Health Center,Quezon City,Immunization,56,5,8,78,High
+SYN-0090,2024-01-03,Cubao Health Center,Quezon City,Prenatal,36,3,8,56,Moderate
+SYN-0091,2024-01-03,Project 4 Health Center,Quezon City,Consultation,58,5,8,70,Moderate
+SYN-0092,2024-01-03,Project 4 Health Center,Quezon City,Immunization,42,4,8,60,Moderate
+SYN-0093,2024-01-03,Project 4 Health Center,Quezon City,Prenatal,30,2,8,45,Low
+SYN-0094,2024-01-03,Project 4 Health Center,Quezon City,Pediatric,32,3,8,50,Moderate
+SYN-0095,2024-01-03,Project 4 Health Center,Quezon City,Senior Care,18,2,6,32,Low
+SYN-0096,2024-01-03,Project 4 Health Center,Quezon City,Pharmacy Dispensing,54,4,8,65,Moderate
+SYN-0097,2024-01-03,Project 4 Health Center,Quezon City,Dental,22,2,6,38,Low
+SYN-0098,2024-01-03,Project 4 Health Center,Quezon City,Consultation,64,6,8,76,Moderate
+SYN-0099,2024-01-03,Project 4 Health Center,Quezon City,Immunization,46,4,8,62,Moderate
+SYN-0100,2024-01-03,Project 4 Health Center,Quezon City,Prenatal,30,2,8,48,Low
+SYN-0101,2024-01-04,Balingasa Health Center,Quezon City,Consultation,52,4,8,62,Moderate
+SYN-0102,2024-01-04,Balingasa Health Center,Quezon City,Immunization,36,3,8,52,Moderate
+SYN-0103,2024-01-04,Balingasa Health Center,Quezon City,Prenatal,22,2,8,38,Low
+SYN-0104,2024-01-04,Balingasa Health Center,Quezon City,Pediatric,28,2,8,45,Low
+SYN-0105,2024-01-04,Balingasa Health Center,Quezon City,Senior Care,16,2,6,30,Low
+SYN-0106,2024-01-04,Balingasa Health Center,Quezon City,Pharmacy Dispensing,48,3,8,60,Moderate
+SYN-0107,2024-01-04,Balingasa Health Center,Quezon City,Dental,20,2,6,34,Low
+SYN-0108,2024-01-04,Balingasa Health Center,Quezon City,Consultation,56,5,8,72,Moderate
+SYN-0109,2024-01-04,Balingasa Health Center,Quezon City,Immunization,32,3,8,50,Low
+SYN-0110,2024-01-04,Balingasa Health Center,Quezon City,Prenatal,24,2,8,42,Low
+SYN-0111,2024-01-04,Barangay Commonwealth Clinic,Quezon City,Consultation,68,5,8,80,High
+SYN-0112,2024-01-04,Barangay Commonwealth Clinic,Quezon City,Immunization,42,4,8,60,Moderate
+SYN-0113,2024-01-04,Barangay Commonwealth Clinic,Quezon City,Prenatal,26,2,8,45,Low
+SYN-0114,2024-01-04,Barangay Commonwealth Clinic,Quezon City,Pediatric,34,3,8,55,Moderate
+SYN-0115,2024-01-04,Barangay Commonwealth Clinic,Quezon City,Senior Care,18,2,6,32,Low
+SYN-0116,2024-01-04,Barangay Commonwealth Clinic,Quezon City,Pharmacy Dispensing,60,4,8,72,Moderate
+SYN-0117,2024-01-04,Barangay Commonwealth Clinic,Quezon City,Dental,22,2,6,38,Low
+SYN-0118,2024-01-04,Barangay Commonwealth Clinic,Quezon City,Consultation,74,6,8,88,High
+SYN-0119,2024-01-04,Barangay Commonwealth Clinic,Quezon City,Immunization,46,4,8,64,Moderate
+SYN-0120,2024-01-04,Barangay Commonwealth Clinic,Quezon City,Prenatal,30,2,8,50,Low
+SYN-0121,2024-01-04,Batasan Hills Health Center,Quezon City,Consultation,48,4,8,62,Moderate
+SYN-0122,2024-01-04,Batasan Hills Health Center,Quezon City,Immunization,34,3,8,52,Low
+SYN-0123,2024-01-04,Batasan Hills Health Center,Quezon City,Prenatal,24,2,8,42,Low
+SYN-0124,2024-01-04,Batasan Hills Health Center,Quezon City,Pediatric,30,2,8,48,Low
+SYN-0125,2024-01-04,Batasan Hills Health Center,Quezon City,Senior Care,14,2,6,28,Low
+SYN-0126,2024-01-04,Batasan Hills Health Center,Quezon City,Pharmacy Dispensing,44,3,8,58,Moderate
+SYN-0127,2024-01-04,Batasan Hills Health Center,Quezon City,Dental,18,2,6,32,Low
+SYN-0128,2024-01-04,Batasan Hills Health Center,Quezon City,Consultation,54,5,8,68,Moderate
+SYN-0129,2024-01-04,Batasan Hills Health Center,Quezon City,Immunization,38,3,8,55,Moderate
+SYN-0130,2024-01-04,Batasan Hills Health Center,Quezon City,Prenatal,22,2,8,40,Low
+SYN-0131,2024-01-04,Cubao Health Center,Quezon City,Consultation,80,6,8,94,High
+SYN-0132,2024-01-04,Cubao Health Center,Quezon City,Immunization,54,5,8,78,High
+SYN-0133,2024-01-04,Cubao Health Center,Quezon City,Prenatal,34,3,8,54,Moderate
+SYN-0134,2024-01-04,Cubao Health Center,Quezon City,Pediatric,40,3,8,60,Moderate
+SYN-0135,2024-01-04,Cubao Health Center,Quezon City,Senior Care,22,3,6,40,Low
+SYN-0136,2024-01-04,Cubao Health Center,Quezon City,Pharmacy Dispensing,74,5,8,86,High
+SYN-0137,2024-01-04,Cubao Health Center,Quezon City,Dental,28,3,6,46,Low
+SYN-0138,2024-01-04,Cubao Health Center,Quezon City,Consultation,86,7,8,100,High
+SYN-0139,2024-01-04,Cubao Health Center,Quezon City,Immunization,60,5,8,82,High
+SYN-0140,2024-01-04,Cubao Health Center,Quezon City,Prenatal,38,3,8,60,Moderate
+SYN-0141,2024-01-04,Project 4 Health Center,Quezon City,Consultation,60,5,8,72,Moderate
+SYN-0142,2024-01-04,Project 4 Health Center,Quezon City,Immunization,44,4,8,62,Moderate
+SYN-0143,2024-01-04,Project 4 Health Center,Quezon City,Prenatal,32,2,8,48,Low
+SYN-0144,2024-01-04,Project 4 Health Center,Quezon City,Pediatric,34,3,8,52,Moderate
+SYN-0145,2024-01-04,Project 4 Health Center,Quezon City,Senior Care,20,2,6,34,Low
+SYN-0146,2024-01-04,Project 4 Health Center,Quezon City,Pharmacy Dispensing,56,4,8,68,Moderate
+SYN-0147,2024-01-04,Project 4 Health Center,Quezon City,Dental,24,2,6,40,Low
+SYN-0148,2024-01-04,Project 4 Health Center,Quezon City,Consultation,66,6,8,80,Moderate
+SYN-0149,2024-01-04,Project 4 Health Center,Quezon City,Immunization,48,4,8,64,Moderate
+SYN-0150,2024-01-04,Project 4 Health Center,Quezon City,Prenatal,32,2,8,50,Low
+SYN-0151,2024-01-05,Balingasa Health Center,Quezon City,Consultation,54,4,8,64,Moderate
+SYN-0152,2024-01-05,Balingasa Health Center,Quezon City,Immunization,38,3,8,54,Low
+SYN-0153,2024-01-05,Balingasa Health Center,Quezon City,Prenatal,24,2,8,40,Low
+SYN-0154,2024-01-05,Balingasa Health Center,Quezon City,Pediatric,30,2,8,48,Low
+SYN-0155,2024-01-05,Balingasa Health Center,Quezon City,Senior Care,18,2,6,32,Low
+SYN-0156,2024-01-05,Balingasa Health Center,Quezon City,Pharmacy Dispensing,50,3,8,62,Moderate
+SYN-0157,2024-01-05,Balingasa Health Center,Quezon City,Dental,22,2,6,36,Low
+SYN-0158,2024-01-05,Balingasa Health Center,Quezon City,Consultation,58,5,8,74,Moderate
+SYN-0159,2024-01-05,Balingasa Health Center,Quezon City,Immunization,34,3,8,52,Low
+SYN-0160,2024-01-05,Balingasa Health Center,Quezon City,Prenatal,26,2,8,44,Low
+SYN-0161,2024-01-05,Barangay Commonwealth Clinic,Quezon City,Consultation,70,5,8,82,High
+SYN-0162,2024-01-05,Barangay Commonwealth Clinic,Quezon City,Immunization,44,4,8,62,Moderate
+SYN-0163,2024-01-05,Barangay Commonwealth Clinic,Quezon City,Prenatal,28,2,8,48,Low
+SYN-0164,2024-01-05,Barangay Commonwealth Clinic,Quezon City,Pediatric,36,3,8,58,Moderate
+SYN-0165,2024-01-05,Barangay Commonwealth Clinic,Quezon City,Senior Care,20,2,6,34,Low
+SYN-0166,2024-01-05,Barangay Commonwealth Clinic,Quezon City,Pharmacy Dispensing,62,4,8,74,Moderate
+SYN-0167,2024-01-05,Barangay Commonwealth Clinic,Quezon City,Dental,24,2,6,40,Low
+SYN-0168,2024-01-05,Barangay Commonwealth Clinic,Quezon City,Consultation,76,6,8,92,High
+SYN-0169,2024-01-05,Barangay Commonwealth Clinic,Quezon City,Immunization,48,4,8,66,Moderate
+SYN-0170,2024-01-05,Barangay Commonwealth Clinic,Quezon City,Prenatal,32,2,8,52,Low
+SYN-0171,2024-01-05,Batasan Hills Health Center,Quezon City,Consultation,50,4,8,64,Moderate
+SYN-0172,2024-01-05,Batasan Hills Health Center,Quezon City,Immunization,36,3,8,54,Low
+SYN-0173,2024-01-05,Batasan Hills Health Center,Quezon City,Prenatal,26,2,8,44,Low
+SYN-0174,2024-01-05,Batasan Hills Health Center,Quezon City,Pediatric,32,2,8,50,Moderate
+SYN-0175,2024-01-05,Batasan Hills Health Center,Quezon City,Senior Care,16,2,6,30,Low
+SYN-0176,2024-01-05,Batasan Hills Health Center,Quezon City,Pharmacy Dispensing,46,3,8,60,Moderate
+SYN-0177,2024-01-05,Batasan Hills Health Center,Quezon City,Dental,20,2,6,34,Low
+SYN-0178,2024-01-05,Batasan Hills Health Center,Quezon City,Consultation,56,5,8,70,Moderate
+SYN-0179,2024-01-05,Batasan Hills Health Center,Quezon City,Immunization,40,3,8,56,Moderate
+SYN-0180,2024-01-05,Batasan Hills Health Center,Quezon City,Prenatal,24,2,8,42,Low
+SYN-0181,2024-01-05,Cubao Health Center,Quezon City,Consultation,84,6,8,98,High
+SYN-0182,2024-01-05,Cubao Health Center,Quezon City,Immunization,58,5,8,82,High
+SYN-0183,2024-01-05,Cubao Health Center,Quezon City,Prenatal,36,3,8,56,Moderate
+SYN-0184,2024-01-05,Cubao Health Center,Quezon City,Pediatric,42,3,8,62,Moderate
+SYN-0185,2024-01-05,Cubao Health Center,Quezon City,Senior Care,24,3,6,42,Low
+SYN-0186,2024-01-05,Cubao Health Center,Quezon City,Pharmacy Dispensing,78,5,8,90,High
+SYN-0187,2024-01-05,Cubao Health Center,Quezon City,Dental,30,3,6,48,Low
+SYN-0188,2024-01-05,Cubao Health Center,Quezon City,Consultation,90,7,8,105,High
+SYN-0189,2024-01-05,Cubao Health Center,Quezon City,Immunization,62,5,8,84,High
+SYN-0190,2024-01-05,Cubao Health Center,Quezon City,Prenatal,40,3,8,62,Moderate
+SYN-0191,2024-01-05,Project 4 Health Center,Quezon City,Consultation,62,5,8,74,Moderate
+SYN-0192,2024-01-05,Project 4 Health Center,Quezon City,Immunization,46,4,8,64,Moderate
+SYN-0193,2024-01-05,Project 4 Health Center,Quezon City,Prenatal,34,2,8,50,Low
+SYN-0194,2024-01-05,Project 4 Health Center,Quezon City,Pediatric,36,3,8,54,Moderate
+SYN-0195,2024-01-05,Project 4 Health Center,Quezon City,Senior Care,22,2,6,36,Low
+SYN-0196,2024-01-05,Project 4 Health Center,Quezon City,Pharmacy Dispensing,58,4,8,70,Moderate
+SYN-0197,2024-01-05,Project 4 Health Center,Quezon City,Dental,26,2,6,42,Low
+SYN-0198,2024-01-05,Project 4 Health Center,Quezon City,Consultation,68,6,8,82,Moderate
+SYN-0199,2024-01-05,Project 4 Health Center,Quezon City,Immunization,50,4,8,66,Moderate
+SYN-0200,2024-01-05,Project 4 Health Center,Quezon City,Prenatal,34,2,8,52,Low
+SYN-0201,2024-01-06,Balingasa Health Center,Quezon City,Consultation,56,4,8,66,Moderate
+SYN-0202,2024-01-06,Balingasa Health Center,Quezon City,Immunization,40,3,8,56,Moderate
+SYN-0203,2024-01-06,Balingasa Health Center,Quezon City,Prenatal,26,2,8,42,Low
+SYN-0204,2024-01-06,Balingasa Health Center,Quezon City,Pediatric,32,2,8,50,Moderate
+SYN-0205,2024-01-06,Balingasa Health Center,Quezon City,Senior Care,20,2,6,34,Low
+SYN-0206,2024-01-06,Balingasa Health Center,Quezon City,Pharmacy Dispensing,52,3,8,64,Moderate
+SYN-0207,2024-01-06,Balingasa Health Center,Quezon City,Dental,24,2,6,38,Low
+SYN-0208,2024-01-06,Balingasa Health Center,Quezon City,Consultation,60,5,8,76,Moderate
+SYN-0209,2024-01-06,Balingasa Health Center,Quezon City,Immunization,36,3,8,54,Low
+SYN-0210,2024-01-06,Balingasa Health Center,Quezon City,Prenatal,28,2,8,46,Low
+SYN-0211,2024-01-06,Barangay Commonwealth Clinic,Quezon City,Consultation,72,5,8,84,High
+SYN-0212,2024-01-06,Barangay Commonwealth Clinic,Quezon City,Immunization,46,4,8,64,Moderate
+SYN-0213,2024-01-06,Barangay Commonwealth Clinic,Quezon City,Prenatal,30,2,8,50,Low
+SYN-0214,2024-01-06,Barangay Commonwealth Clinic,Quezon City,Pediatric,38,3,8,60,Moderate
+SYN-0215,2024-01-06,Barangay Commonwealth Clinic,Quezon City,Senior Care,22,2,6,36,Low
+SYN-0216,2024-01-06,Barangay Commonwealth Clinic,Quezon City,Pharmacy Dispensing,64,4,8,76,Moderate
+SYN-0217,2024-01-06,Barangay Commonwealth Clinic,Quezon City,Dental,26,2,6,42,Low
+SYN-0218,2024-01-06,Barangay Commonwealth Clinic,Quezon City,Consultation,78,6,8,94,High
+SYN-0219,2024-01-06,Barangay Commonwealth Clinic,Quezon City,Immunization,50,4,8,68,Moderate
+SYN-0220,2024-01-06,Barangay Commonwealth Clinic,Quezon City,Prenatal,34,2,8,54,Low
+SYN-0221,2024-01-06,Batasan Hills Health Center,Quezon City,Consultation,52,4,8,66,Moderate
+SYN-0222,2024-01-06,Batasan Hills Health Center,Quezon City,Immunization,38,3,8,56,Low
+SYN-0223,2024-01-06,Batasan Hills Health Center,Quezon City,Prenatal,28,2,8,46,Low
+SYN-0224,2024-01-06,Batasan Hills Health Center,Quezon City,Pediatric,34,2,8,52,Moderate
+SYN-0225,2024-01-06,Batasan Hills Health Center,Quezon City,Senior Care,18,2,6,32,Low
+SYN-0226,2024-01-06,Batasan Hills Health Center,Quezon City,Pharmacy Dispensing,48,3,8,62,Moderate
+SYN-0227,2024-01-06,Batasan Hills Health Center,Quezon City,Dental,22,2,6,36,Low
+SYN-0228,2024-01-06,Batasan Hills Health Center,Quezon City,Consultation,58,5,8,72,Moderate
+SYN-0229,2024-01-06,Batasan Hills Health Center,Quezon City,Immunization,42,3,8,58,Moderate
+SYN-0230,2024-01-06,Batasan Hills Health Center,Quezon City,Prenatal,26,2,8,44,Low
+SYN-0231,2024-01-06,Cubao Health Center,Quezon City,Consultation,88,6,8,102,High
+SYN-0232,2024-01-06,Cubao Health Center,Quezon City,Immunization,60,5,8,84,High
+SYN-0233,2024-01-06,Cubao Health Center,Quezon City,Prenatal,38,3,8,58,Moderate
+SYN-0234,2024-01-06,Cubao Health Center,Quezon City,Pediatric,44,3,8,64,Moderate
+SYN-0235,2024-01-06,Cubao Health Center,Quezon City,Senior Care,26,3,6,44,Low
+SYN-0236,2024-01-06,Cubao Health Center,Quezon City,Pharmacy Dispensing,82,5,8,94,High
+SYN-0237,2024-01-06,Cubao Health Center,Quezon City,Dental,32,3,6,50,Low
+SYN-0238,2024-01-06,Cubao Health Center,Quezon City,Consultation,94,7,8,110,High
+SYN-0239,2024-01-06,Cubao Health Center,Quezon City,Immunization,64,5,8,86,High
+SYN-0240,2024-01-06,Cubao Health Center,Quezon City,Prenatal,42,3,8,64,Moderate
+SYN-0241,2024-01-06,Project 4 Health Center,Quezon City,Consultation,64,5,8,76,Moderate
+SYN-0242,2024-01-06,Project 4 Health Center,Quezon City,Immunization,48,4,8,66,Moderate
+SYN-0243,2024-01-06,Project 4 Health Center,Quezon City,Prenatal,36,2,8,52,Low
+SYN-0244,2024-01-06,Project 4 Health Center,Quezon City,Pediatric,38,3,8,56,Moderate
+SYN-0245,2024-01-06,Project 4 Health Center,Quezon City,Senior Care,24,2,6,38,Low
+SYN-0246,2024-01-06,Project 4 Health Center,Quezon City,Pharmacy Dispensing,60,4,8,72,Moderate
+SYN-0247,2024-01-06,Project 4 Health Center,Quezon City,Dental,28,2,6,44,Low
+SYN-0248,2024-01-06,Project 4 Health Center,Quezon City,Consultation,70,6,8,84,Moderate
+SYN-0249,2024-01-06,Project 4 Health Center,Quezon City,Immunization,52,4,8,68,Moderate
+SYN-0250,2024-01-06,Project 4 Health Center,Quezon City,Prenatal,36,2,8,54,Low
+SYN-0251,2024-01-07,Balingasa Health Center,Quezon City,Consultation,58,4,8,68,Moderate
+SYN-0252,2024-01-07,Balingasa Health Center,Quezon City,Immunization,42,3,8,58,Low
+SYN-0253,2024-01-07,Balingasa Health Center,Quezon City,Prenatal,28,2,8,44,Low
+SYN-0254,2024-01-07,Balingasa Health Center,Quezon City,Pediatric,34,2,8,52,Moderate
+SYN-0255,2024-01-07,Balingasa Health Center,Quezon City,Senior Care,22,2,6,36,Low
+SYN-0256,2024-01-07,Balingasa Health Center,Quezon City,Pharmacy Dispensing,54,3,8,66,Moderate
+SYN-0257,2024-01-07,Balingasa Health Center,Quezon City,Dental,26,2,6,40,Low
+SYN-0258,2024-01-07,Balingasa Health Center,Quezon City,Consultation,62,5,8,78,Moderate
+SYN-0259,2024-01-07,Balingasa Health Center,Quezon City,Immunization,38,3,8,56,Low
+SYN-0260,2024-01-07,Balingasa Health Center,Quezon City,Prenatal,30,2,8,48,Low
+SYN-0261,2024-01-07,Barangay Commonwealth Clinic,Quezon City,Consultation,74,5,8,86,High
+SYN-0262,2024-01-07,Barangay Commonwealth Clinic,Quezon City,Immunization,48,4,8,66,Moderate
+SYN-0263,2024-01-07,Barangay Commonwealth Clinic,Quezon City,Prenatal,32,2,8,52,Low
+SYN-0264,2024-01-07,Barangay Commonwealth Clinic,Quezon City,Pediatric,40,3,8,62,Moderate
+SYN-0265,2024-01-07,Barangay Commonwealth Clinic,Quezon City,Senior Care,24,2,6,38,Low
+SYN-0266,2024-01-07,Barangay Commonwealth Clinic,Quezon City,Pharmacy Dispensing,66,4,8,78,Moderate
+SYN-0267,2024-01-07,Barangay Commonwealth Clinic,Quezon City,Dental,28,2,6,44,Low
+SYN-0268,2024-01-07,Barangay Commonwealth Clinic,Quezon City,Consultation,80,6,8,96,High
+SYN-0269,2024-01-07,Barangay Commonwealth Clinic,Quezon City,Immunization,52,4,8,70,Moderate
+SYN-0270,2024-01-07,Barangay Commonwealth Clinic,Quezon City,Prenatal,36,2,8,56,Low
+SYN-0271,2024-01-07,Batasan Hills Health Center,Quezon City,Consultation,54,4,8,68,Moderate
+SYN-0272,2024-01-07,Batasan Hills Health Center,Quezon City,Immunization,40,3,8,58,Low
+SYN-0273,2024-01-07,Batasan Hills Health Center,Quezon City,Prenatal,30,2,8,48,Low
+SYN-0274,2024-01-07,Batasan Hills Health Center,Quezon City,Pediatric,36,2,8,54,Moderate
+SYN-0275,2024-01-07,Batasan Hills Health Center,Quezon City,Senior Care,20,2,6,34,Low
+SYN-0276,2024-01-07,Batasan Hills Health Center,Quezon City,Pharmacy Dispensing,50,3,8,64,Moderate
+SYN-0277,2024-01-07,Batasan Hills Health Center,Quezon City,Dental,24,2,6,38,Low
+SYN-0278,2024-01-07,Batasan Hills Health Center,Quezon City,Consultation,60,5,8,74,Moderate
+SYN-0279,2024-01-07,Batasan Hills Health Center,Quezon City,Immunization,44,3,8,60,Moderate
+SYN-0280,2024-01-07,Batasan Hills Health Center,Quezon City,Prenatal,28,2,8,46,Low
+SYN-0281,2024-01-07,Cubao Health Center,Quezon City,Consultation,92,6,8,106,High
+SYN-0282,2024-01-07,Cubao Health Center,Quezon City,Immunization,62,5,8,86,High
+SYN-0283,2024-01-07,Cubao Health Center,Quezon City,Prenatal,40,3,8,60,Moderate
+SYN-0284,2024-01-07,Cubao Health Center,Quezon City,Pediatric,46,3,8,66,Moderate
+SYN-0285,2024-01-07,Cubao Health Center,Quezon City,Senior Care,28,3,6,46,Low
+SYN-0286,2024-01-07,Cubao Health Center,Quezon City,Pharmacy Dispensing,86,5,8,98,High
+SYN-0287,2024-01-07,Cubao Health Center,Quezon City,Dental,34,3,6,52,Low
+SYN-0288,2024-01-07,Cubao Health Center,Quezon City,Consultation,98,7,8,114,High
+SYN-0289,2024-01-07,Cubao Health Center,Quezon City,Immunization,66,5,8,88,High
+SYN-0290,2024-01-07,Cubao Health Center,Quezon City,Prenatal,44,3,8,66,Moderate
+SYN-0291,2024-01-07,Project 4 Health Center,Quezon City,Consultation,66,5,8,78,Moderate
+SYN-0292,2024-01-07,Project 4 Health Center,Quezon City,Immunization,50,4,8,68,Moderate
+SYN-0293,2024-01-07,Project 4 Health Center,Quezon City,Prenatal,38,2,8,54,Low
+SYN-0294,2024-01-07,Project 4 Health Center,Quezon City,Pediatric,40,3,8,58,Moderate
+SYN-0295,2024-01-07,Project 4 Health Center,Quezon City,Senior Care,26,2,6,40,Low
+SYN-0296,2024-01-07,Project 4 Health Center,Quezon City,Pharmacy Dispensing,62,4,8,74,Moderate
+SYN-0297,2024-01-07,Project 4 Health Center,Quezon City,Dental,30,2,6,46,Low
+SYN-0298,2024-01-07,Project 4 Health Center,Quezon City,Consultation,72,6,8,86,Moderate
+SYN-0299,2024-01-07,Project 4 Health Center,Quezon City,Immunization,54,4,8,70,Moderate
+SYN-0300,2024-01-07,Project 4 Health Center,Quezon City,Prenatal,38,2,8,56,Low
+SYN-0301,2024-01-08,Balingasa Health Center,Quezon City,Consultation,60,4,8,70,Moderate
+SYN-0302,2024-01-08,Balingasa Health Center,Quezon City,Immunization,44,3,8,60,Moderate
+SYN-0303,2024-01-08,Balingasa Health Center,Quezon City,Prenatal,30,2,8,46,Low
+SYN-0304,2024-01-08,Balingasa Health Center,Quezon City,Pediatric,36,2,8,54,Moderate
+SYN-0305,2024-01-08,Balingasa Health Center,Quezon City,Senior Care,24,2,6,38,Low
+SYN-0306,2024-01-08,Balingasa Health Center,Quezon City,Pharmacy Dispensing,56,3,8,68,Moderate
+SYN-0307,2024-01-08,Balingasa Health Center,Quezon City,Dental,28,2,6,42,Low
+SYN-0308,2024-01-08,Balingasa Health Center,Quezon City,Consultation,64,5,8,80,Moderate
+SYN-0309,2024-01-08,Balingasa Health Center,Quezon City,Immunization,40,3,8,58,Low
+SYN-0310,2024-01-08,Balingasa Health Center,Quezon City,Prenatal,32,2,8,50,Low
+SYN-0311,2024-01-08,Barangay Commonwealth Clinic,Quezon City,Consultation,76,5,8,88,High
+SYN-0312,2024-01-08,Barangay Commonwealth Clinic,Quezon City,Immunization,50,4,8,68,Moderate
+SYN-0313,2024-01-08,Barangay Commonwealth Clinic,Quezon City,Prenatal,34,2,8,54,Low
+SYN-0314,2024-01-08,Barangay Commonwealth Clinic,Quezon City,Pediatric,42,3,8,64,Moderate
+SYN-0315,2024-01-08,Barangay Commonwealth Clinic,Quezon City,Senior Care,26,2,6,40,Low
+SYN-0316,2024-01-08,Barangay Commonwealth Clinic,Quezon City,Pharmacy Dispensing,68,4,8,80,Moderate
+SYN-0317,2024-01-08,Barangay Commonwealth Clinic,Quezon City,Dental,30,2,6,46,Low
+SYN-0318,2024-01-08,Barangay Commonwealth Clinic,Quezon City,Consultation,82,6,8,98,High
+SYN-0319,2024-01-08,Barangay Commonwealth Clinic,Quezon City,Immunization,54,4,8,72,Moderate
+SYN-0320,2024-01-08,Barangay Commonwealth Clinic,Quezon City,Prenatal,38,2,8,58,Low
+SYN-0321,2024-01-08,Batasan Hills Health Center,Quezon City,Consultation,56,4,8,70,Moderate
+SYN-0322,2024-01-08,Batasan Hills Health Center,Quezon City,Immunization,42,3,8,60,Low
+SYN-0323,2024-01-08,Batasan Hills Health Center,Quezon City,Prenatal,32,2,8,50,Low
+SYN-0324,2024-01-08,Batasan Hills Health Center,Quezon City,Pediatric,38,2,8,56,Moderate
+SYN-0325,2024-01-08,Batasan Hills Health Center,Quezon City,Senior Care,22,2,6,36,Low
+SYN-0326,2024-01-08,Batasan Hills Health Center,Quezon City,Pharmacy Dispensing,52,3,8,66,Moderate
+SYN-0327,2024-01-08,Batasan Hills Health Center,Quezon City,Dental,26,2,6,40,Low
+SYN-0328,2024-01-08,Batasan Hills Health Center,Quezon City,Consultation,62,5,8,76,Moderate
+SYN-0329,2024-01-08,Batasan Hills Health Center,Quezon City,Immunization,46,3,8,62,Moderate
+SYN-0330,2024-01-08,Batasan Hills Health Center,Quezon City,Prenatal,30,2,8,48,Low
+SYN-0331,2024-01-08,Cubao Health Center,Quezon City,Consultation,96,6,8,110,High
+SYN-0332,2024-01-08,Cubao Health Center,Quezon City,Immunization,64,5,8,88,High
+SYN-0333,2024-01-08,Cubao Health Center,Quezon City,Prenatal,42,3,8,62,Moderate
+SYN-0334,2024-01-08,Cubao Health Center,Quezon City,Pediatric,48,3,8,68,Moderate
+SYN-0335,2024-01-08,Cubao Health Center,Quezon City,Senior Care,30,3,6,48,Low
+SYN-0336,2024-01-08,Cubao Health Center,Quezon City,Pharmacy Dispensing,90,5,8,102,High
+SYN-0337,2024-01-08,Cubao Health Center,Quezon City,Dental,36,3,6,54,Low
+SYN-0338,2024-01-08,Cubao Health Center,Quezon City,Consultation,102,7,8,118,High
+SYN-0339,2024-01-08,Cubao Health Center,Quezon City,Immunization,68,5,8,90,High
+SYN-0340,2024-01-08,Cubao Health Center,Quezon City,Prenatal,46,3,8,68,Moderate
+SYN-0341,2024-01-08,Project 4 Health Center,Quezon City,Consultation,68,5,8,80,Moderate
+SYN-0342,2024-01-08,Project 4 Health Center,Quezon City,Immunization,52,4,8,70,Moderate
+SYN-0343,2024-01-08,Project 4 Health Center,Quezon City,Prenatal,40,2,8,56,Low
+SYN-0344,2024-01-08,Project 4 Health Center,Quezon City,Pediatric,42,3,8,60,Moderate
+SYN-0345,2024-01-08,Project 4 Health Center,Quezon City,Senior Care,28,2,6,42,Low
+SYN-0346,2024-01-08,Project 4 Health Center,Quezon City,Pharmacy Dispensing,64,4,8,76,Moderate
+SYN-0347,2024-01-08,Project 4 Health Center,Quezon City,Dental,32,2,6,48,Low
+SYN-0348,2024-01-08,Project 4 Health Center,Quezon City,Consultation,74,6,8,88,Moderate
+SYN-0349,2024-01-08,Project 4 Health Center,Quezon City,Immunization,56,4,8,72,Moderate
+SYN-0350,2024-01-08,Project 4 Health Center,Quezon City,Prenatal,40,2,8,58,Low
+SYN-0351,2024-01-09,Balingasa Health Center,Quezon City,Consultation,62,4,8,72,Moderate
+SYN-0352,2024-01-09,Balingasa Health Center,Quezon City,Immunization,46,3,8,62,Moderate
+SYN-0353,2024-01-09,Balingasa Health Center,Quezon City,Prenatal,32,2,8,48,Low
+SYN-0354,2024-01-09,Balingasa Health Center,Quezon City,Pediatric,38,2,8,56,Moderate
+SYN-0355,2024-01-09,Balingasa Health Center,Quezon City,Senior Care,26,2,6,40,Low
+SYN-0356,2024-01-09,Balingasa Health Center,Quezon City,Pharmacy Dispensing,58,3,8,70,Moderate
+SYN-0357,2024-01-09,Balingasa Health Center,Quezon City,Dental,30,2,6,44,Low
+SYN-0358,2024-01-09,Balingasa Health Center,Quezon City,Consultation,66,5,8,82,Moderate
+SYN-0359,2024-01-09,Balingasa Health Center,Quezon City,Immunization,42,3,8,60,Low
+SYN-0360,2024-01-09,Balingasa Health Center,Quezon City,Prenatal,34,2,8,52,Low
+SYN-0361,2024-01-09,Barangay Commonwealth Clinic,Quezon City,Consultation,78,5,8,90,High
+SYN-0362,2024-01-09,Barangay Commonwealth Clinic,Quezon City,Immunization,52,4,8,70,Moderate
+SYN-0363,2024-01-09,Barangay Commonwealth Clinic,Quezon City,Prenatal,36,2,8,56,Low
+SYN-0364,2024-01-09,Barangay Commonwealth Clinic,Quezon City,Pediatric,44,3,8,66,Moderate
+SYN-0365,2024-01-09,Barangay Commonwealth Clinic,Quezon City,Senior Care,28,2,6,42,Low
+SYN-0366,2024-01-09,Barangay Commonwealth Clinic,Quezon City,Pharmacy Dispensing,70,4,8,82,Moderate
+SYN-0367,2024-01-09,Barangay Commonwealth Clinic,Quezon City,Dental,32,2,6,48,Low
+SYN-0368,2024-01-09,Barangay Commonwealth Clinic,Quezon City,Consultation,84,6,8,100,High
+SYN-0369,2024-01-09,Barangay Commonwealth Clinic,Quezon City,Immunization,56,4,8,74,Moderate
+SYN-0370,2024-01-09,Barangay Commonwealth Clinic,Quezon City,Prenatal,40,2,8,60,Low
+SYN-0371,2024-01-09,Batasan Hills Health Center,Quezon City,Consultation,58,4,8,72,Moderate
+SYN-0372,2024-01-09,Batasan Hills Health Center,Quezon City,Immunization,44,3,8,62,Low
+SYN-0373,2024-01-09,Batasan Hills Health Center,Quezon City,Prenatal,34,2,8,52,Low
+SYN-0374,2024-01-09,Batasan Hills Health Center,Quezon City,Pediatric,40,2,8,58,Moderate
+SYN-0375,2024-01-09,Batasan Hills Health Center,Quezon City,Senior Care,24,2,6,38,Low
+SYN-0376,2024-01-09,Batasan Hills Health Center,Quezon City,Pharmacy Dispensing,54,3,8,68,Moderate
+SYN-0377,2024-01-09,Batasan Hills Health Center,Quezon City,Dental,28,2,6,42,Low
+SYN-0378,2024-01-09,Batasan Hills Health Center,Quezon City,Consultation,64,5,8,78,Moderate
+SYN-0379,2024-01-09,Batasan Hills Health Center,Quezon City,Immunization,48,3,8,64,Moderate
+SYN-0380,2024-01-09,Batasan Hills Health Center,Quezon City,Prenatal,32,2,8,50,Low
+SYN-0381,2024-01-09,Cubao Health Center,Quezon City,Consultation,100,6,8,114,High
+SYN-0382,2024-01-09,Cubao Health Center,Quezon City,Immunization,66,5,8,90,High
+SYN-0383,2024-01-09,Cubao Health Center,Quezon City,Prenatal,44,3,8,64,Moderate
+SYN-0384,2024-01-09,Cubao Health Center,Quezon City,Pediatric,50,3,8,70,Moderate
+SYN-0385,2024-01-09,Cubao Health Center,Quezon City,Senior Care,32,3,6,50,Low
+SYN-0386,2024-01-09,Cubao Health Center,Quezon City,Pharmacy Dispensing,94,5,8,106,High
+SYN-0387,2024-01-09,Cubao Health Center,Quezon City,Dental,38,3,6,56,Low
+SYN-0388,2024-01-09,Cubao Health Center,Quezon City,Consultation,106,7,8,122,High
+SYN-0389,2024-01-09,Cubao Health Center,Quezon City,Immunization,70,5,8,92,High
+SYN-0390,2024-01-09,Cubao Health Center,Quezon City,Prenatal,48,3,8,70,Moderate
+SYN-0391,2024-01-09,Project 4 Health Center,Quezon City,Consultation,70,5,8,82,Moderate
+SYN-0392,2024-01-09,Project 4 Health Center,Quezon City,Immunization,54,4,8,72,Moderate
+SYN-0393,2024-01-09,Project 4 Health Center,Quezon City,Prenatal,42,2,8,58,Low
+SYN-0394,2024-01-09,Project 4 Health Center,Quezon City,Pediatric,44,3,8,62,Moderate
+SYN-0395,2024-01-09,Project 4 Health Center,Quezon City,Senior Care,30,2,6,44,Low
+SYN-0396,2024-01-09,Project 4 Health Center,Quezon City,Pharmacy Dispensing,66,4,8,78,Moderate
+SYN-0397,2024-01-09,Project 4 Health Center,Quezon City,Dental,34,2,6,50,Low
+SYN-0398,2024-01-09,Project 4 Health Center,Quezon City,Consultation,76,6,8,90,Moderate
+SYN-0399,2024-01-09,Project 4 Health Center,Quezon City,Immunization,58,4,8,74,Moderate
+SYN-0400,2024-01-09,Project 4 Health Center,Quezon City,Prenatal,42,2,8,60,Low
+SYN-0401,2024-01-10,Balingasa Health Center,Quezon City,Consultation,64,4,8,74,Moderate
+SYN-0402,2024-01-10,Balingasa Health Center,Quezon City,Immunization,48,3,8,64,Moderate
+SYN-0403,2024-01-10,Balingasa Health Center,Quezon City,Prenatal,34,2,8,50,Low
+SYN-0404,2024-01-10,Balingasa Health Center,Quezon City,Pediatric,40,2,8,58,Moderate
+SYN-0405,2024-01-10,Balingasa Health Center,Quezon City,Senior Care,28,2,6,42,Low
+SYN-0406,2024-01-10,Balingasa Health Center,Quezon City,Pharmacy Dispensing,60,3,8,72,Moderate
+SYN-0407,2024-01-10,Balingasa Health Center,Quezon City,Dental,32,2,6,46,Low
+SYN-0408,2024-01-10,Balingasa Health Center,Quezon City,Consultation,68,5,8,84,Moderate
+SYN-0409,2024-01-10,Balingasa Health Center,Quezon City,Immunization,44,3,8,62,Low
+SYN-0410,2024-01-10,Balingasa Health Center,Quezon City,Prenatal,36,2,8,54,Low
+SYN-0411,2024-01-10,Barangay Commonwealth Clinic,Quezon City,Consultation,80,5,8,92,High
+SYN-0412,2024-01-10,Barangay Commonwealth Clinic,Quezon City,Immunization,54,4,8,72,Moderate
+SYN-0413,2024-01-10,Barangay Commonwealth Clinic,Quezon City,Prenatal,38,2,8,58,Low
+SYN-0414,2024-01-10,Barangay Commonwealth Clinic,Quezon City,Pediatric,46,3,8,68,Moderate
+SYN-0415,2024-01-10,Barangay Commonwealth Clinic,Quezon City,Senior Care,30,2,6,44,Low
+SYN-0416,2024-01-10,Barangay Commonwealth Clinic,Quezon City,Pharmacy Dispensing,72,4,8,84,Moderate
+SYN-0417,2024-01-10,Barangay Commonwealth Clinic,Quezon City,Dental,34,2,6,50,Low
+SYN-0418,2024-01-10,Barangay Commonwealth Clinic,Quezon City,Consultation,86,6,8,102,High
+SYN-0419,2024-01-10,Barangay Commonwealth Clinic,Quezon City,Immunization,58,4,8,76,Moderate
+SYN-0420,2024-01-10,Barangay Commonwealth Clinic,Quezon City,Prenatal,42,2,8,62,Low
+SYN-0421,2024-01-10,Batasan Hills Health Center,Quezon City,Consultation,60,4,8,74,Moderate
+SYN-0422,2024-01-10,Batasan Hills Health Center,Quezon City,Immunization,46,3,8,64,Low
+SYN-0423,2024-01-10,Batasan Hills Health Center,Quezon City,Prenatal,36,2,8,54,Low
+SYN-0424,2024-01-10,Batasan Hills Health Center,Quezon City,Pediatric,42,2,8,60,Moderate
+SYN-0425,2024-01-10,Batasan Hills Health Center,Quezon City,Senior Care,26,2,6,40,Low
+SYN-0426,2024-01-10,Batasan Hills Health Center,Quezon City,Pharmacy Dispensing,56,3,8,70,Moderate
+SYN-0427,2024-01-10,Batasan Hills Health Center,Quezon City,Dental,30,2,6,44,Low
+SYN-0428,2024-01-10,Batasan Hills Health Center,Quezon City,Consultation,66,5,8,80,Moderate
+SYN-0429,2024-01-10,Batasan Hills Health Center,Quezon City,Immunization,50,3,8,64,Moderate
+SYN-0430,2024-01-10,Batasan Hills Health Center,Quezon City,Prenatal,34,2,8,52,Low
+SYN-0431,2024-01-10,Cubao Health Center,Quezon City,Consultation,104,6,8,118,High
+SYN-0432,2024-01-10,Cubao Health Center,Quezon City,Immunization,68,5,8,92,High
+SYN-0433,2024-01-10,Cubao Health Center,Quezon City,Prenatal,46,3,8,66,Moderate
+SYN-0434,2024-01-10,Cubao Health Center,Quezon City,Pediatric,52,3,8,72,Moderate
+SYN-0435,2024-01-10,Cubao Health Center,Quezon City,Senior Care,34,3,6,52,Low
+SYN-0436,2024-01-10,Cubao Health Center,Quezon City,Pharmacy Dispensing,98,5,8,110,High
+SYN-0437,2024-01-10,Cubao Health Center,Quezon City,Dental,40,3,6,58,Low
+SYN-0438,2024-01-10,Cubao Health Center,Quezon City,Consultation,110,7,8,126,High
+SYN-0439,2024-01-10,Cubao Health Center,Quezon City,Immunization,72,5,8,94,High
+SYN-0440,2024-01-10,Cubao Health Center,Quezon City,Prenatal,50,3,8,72,Moderate
+SYN-0441,2024-01-10,Project 4 Health Center,Quezon City,Consultation,72,5,8,84,Moderate
+SYN-0442,2024-01-10,Project 4 Health Center,Quezon City,Immunization,56,4,8,74,Moderate
+SYN-0443,2024-01-10,Project 4 Health Center,Quezon City,Prenatal,44,2,8,60,Low
+SYN-0444,2024-01-10,Project 4 Health Center,Quezon City,Pediatric,46,3,8,64,Moderate
+SYN-0445,2024-01-10,Project 4 Health Center,Quezon City,Senior Care,32,2,6,46,Low
+SYN-0446,2024-01-10,Project 4 Health Center,Quezon City,Pharmacy Dispensing,68,4,8,80,Moderate
+SYN-0447,2024-01-10,Project 4 Health Center,Quezon City,Dental,36,2,6,52,Low
+SYN-0448,2024-01-10,Project 4 Health Center,Quezon City,Consultation,78,6,8,92,Moderate
+SYN-0449,2024-01-10,Project 4 Health Center,Quezon City,Immunization,60,4,8,76,Moderate
+SYN-0450,2024-01-10,Project 4 Health Center,Quezon City,Prenatal,44,2,8,62,Low
+SYN-0451,2024-01-11,Balingasa Health Center,Quezon City,Consultation,66,4,8,76,Moderate
+SYN-0452,2024-01-11,Balingasa Health Center,Quezon City,Immunization,50,3,8,66,Moderate
+SYN-0453,2024-01-11,Balingasa Health Center,Quezon City,Prenatal,36,2,8,52,Low
+SYN-0454,2024-01-11,Balingasa Health Center,Quezon City,Pediatric,42,2,8,60,Moderate
+SYN-0455,2024-01-11,Balingasa Health Center,Quezon City,Senior Care,30,2,6,44,Low
+SYN-0456,2024-01-11,Balingasa Health Center,Quezon City,Pharmacy Dispensing,62,3,8,74,Moderate
+SYN-0457,2024-01-11,Balingasa Health Center,Quezon City,Dental,34,2,6,48,Low
+SYN-0458,2024-01-11,Balingasa Health Center,Quezon City,Consultation,70,5,8,86,Moderate
+SYN-0459,2024-01-11,Balingasa Health Center,Quezon City,Immunization,46,3,8,64,Low
+SYN-0460,2024-01-11,Balingasa Health Center,Quezon City,Prenatal,38,2,8,56,Low
+SYN-0461,2024-01-11,Barangay Commonwealth Clinic,Quezon City,Consultation,82,5,8,94,High
+SYN-0462,2024-01-11,Barangay Commonwealth Clinic,Quezon City,Immunization,56,4,8,74,Moderate
+SYN-0463,2024-01-11,Barangay Commonwealth Clinic,Quezon City,Prenatal,40,2,8,58,Low
+SYN-0464,2024-01-11,Barangay Commonwealth Clinic,Quezon City,Pediatric,48,3,8,70,Moderate
+SYN-0465,2024-01-11,Barangay Commonwealth Clinic,Quezon City,Senior Care,32,2,6,46,Low
+SYN-0466,2024-01-11,Barangay Commonwealth Clinic,Quezon City,Pharmacy Dispensing,74,4,8,86,Moderate
+SYN-0467,2024-01-11,Barangay Commonwealth Clinic,Quezon City,Dental,36,2,6,52,Low
+SYN-0468,2024-01-11,Barangay Commonwealth Clinic,Quezon City,Consultation,88,6,8,104,High
+SYN-0469,2024-01-11,Barangay Commonwealth Clinic,Quezon City,Immunization,60,4,8,78,Moderate
+SYN-0470,2024-01-11,Barangay Commonwealth Clinic,Quezon City,Prenatal,44,2,8,64,Low
+SYN-0471,2024-01-11,Batasan Hills Health Center,Quezon City,Consultation,62,4,8,76,Moderate
+SYN-0472,2024-01-11,Batasan Hills Health Center,Quezon City,Immunization,48,3,8,64,Low
+SYN-0473,2024-01-11,Batasan Hills Health Center,Quezon City,Prenatal,36,2,8,54,Low
+SYN-0474,2024-01-11,Batasan Hills Health Center,Quezon City,Pediatric,44,2,8,62,Moderate
+SYN-0475,2024-01-11,Batasan Hills Health Center,Quezon City,Senior Care,28,2,6,42,Low
+SYN-0476,2024-01-11,Batasan Hills Health Center,Quezon City,Pharmacy Dispensing,58,3,8,70,Moderate
+SYN-0477,2024-01-11,Batasan Hills Health Center,Quezon City,Dental,32,2,6,46,Low
+SYN-0478,2024-01-11,Batasan Hills Health Center,Quezon City,Consultation,68,5,8,82,Moderate
+SYN-0479,2024-01-11,Batasan Hills Health Center,Quezon City,Immunization,52,3,8,66,Moderate
+SYN-0480,2024-01-11,Batasan Hills Health Center,Quezon City,Prenatal,36,2,8,54,Low
+SYN-0481,2024-01-11,Cubao Health Center,Quezon City,Consultation,108,6,8,122,High
+SYN-0482,2024-01-11,Cubao Health Center,Quezon City,Immunization,70,5,8,94,High
+SYN-0483,2024-01-11,Cubao Health Center,Quezon City,Prenatal,48,3,8,68,Moderate
+SYN-0484,2024-01-11,Cubao Health Center,Quezon City,Pediatric,54,3,8,74,Moderate
+SYN-0485,2024-01-11,Cubao Health Center,Quezon City,Senior Care,36,3,6,54,Low
+SYN-0486,2024-01-11,Cubao Health Center,Quezon City,Pharmacy Dispensing,102,5,8,114,High
+SYN-0487,2024-01-11,Cubao Health Center,Quezon City,Dental,42,3,6,60,Low
+SYN-0488,2024-01-11,Cubao Health Center,Quezon City,Consultation,114,7,8,130,High
+SYN-0489,2024-01-11,Cubao Health Center,Quezon City,Immunization,74,5,8,96,High
+SYN-0490,2024-01-11,Cubao Health Center,Quezon City,Prenatal,52,3,8,74,Moderate
+SYN-0491,2024-01-11,Project 4 Health Center,Quezon City,Consultation,74,5,8,86,Moderate
+SYN-0492,2024-01-11,Project 4 Health Center,Quezon City,Immunization,58,4,8,76,Moderate
+SYN-0493,2024-01-11,Project 4 Health Center,Quezon City,Prenatal,46,2,8,62,Low
+SYN-0494,2024-01-11,Project 4 Health Center,Quezon City,Pediatric,48,3,8,66,Moderate
+SYN-0495,2024-01-11,Project 4 Health Center,Quezon City,Senior Care,34,2,6,48,Low
+SYN-0496,2024-01-11,Project 4 Health Center,Quezon City,Pharmacy Dispensing,70,4,8,82,Moderate
+SYN-0497,2024-01-11,Project 4 Health Center,Quezon City,Dental,36,2,6,54,Low
+SYN-0498,2024-01-11,Project 4 Health Center,Quezon City,Consultation,80,6,8,94,Moderate
+SYN-0499,2024-01-11,Project 4 Health Center,Quezon City,Immunization,62,4,8,78,Moderate
+SYN-0500,2024-01-11,Project 4 Health Center,Quezon City,Prenatal,46,2,8,64,Low
+SYN-0501,2024-01-12,Balingasa Health Center,Quezon City,Consultation,68,4,8,78,Moderate
+SYN-0502,2024-01-12,Balingasa Health Center,Quezon City,Immunization,52,3,8,68,Moderate
+SYN-0503,2024-01-12,Balingasa Health Center,Quezon City,Prenatal,38,2,8,54,Low
+SYN-0504,2024-01-12,Balingasa Health Center,Quezon City,Pediatric,44,2,8,62,Moderate
+SYN-0505,2024-01-12,Balingasa Health Center,Quezon City,Senior Care,32,2,6,46,Low
+SYN-0506,2024-01-12,Balingasa Health Center,Quezon City,Pharmacy Dispensing,64,3,8,76,Moderate
+SYN-0507,2024-01-12,Balingasa Health Center,Quezon City,Dental,36,2,6,50,Low
+SYN-0508,2024-01-12,Balingasa Health Center,Quezon City,Consultation,72,5,8,88,Moderate
+SYN-0509,2024-01-12,Balingasa Health Center,Quezon City,Immunization,48,3,8,66,Low
+SYN-0510,2024-01-12,Balingasa Health Center,Quezon City,Prenatal,40,2,8,58,Low
+SYN-0511,2024-01-12,Barangay Commonwealth Clinic,Quezon City,Consultation,84,5,8,96,High
+SYN-0512,2024-01-12,Barangay Commonwealth Clinic,Quezon City,Immunization,58,4,8,76,Moderate
+SYN-0513,2024-01-12,Barangay Commonwealth Clinic,Quezon City,Prenatal,42,2,8,60,Low
+SYN-0514,2024-01-12,Barangay Commonwealth Clinic,Quezon City,Pediatric,50,3,8,72,Moderate
+SYN-0515,2024-01-12,Barangay Commonwealth Clinic,Quezon City,Senior Care,34,2,6,48,Low
+SYN-0516,2024-01-12,Barangay Commonwealth Clinic,Quezon City,Pharmacy Dispensing,76,4,8,88,Moderate
+SYN-0517,2024-01-12,Barangay Commonwealth Clinic,Quezon City,Dental,38,2,6,54,Low
+SYN-0518,2024-01-12,Barangay Commonwealth Clinic,Quezon City,Consultation,90,6,8,106,High
+SYN-0519,2024-01-12,Barangay Commonwealth Clinic,Quezon City,Immunization,62,4,8,78,Moderate
+SYN-0520,2024-01-12,Barangay Commonwealth Clinic,Quezon City,Prenatal,46,2,8,66,Low
+SYN-0521,2024-01-12,Batasan Hills Health Center,Quezon City,Consultation,64,4,8,78,Moderate
+SYN-0522,2024-01-12,Batasan Hills Health Center,Quezon City,Immunization,50,3,8,66,Low
+SYN-0523,2024-01-12,Batasan Hills Health Center,Quezon City,Prenatal,38,2,8,56,Low
+SYN-0524,2024-01-12,Batasan Hills Health Center,Quezon City,Pediatric,46,2,8,64,Moderate
+SYN-0525,2024-01-12,Batasan Hills Health Center,Quezon City,Senior Care,30,2,6,44,Low
+SYN-0526,2024-01-12,Batasan Hills Health Center,Quezon City,Pharmacy Dispensing,60,3,8,72,Moderate
+SYN-0527,2024-01-12,Batasan Hills Health Center,Quezon City,Dental,34,2,6,48,Low
+SYN-0528,2024-01-12,Batasan Hills Health Center,Quezon City,Consultation,70,5,8,84,Moderate
+SYN-0529,2024-01-12,Batasan Hills Health Center,Quezon City,Immunization,54,3,8,68,Moderate
+SYN-0530,2024-01-12,Batasan Hills Health Center,Quezon City,Prenatal,38,2,8,56,Low
+SYN-0531,2024-01-12,Cubao Health Center,Quezon City,Consultation,112,6,8,126,High
+SYN-0532,2024-01-12,Cubao Health Center,Quezon City,Immunization,72,5,8,96,High
+SYN-0533,2024-01-12,Cubao Health Center,Quezon City,Prenatal,50,3,8,70,Moderate
+SYN-0534,2024-01-12,Cubao Health Center,Quezon City,Pediatric,56,3,8,76,Moderate
+SYN-0535,2024-01-12,Cubao Health Center,Quezon City,Senior Care,38,3,6,56,Low
+SYN-0536,2024-01-12,Cubao Health Center,Quezon City,Pharmacy Dispensing,106,5,8,118,High
+SYN-0537,2024-01-12,Cubao Health Center,Quezon City,Dental,44,3,6,62,Low
+SYN-0538,2024-01-12,Cubao Health Center,Quezon City,Consultation,118,7,8,134,High
+SYN-0539,2024-01-12,Cubao Health Center,Quezon City,Immunization,76,5,8,98,High
+SYN-0540,2024-01-12,Cubao Health Center,Quezon City,Prenatal,54,3,8,76,Moderate
+SYN-0541,2024-01-12,Project 4 Health Center,Quezon City,Consultation,76,5,8,88,Moderate
+SYN-0542,2024-01-12,Project 4 Health Center,Quezon City,Immunization,60,4,8,78,Moderate
+SYN-0543,2024-01-12,Project 4 Health Center,Quezon City,Prenatal,48,2,8,64,Low
+SYN-0544,2024-01-12,Project 4 Health Center,Quezon City,Pediatric,50,3,8,68,Moderate
+SYN-0545,2024-01-12,Project 4 Health Center,Quezon City,Senior Care,36,2,6,50,Low
+SYN-0546,2024-01-12,Project 4 Health Center,Quezon City,Pharmacy Dispensing,72,4,8,84,Moderate
+SYN-0547,2024-01-12,Project 4 Health Center,Quezon City,Dental,38,2,6,56,Low
+SYN-0548,2024-01-12,Project 4 Health Center,Quezon City,Consultation,82,6,8,96,Moderate
+SYN-0549,2024-01-12,Project 4 Health Center,Quezon City,Immunization,64,4,8,80,Moderate
+SYN-0550,2024-01-12,Project 4 Health Center,Quezon City,Prenatal,48,2,8,66,Low
+SYN-0551,2024-01-13,Balingasa Health Center,Quezon City,Consultation,70,4,8,80,Moderate
+SYN-0552,2024-01-13,Balingasa Health Center,Quezon City,Immunization,54,3,8,70,Moderate
+SYN-0553,2024-01-13,Balingasa Health Center,Quezon City,Prenatal,40,2,8,56,Low
+SYN-0554,2024-01-13,Balingasa Health Center,Quezon City,Pediatric,46,2,8,64,Moderate
+SYN-0555,2024-01-13,Balingasa Health Center,Quezon City,Senior Care,34,2,6,48,Low
+SYN-0556,2024-01-13,Balingasa Health Center,Quezon City,Pharmacy Dispensing,66,3,8,78,Moderate
+SYN-0557,2024-01-13,Balingasa Health Center,Quezon City,Dental,38,2,6,52,Low
+SYN-0558,2024-01-13,Balingasa Health Center,Quezon City,Consultation,74,5,8,90,Moderate
+SYN-0559,2024-01-13,Balingasa Health Center,Quezon City,Immunization,50,3,8,68,Low
+SYN-0560,2024-01-13,Balingasa Health Center,Quezon City,Prenatal,42,2,8,60,Low
+SYN-0561,2024-01-13,Barangay Commonwealth Clinic,Quezon City,Consultation,86,5,8,98,High
+SYN-0562,2024-01-13,Barangay Commonwealth Clinic,Quezon City,Immunization,60,4,8,78,Moderate
+SYN-0563,2024-01-13,Barangay Commonwealth Clinic,Quezon City,Prenatal,44,2,8,62,Low
+SYN-0564,2024-01-13,Barangay Commonwealth Clinic,Quezon City,Pediatric,52,3,8,74,Moderate
+SYN-0565,2024-01-13,Barangay Commonwealth Clinic,Quezon City,Senior Care,36,2,6,50,Low
+SYN-0566,2024-01-13,Barangay Commonwealth Clinic,Quezon City,Pharmacy Dispensing,78,4,8,90,Moderate
+SYN-0567,2024-01-13,Barangay Commonwealth Clinic,Quezon City,Dental,40,2,6,56,Low
+SYN-0568,2024-01-13,Barangay Commonwealth Clinic,Quezon City,Consultation,92,6,8,108,High
+SYN-0569,2024-01-13,Barangay Commonwealth Clinic,Quezon City,Immunization,64,4,8,80,Moderate
+SYN-0570,2024-01-13,Barangay Commonwealth Clinic,Quezon City,Prenatal,48,2,8,68,Low
+SYN-0571,2024-01-13,Batasan Hills Health Center,Quezon City,Consultation,66,4,8,80,Moderate
+SYN-0572,2024-01-13,Batasan Hills Health Center,Quezon City,Immunization,52,3,8,68,Low
+SYN-0573,2024-01-13,Batasan Hills Health Center,Quezon City,Prenatal,40,2,8,58,Low
+SYN-0574,2024-01-13,Batasan Hills Health Center,Quezon City,Pediatric,48,2,8,66,Moderate
+SYN-0575,2024-01-13,Batasan Hills Health Center,Quezon City,Senior Care,32,2,6,46,Low
+SYN-0576,2024-01-13,Batasan Hills Health Center,Quezon City,Pharmacy Dispensing,62,3,8,74,Moderate
+SYN-0577,2024-01-13,Batasan Hills Health Center,Quezon City,Dental,36,2,6,48,Low
+SYN-0578,2024-01-13,Batasan Hills Health Center,Quezon City,Consultation,72,5,8,86,Moderate
+SYN-0579,2024-01-13,Batasan Hills Health Center,Quezon City,Immunization,56,3,8,70,Moderate
+SYN-0580,2024-01-13,Batasan Hills Health Center,Quezon City,Prenatal,40,2,8,58,Low
+SYN-0581,2024-01-13,Cubao Health Center,Quezon City,Consultation,116,6,8,130,High
+SYN-0582,2024-01-13,Cubao Health Center,Quezon City,Immunization,74,5,8,98,High
+SYN-0583,2024-01-13,Cubao Health Center,Quezon City,Prenatal,52,3,8,72,Moderate
+SYN-0584,2024-01-13,Cubao Health Center,Quezon City,Pediatric,58,3,8,78,Moderate
+SYN-0585,2024-01-13,Cubao Health Center,Quezon City,Senior Care,40,3,6,58,Low
+SYN-0586,2024-01-13,Cubao Health Center,Quezon City,Pharmacy Dispensing,110,5,8,122,High
+SYN-0587,2024-01-13,Cubao Health Center,Quezon City,Dental,46,3,6,64,Low
+SYN-0588,2024-01-13,Cubao Health Center,Quezon City,Consultation,122,7,8,138,High
+SYN-0589,2024-01-13,Cubao Health Center,Quezon City,Immunization,78,5,8,100,High
+SYN-0590,2024-01-13,Cubao Health Center,Quezon City,Prenatal,56,3,8,78,Moderate
+SYN-0591,2024-01-13,Project 4 Health Center,Quezon City,Consultation,78,5,8,90,Moderate
+SYN-0592,2024-01-13,Project 4 Health Center,Quezon City,Immunization,62,4,8,80,Moderate
+SYN-0593,2024-01-13,Project 4 Health Center,Quezon City,Prenatal,50,2,8,66,Low
+SYN-0594,2024-01-13,Project 4 Health Center,Quezon City,Pediatric,52,3,8,70,Moderate
+SYN-0595,2024-01-13,Project 4 Health Center,Quezon City,Senior Care,38,2,6,52,Low
+SYN-0596,2024-01-13,Project 4 Health Center,Quezon City,Pharmacy Dispensing,74,4,8,86,Moderate
+SYN-0597,2024-01-13,Project 4 Health Center,Quezon City,Dental,40,2,6,58,Low
+SYN-0598,2024-01-13,Project 4 Health Center,Quezon City,Consultation,84,6,8,98,Moderate
+SYN-0599,2024-01-13,Project 4 Health Center,Quezon City,Immunization,66,4,8,82,Moderate
+SYN-0600,2024-01-13,Project 4 Health Center,Quezon City,Prenatal,50,2,8,68,Low
+SYN-0601,2024-01-14,Balingasa Health Center,Quezon City,Consultation,72,4,8,82,Moderate
+SYN-0602,2024-01-14,Balingasa Health Center,Quezon City,Immunization,56,3,8,72,Moderate
+SYN-0603,2024-01-14,Balingasa Health Center,Quezon City,Prenatal,42,2,8,58,Low
+SYN-0604,2024-01-14,Balingasa Health Center,Quezon City,Pediatric,48,2,8,66,Moderate
+SYN-0605,2024-01-14,Balingasa Health Center,Quezon City,Senior Care,36,2,6,50,Low
+SYN-0606,2024-01-14,Balingasa Health Center,Quezon City,Pharmacy Dispensing,68,3,8,80,Moderate
+SYN-0607,2024-01-14,Balingasa Health Center,Quezon City,Dental,40,2,6,54,Low
+SYN-0608,2024-01-14,Balingasa Health Center,Quezon City,Consultation,76,5,8,92,Moderate
+SYN-0609,2024-01-14,Balingasa Health Center,Quezon City,Immunization,52,3,8,70,Low
+SYN-0610,2024-01-14,Balingasa Health Center,Quezon City,Prenatal,44,2,8,62,Low
+SYN-0611,2024-01-14,Barangay Commonwealth Clinic,Quezon City,Consultation,88,5,8,100,High
+SYN-0612,2024-01-14,Barangay Commonwealth Clinic,Quezon City,Immunization,62,4,8,80,Moderate
+SYN-0613,2024-01-14,Barangay Commonwealth Clinic,Quezon City,Prenatal,46,2,8,64,Low
+SYN-0614,2024-01-14,Barangay Commonwealth Clinic,Quezon City,Pediatric,54,3,8,76,Moderate
+SYN-0615,2024-01-14,Barangay Commonwealth Clinic,Quezon City,Senior Care,38,2,6,52,Low
+SYN-0616,2024-01-14,Barangay Commonwealth Clinic,Quezon City,Pharmacy Dispensing,80,4,8,92,Moderate
+SYN-0617,2024-01-14,Barangay Commonwealth Clinic,Quezon City,Dental,42,2,6,58,Low
+SYN-0618,2024-01-14,Barangay Commonwealth Clinic,Quezon City,Consultation,94,6,8,110,High
+SYN-0619,2024-01-14,Barangay Commonwealth Clinic,Quezon City,Immunization,66,4,8,82,Moderate
+SYN-0620,2024-01-14,Barangay Commonwealth Clinic,Quezon City,Prenatal,50,2,8,70,Low
+SYN-0621,2024-01-14,Batasan Hills Health Center,Quezon City,Consultation,68,4,8,82,Moderate
+SYN-0622,2024-01-14,Batasan Hills Health Center,Quezon City,Immunization,54,3,8,70,Low
+SYN-0623,2024-01-14,Batasan Hills Health Center,Quezon City,Prenatal,42,2,8,60,Low
+SYN-0624,2024-01-14,Batasan Hills Health Center,Quezon City,Pediatric,50,2,8,68,Moderate
+SYN-0625,2024-01-14,Batasan Hills Health Center,Quezon City,Senior Care,34,2,6,48,Low
+SYN-0626,2024-01-14,Batasan Hills Health Center,Quezon City,Pharmacy Dispensing,64,3,8,76,Moderate
+SYN-0627,2024-01-14,Batasan Hills Health Center,Quezon City,Dental,38,2,6,50,Low
+SYN-0628,2024-01-14,Batasan Hills Health Center,Quezon City,Consultation,74,5,8,88,Moderate
+SYN-0629,2024-01-14,Batasan Hills Health Center,Quezon City,Immunization,58,3,8,70,Moderate
+SYN-0630,2024-01-14,Batasan Hills Health Center,Quezon City,Prenatal,42,2,8,60,Low
+SYN-0631,2024-01-14,Cubao Health Center,Quezon City,Consultation,120,6,8,134,High
+SYN-0632,2024-01-14,Cubao Health Center,Quezon City,Immunization,76,5,8,100,High
+SYN-0633,2024-01-14,Cubao Health Center,Quezon City,Prenatal,54,3,8,74,Moderate
+SYN-0634,2024-01-14,Cubao Health Center,Quezon City,Pediatric,60,3,8,80,Moderate
+SYN-0635,2024-01-14,Cubao Health Center,Quezon City,Senior Care,42,3,6,60,Low
+SYN-0636,2024-01-14,Cubao Health Center,Quezon City,Pharmacy Dispensing,114,5,8,126,High
+SYN-0637,2024-01-14,Cubao Health Center,Quezon City,Dental,48,3,6,66,Low
+SYN-0638,2024-01-14,Cubao Health Center,Quezon City,Consultation,126,7,8,142,High
+SYN-0639,2024-01-14,Cubao Health Center,Quezon City,Immunization,80,5,8,102,High
+SYN-0640,2024-01-14,Cubao Health Center,Quezon City,Prenatal,58,3,8,80,Moderate
+SYN-0641,2024-01-14,Project 4 Health Center,Quezon City,Consultation,80,5,8,92,Moderate
+SYN-0642,2024-01-14,Project 4 Health Center,Quezon City,Immunization,64,4,8,82,Moderate
+SYN-0643,2024-01-14,Project 4 Health Center,Quezon City,Prenatal,52,2,8,68,Low
+SYN-0644,2024-01-14,Project 4 Health Center,Quezon City,Pediatric,54,3,8,72,Moderate
+SYN-0645,2024-01-14,Project 4 Health Center,Quezon City,Senior Care,40,2,6,54,Low
+SYN-0646,2024-01-14,Project 4 Health Center,Quezon City,Pharmacy Dispensing,76,4,8,88,Moderate
+SYN-0647,2024-01-14,Project 4 Health Center,Quezon City,Dental,42,2,6,60,Low
+SYN-0648,2024-01-14,Project 4 Health Center,Quezon City,Consultation,86,6,8,100,Moderate
+SYN-0649,2024-01-14,Project 4 Health Center,Quezon City,Immunization,68,4,8,84,Moderate
+SYN-0650,2024-01-14,Project 4 Health Center,Quezon City,Prenatal,52,2,8,70,Low
+SYN-0651,2024-01-15,Balingasa Health Center,Quezon City,Consultation,74,4,8,84,Moderate
+SYN-0652,2024-01-15,Balingasa Health Center,Quezon City,Immunization,58,3,8,74,Moderate
+SYN-0653,2024-01-15,Balingasa Health Center,Quezon City,Prenatal,44,2,8,60,Low
+SYN-0654,2024-01-15,Balingasa Health Center,Quezon City,Pediatric,50,2,8,68,Moderate
+SYN-0655,2024-01-15,Balingasa Health Center,Quezon City,Senior Care,38,2,6,52,Low
+SYN-0656,2024-01-15,Balingasa Health Center,Quezon City,Pharmacy Dispensing,70,3,8,82,Moderate
+SYN-0657,2024-01-15,Balingasa Health Center,Quezon City,Dental,42,2,6,56,Low
+SYN-0658,2024-01-15,Balingasa Health Center,Quezon City,Consultation,78,5,8,94,Moderate
+SYN-0659,2024-01-15,Balingasa Health Center,Quezon City,Immunization,54,3,8,72,Low
+SYN-0660,2024-01-15,Balingasa Health Center,Quezon City,Prenatal,46,2,8,64,Low
+SYN-0661,2024-01-15,Barangay Commonwealth Clinic,Quezon City,Consultation,90,5,8,102,High
+SYN-0662,2024-01-15,Barangay Commonwealth Clinic,Quezon City,Immunization,64,4,8,82,Moderate
+SYN-0663,2024-01-15,Barangay Commonwealth Clinic,Quezon City,Prenatal,48,2,8,66,Low
+SYN-0664,2024-01-15,Barangay Commonwealth Clinic,Quezon City,Pediatric,56,3,8,78,Moderate
+SYN-0665,2024-01-15,Barangay Commonwealth Clinic,Quezon City,Senior Care,40,2,6,54,Low
+SYN-0666,2024-01-15,Barangay Commonwealth Clinic,Quezon City,Pharmacy Dispensing,82,4,8,94,Moderate
+SYN-0667,2024-01-15,Barangay Commonwealth Clinic,Quezon City,Dental,44,2,6,60,Low
+SYN-0668,2024-01-15,Barangay Commonwealth Clinic,Quezon City,Consultation,96,6,8,112,High
+SYN-0669,2024-01-15,Barangay Commonwealth Clinic,Quezon City,Immunization,68,4,8,84,Moderate
+SYN-0670,2024-01-15,Barangay Commonwealth Clinic,Quezon City,Prenatal,52,2,8,72,Low
+SYN-0671,2024-01-15,Batasan Hills Health Center,Quezon City,Consultation,70,4,8,84,Moderate
+SYN-0672,2024-01-15,Batasan Hills Health Center,Quezon City,Immunization,56,3,8,72,Low
+SYN-0673,2024-01-15,Batasan Hills Health Center,Quezon City,Prenatal,44,2,8,62,Low
+SYN-0674,2024-01-15,Batasan Hills Health Center,Quezon City,Pediatric,52,2,8,70,Moderate
+SYN-0675,2024-01-15,Batasan Hills Health Center,Quezon City,Senior Care,36,2,6,50,Low
+SYN-0676,2024-01-15,Batasan Hills Health Center,Quezon City,Pharmacy Dispensing,66,3,8,78,Moderate
+SYN-0677,2024-01-15,Batasan Hills Health Center,Quezon City,Dental,40,2,6,52,Low
+SYN-0678,2024-01-15,Batasan Hills Health Center,Quezon City,Consultation,76,5,8,90,Moderate
+SYN-0679,2024-01-15,Batasan Hills Health Center,Quezon City,Immunization,60,3,8,72,Moderate
+SYN-0680,2024-01-15,Batasan Hills Health Center,Quezon City,Prenatal,44,2,8,62,Low
+SYN-0681,2024-01-15,Cubao Health Center,Quezon City,Consultation,124,6,8,138,High
+SYN-0682,2024-01-15,Cubao Health Center,Quezon City,Immunization,78,5,8,102,High
+SYN-0683,2024-01-15,Cubao Health Center,Quezon City,Prenatal,56,3,8,76,Moderate
+SYN-0684,2024-01-15,Cubao Health Center,Quezon City,Pediatric,62,3,8,82,Moderate
+SYN-0685,2024-01-15,Cubao Health Center,Quezon City,Senior Care,44,3,6,62,Low
+SYN-0686,2024-01-15,Cubao Health Center,Quezon City,Pharmacy Dispensing,118,5,8,130,High
+SYN-0687,2024-01-15,Cubao Health Center,Quezon City,Dental,50,3,6,68,Low
+SYN-0688,2024-01-15,Cubao Health Center,Quezon City,Consultation,130,7,8,146,High
+SYN-0689,2024-01-15,Cubao Health Center,Quezon City,Immunization,82,5,8,104,High
+SYN-0690,2024-01-15,Cubao Health Center,Quezon City,Prenatal,60,3,8,82,Moderate
+SYN-0691,2024-01-15,Project 4 Health Center,Quezon City,Consultation,82,5,8,94,Moderate
+SYN-0692,2024-01-15,Project 4 Health Center,Quezon City,Immunization,66,4,8,84,Moderate
+SYN-0693,2024-01-15,Project 4 Health Center,Quezon City,Prenatal,54,2,8,70,Low
+SYN-0694,2024-01-15,Project 4 Health Center,Quezon City,Pediatric,56,3,8,74,Moderate
+SYN-0695,2024-01-15,Project 4 Health Center,Quezon City,Senior Care,42,2,6,56,Low
+SYN-0696,2024-01-15,Project 4 Health Center,Quezon City,Pharmacy Dispensing,78,4,8,90,Moderate
+SYN-0697,2024-01-15,Project 4 Health Center,Quezon City,Dental,44,2,6,62,Low
+SYN-0698,2024-01-15,Project 4 Health Center,Quezon City,Consultation,88,6,8,102,Moderate
+SYN-0699,2024-01-15,Project 4 Health Center,Quezon City,Immunization,70,4,8,86,Moderate
+SYN-0700,2024-01-15,Project 4 Health Center,Quezon City,Prenatal,54,2,8,72,Low
+SYN-0701,2024-01-16,Balingasa Health Center,Quezon City,Consultation,76,4,8,86,Moderate
+SYN-0702,2024-01-16,Balingasa Health Center,Quezon City,Immunization,60,3,8,76,Moderate
+SYN-0703,2024-01-16,Balingasa Health Center,Quezon City,Prenatal,46,2,8,62,Low
+SYN-0704,2024-01-16,Balingasa Health Center,Quezon City,Pediatric,52,2,8,70,Moderate
+SYN-0705,2024-01-16,Balingasa Health Center,Quezon City,Senior Care,40,2,6,54,Low
+SYN-0706,2024-01-16,Balingasa Health Center,Quezon City,Pharmacy Dispensing,72,3,8,84,Moderate
+SYN-0707,2024-01-16,Balingasa Health Center,Quezon City,Dental,44,2,6,58,Low
+SYN-0708,2024-01-16,Balingasa Health Center,Quezon City,Consultation,80,5,8,96,Moderate
+SYN-0709,2024-01-16,Balingasa Health Center,Quezon City,Immunization,56,3,8,74,Low
+SYN-0710,2024-01-16,Balingasa Health Center,Quezon City,Prenatal,48,2,8,66,Low
+SYN-0711,2024-01-16,Barangay Commonwealth Clinic,Quezon City,Consultation,92,5,8,104,High
+SYN-0712,2024-01-16,Barangay Commonwealth Clinic,Quezon City,Immunization,66,4,8,84,Moderate
+SYN-0713,2024-01-16,Barangay Commonwealth Clinic,Quezon City,Prenatal,50,2,8,68,Low
+SYN-0714,2024-01-16,Barangay Commonwealth Clinic,Quezon City,Pediatric,58,3,8,80,Moderate
+SYN-0715,2024-01-16,Barangay Commonwealth Clinic,Quezon City,Senior Care,42,2,6,56,Low
+SYN-0716,2024-01-16,Barangay Commonwealth Clinic,Quezon City,Pharmacy Dispensing,84,4,8,96,Moderate
+SYN-0717,2024-01-16,Barangay Commonwealth Clinic,Quezon City,Dental,46,2,6,62,Low
+SYN-0718,2024-01-16,Barangay Commonwealth Clinic,Quezon City,Consultation,98,6,8,114,High
+SYN-0719,2024-01-16,Barangay Commonwealth Clinic,Quezon City,Immunization,70,4,8,86,Moderate
+SYN-0720,2024-01-16,Barangay Commonwealth Clinic,Quezon City,Prenatal,54,2,8,74,Low
+SYN-0721,2024-01-16,Batasan Hills Health Center,Quezon City,Consultation,72,4,8,86,Moderate
+SYN-0722,2024-01-16,Batasan Hills Health Center,Quezon City,Immunization,58,3,8,72,Low
+SYN-0723,2024-01-16,Batasan Hills Health Center,Quezon City,Prenatal,46,2,8,64,Low
+SYN-0724,2024-01-16,Batasan Hills Health Center,Quezon City,Pediatric,54,2,8,72,Moderate
+SYN-0725,2024-01-16,Batasan Hills Health Center,Quezon City,Senior Care,38,2,6,52,Low
+SYN-0726,2024-01-16,Batasan Hills Health Center,Quezon City,Pharmacy Dispensing,68,3,8,80,Moderate
+SYN-0727,2024-01-16,Batasan Hills Health Center,Quezon City,Dental,42,2,6,54,Low
+SYN-0728,2024-01-16,Batasan Hills Health Center,Quezon City,Consultation,78,5,8,90,Moderate
+SYN-0729,2024-01-16,Batasan Hills Health Center,Quezon City,Immunization,62,3,8,74,Moderate
+SYN-0730,2024-01-16,Batasan Hills Health Center,Quezon City,Prenatal,46,2,8,64,Low
+SYN-0731,2024-01-16,Cubao Health Center,Quezon City,Consultation,128,6,8,142,High
+SYN-0732,2024-01-16,Cubao Health Center,Quezon City,Immunization,80,5,8,104,High
+SYN-0733,2024-01-16,Cubao Health Center,Quezon City,Prenatal,58,3,8,78,Moderate
+SYN-0734,2024-01-16,Cubao Health Center,Quezon City,Pediatric,64,3,8,84,Moderate
+SYN-0735,2024-01-16,Cubao Health Center,Quezon City,Senior Care,46,3,6,64,Low
+SYN-0736,2024-01-16,Cubao Health Center,Quezon City,Pharmacy Dispensing,122,5,8,134,High
+SYN-0737,2024-01-16,Cubao Health Center,Quezon City,Dental,52,3,6,70,Low
+SYN-0738,2024-01-16,Cubao Health Center,Quezon City,Consultation,134,7,8,150,High
+SYN-0739,2024-01-16,Cubao Health Center,Quezon City,Immunization,84,5,8,106,High
+SYN-0740,2024-01-16,Cubao Health Center,Quezon City,Prenatal,62,3,8,84,Moderate
+SYN-0741,2024-01-16,Project 4 Health Center,Quezon City,Consultation,84,5,8,96,Moderate
+SYN-0742,2024-01-16,Project 4 Health Center,Quezon City,Immunization,68,4,8,86,Moderate
+SYN-0743,2024-01-16,Project 4 Health Center,Quezon City,Prenatal,56,2,8,72,Low
+SYN-0744,2024-01-16,Project 4 Health Center,Quezon City,Pediatric,58,3,8,76,Moderate
+SYN-0745,2024-01-16,Project 4 Health Center,Quezon City,Senior Care,44,2,6,58,Low
+SYN-0746,2024-01-16,Project 4 Health Center,Quezon City,Pharmacy Dispensing,80,4,8,92,Moderate
+SYN-0747,2024-01-16,Project 4 Health Center,Quezon City,Dental,46,2,6,64,Low
+SYN-0748,2024-01-16,Project 4 Health Center,Quezon City,Consultation,90,6,8,104,Moderate
+SYN-0749,2024-01-16,Project 4 Health Center,Quezon City,Immunization,72,4,8,88,Moderate
+SYN-0750,2024-01-16,Project 4 Health Center,Quezon City,Prenatal,56,2,8,74,Low
+SYN-0751,2024-01-17,Balingasa Health Center,Quezon City,Consultation,78,4,8,88,Moderate
+SYN-0752,2024-01-17,Balingasa Health Center,Quezon City,Immunization,62,3,8,78,Moderate
+SYN-0753,2024-01-17,Balingasa Health Center,Quezon City,Prenatal,48,2,8,64,Low
+SYN-0754,2024-01-17,Balingasa Health Center,Quezon City,Pediatric,54,2,8,72,Moderate
+SYN-0755,2024-01-17,Balingasa Health Center,Quezon City,Senior Care,42,2,6,56,Low
+SYN-0756,2024-01-17,Balingasa Health Center,Quezon City,Pharmacy Dispensing,74,3,8,86,Moderate
+SYN-0757,2024-01-17,Balingasa Health Center,Quezon City,Dental,46,2,6,60,Low
+SYN-0758,2024-01-17,Balingasa Health Center,Quezon City,Consultation,82,5,8,98,Moderate
+SYN-0759,2024-01-17,Balingasa Health Center,Quezon City,Immunization,58,3,8,76,Low
+SYN-0760,2024-01-17,Balingasa Health Center,Quezon City,Prenatal,50,2,8,68,Low
+SYN-0761,2024-01-17,Barangay Commonwealth Clinic,Quezon City,Consultation,94,5,8,106,High
+SYN-0762,2024-01-17,Barangay Commonwealth Clinic,Quezon City,Immunization,68,4,8,86,Moderate
+SYN-0763,2024-01-17,Barangay Commonwealth Clinic,Quezon City,Prenatal,52,2,8,70,Low
+SYN-0764,2024-01-17,Barangay Commonwealth Clinic,Quezon City,Pediatric,60,3,8,82,Moderate
+SYN-0765,2024-01-17,Barangay Commonwealth Clinic,Quezon City,Senior Care,44,2,6,58,Low
+SYN-0766,2024-01-17,Barangay Commonwealth Clinic,Quezon City,Pharmacy Dispensing,86,4,8,98,Moderate
+SYN-0767,2024-01-17,Barangay Commonwealth Clinic,Quezon City,Dental,48,2,6,64,Low
+SYN-0768,2024-01-17,Barangay Commonwealth Clinic,Quezon City,Consultation,100,6,8,116,High
+SYN-0769,2024-01-17,Barangay Commonwealth Clinic,Quezon City,Immunization,72,4,8,88,Moderate
+SYN-0770,2024-01-17,Barangay Commonwealth Clinic,Quezon City,Prenatal,56,2,8,76,Low
+SYN-0771,2024-01-17,Batasan Hills Health Center,Quezon City,Consultation,74,4,8,88,Moderate
+SYN-0772,2024-01-17,Batasan Hills Health Center,Quezon City,Immunization,60,3,8,74,Low
+SYN-0773,2024-01-17,Batasan Hills Health Center,Quezon City,Prenatal,48,2,8,66,Low
+SYN-0774,2024-01-17,Batasan Hills Health Center,Quezon City,Pediatric,56,2,8,74,Moderate
+SYN-0775,2024-01-17,Batasan Hills Health Center,Quezon City,Senior Care,40,2,6,54,Low
+SYN-0776,2024-01-17,Batasan Hills Health Center,Quezon City,Pharmacy Dispensing,70,3,8,82,Moderate
+SYN-0777,2024-01-17,Batasan Hills Health Center,Quezon City,Dental,44,2,6,56,Low
+SYN-0778,2024-01-17,Batasan Hills Health Center,Quezon City,Consultation,80,5,8,92,Moderate
+SYN-0779,2024-01-17,Batasan Hills Health Center,Quezon City,Immunization,64,3,8,76,Moderate
+SYN-0780,2024-01-17,Batasan Hills Health Center,Quezon City,Prenatal,48,2,8,66,Low
+SYN-0781,2024-01-17,Cubao Health Center,Quezon City,Consultation,132,6,8,146,High
+SYN-0782,2024-01-17,Cubao Health Center,Quezon City,Immunization,82,5,8,106,High
+SYN-0783,2024-01-17,Cubao Health Center,Quezon City,Prenatal,60,3,8,80,Moderate
+SYN-0784,2024-01-17,Cubao Health Center,Quezon City,Pediatric,66,3,8,86,Moderate
+SYN-0785,2024-01-17,Cubao Health Center,Quezon City,Senior Care,48,3,6,66,Low
+SYN-0786,2024-01-17,Cubao Health Center,Quezon City,Pharmacy Dispensing,126,5,8,138,High
+SYN-0787,2024-01-17,Cubao Health Center,Quezon City,Dental,54,3,6,72,Low
+SYN-0788,2024-01-17,Cubao Health Center,Quezon City,Consultation,138,7,8,154,High
+SYN-0789,2024-01-17,Cubao Health Center,Quezon City,Immunization,86,5,8,108,High
+SYN-0790,2024-01-17,Cubao Health Center,Quezon City,Prenatal,64,3,8,86,Moderate
+SYN-0791,2024-01-17,Project 4 Health Center,Quezon City,Consultation,86,5,8,98,Moderate
+SYN-0792,2024-01-17,Project 4 Health Center,Quezon City,Immunization,70,4,8,88,Moderate
+SYN-0793,2024-01-17,Project 4 Health Center,Quezon City,Prenatal,58,2,8,74,Low
+SYN-0794,2024-01-17,Project 4 Health Center,Quezon City,Pediatric,60,3,8,78,Moderate
+SYN-0795,2024-01-17,Project 4 Health Center,Quezon City,Senior Care,46,2,6,60,Low
+SYN-0796,2024-01-17,Project 4 Health Center,Quezon City,Pharmacy Dispensing,82,4,8,94,Moderate
+SYN-0797,2024-01-17,Project 4 Health Center,Quezon City,Dental,48,2,6,66,Low
+SYN-0798,2024-01-17,Project 4 Health Center,Quezon City,Consultation,92,6,8,106,Moderate
+SYN-0799,2024-01-17,Project 4 Health Center,Quezon City,Immunization,74,4,8,90,Moderate
+SYN-0800,2024-01-17,Project 4 Health Center,Quezon City,Prenatal,58,2,8,76,Low
+SYN-0801,2024-01-18,Balingasa Health Center,Quezon City,Consultation,80,4,8,90,Moderate
+SYN-0802,2024-01-18,Balingasa Health Center,Quezon City,Immunization,64,3,8,80,Moderate
+SYN-0803,2024-01-18,Balingasa Health Center,Quezon City,Prenatal,50,2,8,66,Low
+SYN-0804,2024-01-18,Balingasa Health Center,Quezon City,Pediatric,56,2,8,74,Moderate
+SYN-0805,2024-01-18,Balingasa Health Center,Quezon City,Senior Care,44,2,6,58,Low
+SYN-0806,2024-01-18,Balingasa Health Center,Quezon City,Pharmacy Dispensing,76,3,8,88,Moderate
+SYN-0807,2024-01-18,Balingasa Health Center,Quezon City,Dental,48,2,6,62,Low
+SYN-0808,2024-01-18,Balingasa Health Center,Quezon City,Consultation,84,5,8,100,Moderate
+SYN-0809,2024-01-18,Balingasa Health Center,Quezon City,Immunization,60,3,8,78,Low
+SYN-0810,2024-01-18,Balingasa Health Center,Quezon City,Prenatal,52,2,8,70,Low
+SYN-0811,2024-01-18,Barangay Commonwealth Clinic,Quezon City,Consultation,96,5,8,108,High
+SYN-0812,2024-01-18,Barangay Commonwealth Clinic,Quezon City,Immunization,70,4,8,88,Moderate
+SYN-0813,2024-01-18,Barangay Commonwealth Clinic,Quezon City,Prenatal,54,2,8,72,Low
+SYN-0814,2024-01-18,Barangay Commonwealth Clinic,Quezon City,Pediatric,62,3,8,84,Moderate
+SYN-0815,2024-01-18,Barangay Commonwealth Clinic,Quezon City,Senior Care,46,2,6,60,Low
+SYN-0816,2024-01-18,Barangay Commonwealth Clinic,Quezon City,Pharmacy Dispensing,88,4,8,100,Moderate
+SYN-0817,2024-01-18,Barangay Commonwealth Clinic,Quezon City,Dental,50,2,6,66,Low
+SYN-0818,2024-01-18,Barangay Commonwealth Clinic,Quezon City,Consultation,102,6,8,118,High
+SYN-0819,2024-01-18,Barangay Commonwealth Clinic,Quezon City,Immunization,74,4,8,90,Moderate
+SYN-0820,2024-01-18,Barangay Commonwealth Clinic,Quezon City,Prenatal,58,2,8,78,Low
+SYN-0821,2024-01-18,Batasan Hills Health Center,Quezon City,Consultation,76,4,8,90,Moderate
+SYN-0822,2024-01-18,Batasan Hills Health Center,Quezon City,Immunization,62,3,8,74,Low
+SYN-0823,2024-01-18,Batasan Hills Health Center,Quezon City,Prenatal,50,2,8,68,Low
+SYN-0824,2024-01-18,Batasan Hills Health Center,Quezon City,Pediatric,58,2,8,76,Moderate
+SYN-0825,2024-01-18,Batasan Hills Health Center,Quezon City,Senior Care,42,2,6,56,Low
+SYN-0826,2024-01-18,Batasan Hills Health Center,Quezon City,Pharmacy Dispensing,70,3,8,82,Moderate
+SYN-0827,2024-01-18,Batasan Hills Health Center,Quezon City,Dental,46,2,6,58,Low
+SYN-0828,2024-01-18,Batasan Hills Health Center,Quezon City,Consultation,82,5,8,94,Moderate
+SYN-0829,2024-01-18,Batasan Hills Health Center,Quezon City,Immunization,66,3,8,78,Moderate
+SYN-0830,2024-01-18,Batasan Hills Health Center,Quezon City,Prenatal,50,2,8,68,Low
+SYN-0831,2024-01-18,Cubao Health Center,Quezon City,Consultation,136,6,8,150,High
+SYN-0832,2024-01-18,Cubao Health Center,Quezon City,Immunization,84,5,8,108,High
+SYN-0833,2024-01-18,Cubao Health Center,Quezon City,Prenatal,62,3,8,82,Moderate
+SYN-0834,2024-01-18,Cubao Health Center,Quezon City,Pediatric,68,3,8,88,Moderate
+SYN-0835,2024-01-18,Cubao Health Center,Quezon City,Senior Care,50,3,6,68,Low
+SYN-0836,2024-01-18,Cubao Health Center,Quezon City,Pharmacy Dispensing,130,5,8,142,High
+SYN-0837,2024-01-18,Cubao Health Center,Quezon City,Dental,56,3,6,74,Low
+SYN-0838,2024-01-18,Cubao Health Center,Quezon City,Consultation,142,7,8,158,High
+SYN-0839,2024-01-18,Cubao Health Center,Quezon City,Immunization,88,5,8,110,High
+SYN-0840,2024-01-18,Cubao Health Center,Quezon City,Prenatal,66,3,8,88,Moderate
+SYN-0841,2024-01-18,Project 4 Health Center,Quezon City,Consultation,88,5,8,100,Moderate
+SYN-0842,2024-01-18,Project 4 Health Center,Quezon City,Immunization,72,4,8,90,Moderate
+SYN-0843,2024-01-18,Project 4 Health Center,Quezon City,Prenatal,60,2,8,76,Low
+SYN-0844,2024-01-18,Project 4 Health Center,Quezon City,Pediatric,62,3,8,80,Moderate
+SYN-0845,2024-01-18,Project 4 Health Center,Quezon City,Senior Care,48,2,6,62,Low
+SYN-0846,2024-01-18,Project 4 Health Center,Quezon City,Pharmacy Dispensing,84,4,8,96,Moderate
+SYN-0847,2024-01-18,Project 4 Health Center,Quezon City,Dental,50,2,6,68,Low
+SYN-0848,2024-01-18,Project 4 Health Center,Quezon City,Consultation,94,6,8,108,Moderate
+SYN-0849,2024-01-18,Project 4 Health Center,Quezon City,Immunization,76,4,8,92,Moderate
+SYN-0850,2024-01-18,Project 4 Health Center,Quezon City,Prenatal,60,2,8,78,Low
+SYN-0851,2024-01-19,Balingasa Health Center,Quezon City,Consultation,82,4,8,92,Moderate
+SYN-0852,2024-01-19,Balingasa Health Center,Quezon City,Immunization,66,3,8,82,Moderate
+SYN-0853,2024-01-19,Balingasa Health Center,Quezon City,Prenatal,52,2,8,68,Low
+SYN-0854,2024-01-19,Balingasa Health Center,Quezon City,Pediatric,58,2,8,76,Moderate
+SYN-0855,2024-01-19,Balingasa Health Center,Quezon City,Senior Care,46,2,6,60,Low
+SYN-0856,2024-01-19,Balingasa Health Center,Quezon City,Pharmacy Dispensing,78,3,8,90,Moderate
+SYN-0857,2024-01-19,Balingasa Health Center,Quezon City,Dental,50,2,6,64,Low
+SYN-0858,2024-01-19,Balingasa Health Center,Quezon City,Consultation,86,5,8,102,Moderate
+SYN-0859,2024-01-19,Balingasa Health Center,Quezon City,Immunization,62,3,8,80,Low
+SYN-0860,2024-01-19,Balingasa Health Center,Quezon City,Prenatal,54,2,8,72,Low
+SYN-0861,2024-01-19,Barangay Commonwealth Clinic,Quezon City,Consultation,98,5,8,110,High
+SYN-0862,2024-01-19,Barangay Commonwealth Clinic,Quezon City,Immunization,72,4,8,90,Moderate
+SYN-0863,2024-01-19,Barangay Commonwealth Clinic,Quezon City,Prenatal,56,2,8,74,Low
+SYN-0864,2024-01-19,Barangay Commonwealth Clinic,Quezon City,Pediatric,64,3,8,86,Moderate
+SYN-0865,2024-01-19,Barangay Commonwealth Clinic,Quezon City,Senior Care,48,2,6,62,Low
+SYN-0866,2024-01-19,Barangay Commonwealth Clinic,Quezon City,Pharmacy Dispensing,90,4,8,102,Moderate
+SYN-0867,2024-01-19,Barangay Commonwealth Clinic,Quezon City,Dental,52,2,6,68,Low
+SYN-0868,2024-01-19,Barangay Commonwealth Clinic,Quezon City,Consultation,104,6,8,120,High
+SYN-0869,2024-01-19,Barangay Commonwealth Clinic,Quezon City,Immunization,76,4,8,92,Moderate
+SYN-0870,2024-01-19,Barangay Commonwealth Clinic,Quezon City,Prenatal,60,2,8,80,Low
+SYN-0871,2024-01-19,Batasan Hills Health Center,Quezon City,Consultation,78,4,8,92,Moderate
+SYN-0872,2024-01-19,Batasan Hills Health Center,Quezon City,Immunization,64,3,8,76,Low
+SYN-0873,2024-01-19,Batasan Hills Health Center,Quezon City,Prenatal,52,2,8,70,Low
+SYN-0874,2024-01-19,Batasan Hills Health Center,Quezon City,Pediatric,60,2,8,78,Moderate
+SYN-0875,2024-01-19,Batasan Hills Health Center,Quezon City,Senior Care,44,2,6,58,Low
+SYN-0876,2024-01-19,Batasan Hills Health Center,Quezon City,Pharmacy Dispensing,72,3,8,84,Moderate
+SYN-0877,2024-01-19,Batasan Hills Health Center,Quezon City,Dental,48,2,6,60,Low
+SYN-0878,2024-01-19,Batasan Hills Health Center,Quezon City,Consultation,84,5,8,96,Moderate
+SYN-0879,2024-01-19,Batasan Hills Health Center,Quezon City,Immunization,68,3,8,80,Moderate
+SYN-0880,2024-01-19,Batasan Hills Health Center,Quezon City,Prenatal,52,2,8,70,Low
+SYN-0881,2024-01-19,Cubao Health Center,Quezon City,Consultation,140,6,8,154,High
+SYN-0882,2024-01-19,Cubao Health Center,Quezon City,Immunization,86,5,8,110,High
+SYN-0883,2024-01-19,Cubao Health Center,Quezon City,Prenatal,64,3,8,84,Moderate
+SYN-0884,2024-01-19,Cubao Health Center,Quezon City,Pediatric,70,3,8,90,Moderate
+SYN-0885,2024-01-19,Cubao Health Center,Quezon City,Senior Care,52,3,6,70,Low
+SYN-0886,2024-01-19,Cubao Health Center,Quezon City,Pharmacy Dispensing,134,5,8,146,High
+SYN-0887,2024-01-19,Cubao Health Center,Quezon City,Dental,58,3,6,76,Low
+SYN-0888,2024-01-19,Cubao Health Center,Quezon City,Consultation,146,7,8,162,High
+SYN-0889,2024-01-19,Cubao Health Center,Quezon City,Immunization,90,5,8,112,High
+SYN-0890,2024-01-19,Cubao Health Center,Quezon City,Prenatal,68,3,8,90,Moderate
+SYN-0891,2024-01-19,Project 4 Health Center,Quezon City,Consultation,90,5,8,102,Moderate
+SYN-0892,2024-01-19,Project 4 Health Center,Quezon City,Immunization,74,4,8,92,Moderate
+SYN-0893,2024-01-19,Project 4 Health Center,Quezon City,Prenatal,62,2,8,78,Low
+SYN-0894,2024-01-19,Project 4 Health Center,Quezon City,Pediatric,64,3,8,82,Moderate
+SYN-0895,2024-01-19,Project 4 Health Center,Quezon City,Senior Care,50,2,6,64,Low
+SYN-0896,2024-01-19,Project 4 Health Center,Quezon City,Pharmacy Dispensing,86,4,8,98,Moderate
+SYN-0897,2024-01-19,Project 4 Health Center,Quezon City,Dental,52,2,6,70,Low
+SYN-0898,2024-01-19,Project 4 Health Center,Quezon City,Consultation,96,6,8,110,Moderate
+SYN-0899,2024-01-19,Project 4 Health Center,Quezon City,Immunization,78,4,8,94,Moderate
+SYN-0900,2024-01-19,Project 4 Health Center,Quezon City,Prenatal,62,2,8,80,Low
+SYN-0901,2024-01-20,Balingasa Health Center,Quezon City,Consultation,84,4,8,94,Moderate
+SYN-0902,2024-01-20,Balingasa Health Center,Quezon City,Immunization,68,3,8,84,Moderate
+SYN-0903,2024-01-20,Balingasa Health Center,Quezon City,Prenatal,54,2,8,70,Low
+SYN-0904,2024-01-20,Balingasa Health Center,Quezon City,Pediatric,60,2,8,78,Moderate
+SYN-0905,2024-01-20,Balingasa Health Center,Quezon City,Senior Care,48,2,6,62,Low
+SYN-0906,2024-01-20,Balingasa Health Center,Quezon City,Pharmacy Dispensing,80,3,8,92,Moderate
+SYN-0907,2024-01-20,Balingasa Health Center,Quezon City,Dental,52,2,6,66,Low
+SYN-0908,2024-01-20,Balingasa Health Center,Quezon City,Consultation,88,5,8,104,Moderate
+SYN-0909,2024-01-20,Balingasa Health Center,Quezon City,Immunization,64,3,8,82,Low
+SYN-0910,2024-01-20,Balingasa Health Center,Quezon City,Prenatal,56,2,8,74,Low
+SYN-0911,2024-01-20,Barangay Commonwealth Clinic,Quezon City,Consultation,100,5,8,112,High
+SYN-0912,2024-01-20,Barangay Commonwealth Clinic,Quezon City,Immunization,74,4,8,92,Moderate
+SYN-0913,2024-01-20,Barangay Commonwealth Clinic,Quezon City,Prenatal,58,2,8,76,Low
+SYN-0914,2024-01-20,Barangay Commonwealth Clinic,Quezon City,Pediatric,66,3,8,88,Moderate
+SYN-0915,2024-01-20,Barangay Commonwealth Clinic,Quezon City,Senior Care,50,2,6,64,Low
+SYN-0916,2024-01-20,Barangay Commonwealth Clinic,Quezon City,Pharmacy Dispensing,92,4,8,104,Moderate
+SYN-0917,2024-01-20,Barangay Commonwealth Clinic,Quezon City,Dental,54,2,6,70,Low
+SYN-0918,2024-01-20,Barangay Commonwealth Clinic,Quezon City,Consultation,106,6,8,122,High
+SYN-0919,2024-01-20,Barangay Commonwealth Clinic,Quezon City,Immunization,78,4,8,94,Moderate
+SYN-0920,2024-01-20,Barangay Commonwealth Clinic,Quezon City,Prenatal,62,2,8,82,Low
+SYN-0921,2024-01-20,Batasan Hills Health Center,Quezon City,Consultation,80,4,8,94,Moderate
+SYN-0922,2024-01-20,Batasan Hills Health Center,Quezon City,Immunization,66,3,8,78,Low
+SYN-0923,2024-01-20,Batasan Hills Health Center,Quezon City,Prenatal,54,2,8,72,Low
+SYN-0924,2024-01-20,Batasan Hills Health Center,Quezon City,Pediatric,62,2,8,80,Moderate
+SYN-0925,2024-01-20,Batasan Hills Health Center,Quezon City,Senior Care,46,2,6,60,Low
+SYN-0926,2024-01-20,Batasan Hills Health Center,Quezon City,Pharmacy Dispensing,74,3,8,86,Moderate
+SYN-0927,2024-01-20,Batasan Hills Health Center,Quezon City,Dental,50,2,6,62,Low
+SYN-0928,2024-01-20,Batasan Hills Health Center,Quezon City,Consultation,86,5,8,98,Moderate
+SYN-0929,2024-01-20,Batasan Hills Health Center,Quezon City,Immunization,70,3,8,82,Moderate
+SYN-0930,2024-01-20,Batasan Hills Health Center,Quezon City,Prenatal,54,2,8,72,Low
+SYN-0931,2024-01-20,Cubao Health Center,Quezon City,Consultation,144,6,8,158,High
+SYN-0932,2024-01-20,Cubao Health Center,Quezon City,Immunization,88,5,8,112,High
+SYN-0933,2024-01-20,Cubao Health Center,Quezon City,Prenatal,66,3,8,86,Moderate
+SYN-0934,2024-01-20,Cubao Health Center,Quezon City,Pediatric,72,3,8,92,Moderate
+SYN-0935,2024-01-20,Cubao Health Center,Quezon City,Senior Care,54,3,6,72,Low
+SYN-0936,2024-01-20,Cubao Health Center,Quezon City,Pharmacy Dispensing,138,5,8,150,High
+SYN-0937,2024-01-20,Cubao Health Center,Quezon City,Dental,60,3,6,78,Low
+SYN-0938,2024-01-20,Cubao Health Center,Quezon City,Consultation,150,7,8,166,High
+SYN-0939,2024-01-20,Cubao Health Center,Quezon City,Immunization,92,5,8,114,High
+SYN-0940,2024-01-20,Cubao Health Center,Quezon City,Prenatal,70,3,8,92,Moderate
+SYN-0941,2024-01-20,Project 4 Health Center,Quezon City,Consultation,92,5,8,104,Moderate
+SYN-0942,2024-01-20,Project 4 Health Center,Quezon City,Immunization,76,4,8,94,Moderate
+SYN-0943,2024-01-20,Project 4 Health Center,Quezon City,Prenatal,64,2,8,80,Low
+SYN-0944,2024-01-20,Project 4 Health Center,Quezon City,Pediatric,66,3,8,84,Moderate
+SYN-0945,2024-01-20,Project 4 Health Center,Quezon City,Senior Care,52,2,6,66,Low
+SYN-0946,2024-01-20,Project 4 Health Center,Quezon City,Pharmacy Dispensing,88,4,8,100,Moderate
+SYN-0947,2024-01-20,Project 4 Health Center,Quezon City,Dental,54,2,6,72,Low
+SYN-0948,2024-01-20,Project 4 Health Center,Quezon City,Consultation,98,6,8,112,Moderate
+SYN-0949,2024-01-20,Project 4 Health Center,Quezon City,Immunization,80,4,8,96,Moderate
+SYN-0950,2024-01-20,Project 4 Health Center,Quezon City,Prenatal,64,2,8,82,Low
+SYN-0951,2024-01-21,Balingasa Health Center,Quezon City,Consultation,86,4,8,96,Moderate
+SYN-0952,2024-01-21,Balingasa Health Center,Quezon City,Immunization,70,3,8,86,Moderate
+SYN-0953,2024-01-21,Balingasa Health Center,Quezon City,Prenatal,56,2,8,72,Low
+SYN-0954,2024-01-21,Balingasa Health Center,Quezon City,Pediatric,62,2,8,80,Moderate
+SYN-0955,2024-01-21,Balingasa Health Center,Quezon City,Senior Care,50,2,6,64,Low
+SYN-0956,2024-01-21,Balingasa Health Center,Quezon City,Pharmacy Dispensing,82,3,8,94,Moderate
+SYN-0957,2024-01-21,Balingasa Health Center,Quezon City,Dental,54,2,6,68,Low
+SYN-0958,2024-01-21,Balingasa Health Center,Quezon City,Consultation,90,5,8,106,Moderate
+SYN-0959,2024-01-21,Balingasa Health Center,Quezon City,Immunization,66,3,8,84,Low
+SYN-0960,2024-01-21,Balingasa Health Center,Quezon City,Prenatal,58,2,8,76,Low
+SYN-0961,2024-01-21,Barangay Commonwealth Clinic,Quezon City,Consultation,102,5,8,114,High
+SYN-0962,2024-01-21,Barangay Commonwealth Clinic,Quezon City,Immunization,76,4,8,94,Moderate
+SYN-0963,2024-01-21,Barangay Commonwealth Clinic,Quezon City,Prenatal,60,2,8,78,Low
+SYN-0964,2024-01-21,Barangay Commonwealth Clinic,Quezon City,Pediatric,68,3,8,90,Moderate
+SYN-0965,2024-01-21,Barangay Commonwealth Clinic,Quezon City,Senior Care,52,2,6,66,Low
+SYN-0966,2024-01-21,Barangay Commonwealth Clinic,Quezon City,Pharmacy Dispensing,94,4,8,106,Moderate
+SYN-0967,2024-01-21,Barangay Commonwealth Clinic,Quezon City,Dental,56,2,6,72,Low
+SYN-0968,2024-01-21,Barangay Commonwealth Clinic,Quezon City,Consultation,108,6,8,124,High
+SYN-0969,2024-01-21,Barangay Commonwealth Clinic,Quezon City,Immunization,80,4,8,96,Moderate
+SYN-0970,2024-01-21,Barangay Commonwealth Clinic,Quezon City,Prenatal,64,2,8,84,Low
+SYN-0971,2024-01-21,Batasan Hills Health Center,Quezon City,Consultation,82,4,8,96,Moderate
+SYN-0972,2024-01-21,Batasan Hills Health Center,Quezon City,Immunization,68,3,8,80,Low
+SYN-0973,2024-01-21,Batasan Hills Health Center,Quezon City,Prenatal,56,2,8,74,Low
+SYN-0974,2024-01-21,Batasan Hills Health Center,Quezon City,Pediatric,64,2,8,82,Moderate
+SYN-0975,2024-01-21,Batasan Hills Health Center,Quezon City,Senior Care,48,2,6,62,Low
+SYN-0976,2024-01-21,Batasan Hills Health Center,Quezon City,Pharmacy Dispensing,76,3,8,88,Moderate
+SYN-0977,2024-01-21,Batasan Hills Health Center,Quezon City,Dental,52,2,6,64,Low
+SYN-0978,2024-01-21,Batasan Hills Health Center,Quezon City,Consultation,88,5,8,100,Moderate
+SYN-0979,2024-01-21,Batasan Hills Health Center,Quezon City,Immunization,72,3,8,84,Moderate
+SYN-0980,2024-01-21,Batasan Hills Health Center,Quezon City,Prenatal,56,2,8,74,Low
+SYN-0981,2024-01-21,Cubao Health Center,Quezon City,Consultation,148,6,8,162,High
+SYN-0982,2024-01-21,Cubao Health Center,Quezon City,Immunization,90,5,8,114,High
+SYN-0983,2024-01-21,Cubao Health Center,Quezon City,Prenatal,68,3,8,88,Moderate
+SYN-0984,2024-01-21,Cubao Health Center,Quezon City,Pediatric,74,3,8,94,Moderate
+SYN-0985,2024-01-21,Cubao Health Center,Quezon City,Senior Care,56,3,6,74,Low
+SYN-0986,2024-01-21,Cubao Health Center,Quezon City,Pharmacy Dispensing,142,5,8,154,High
+SYN-0987,2024-01-21,Cubao Health Center,Quezon City,Dental,62,3,6,80,Low
+SYN-0988,2024-01-21,Cubao Health Center,Quezon City,Consultation,154,7,8,170,High
+SYN-0989,2024-01-21,Cubao Health Center,Quezon City,Immunization,94,5,8,116,High
+SYN-0990,2024-01-21,Cubao Health Center,Quezon City,Prenatal,72,3,8,94,Moderate
+SYN-0991,2024-01-21,Project 4 Health Center,Quezon City,Consultation,94,5,8,106,Moderate
+SYN-0992,2024-01-21,Project 4 Health Center,Quezon City,Immunization,78,4,8,96,Moderate
+SYN-0993,2024-01-21,Project 4 Health Center,Quezon City,Prenatal,66,2,8,82,Low
+SYN-0994,2024-01-21,Project 4 Health Center,Quezon City,Pediatric,68,3,8,86,Moderate
+SYN-0995,2024-01-21,Project 4 Health Center,Quezon City,Senior Care,54,2,6,68,Low
+SYN-0996,2024-01-21,Project 4 Health Center,Quezon City,Pharmacy Dispensing,90,4,8,102,Moderate
+SYN-0997,2024-01-21,Project 4 Health Center,Quezon City,Dental,56,2,6,74,Low
+SYN-0998,2024-01-21,Project 4 Health Center,Quezon City,Consultation,100,6,8,114,Moderate
+SYN-0999,2024-01-21,Project 4 Health Center,Quezon City,Immunization,82,4,8,98,Moderate
+SYN-1000,2024-01-21,Project 4 Health Center,Quezon City,Prenatal,66,2,8,84,Low
+SYN-1001,2024-01-22,Balingasa Health Center,Quezon City,Consultation,88,4,8,98,Moderate
+SYN-1002,2024-01-22,Balingasa Health Center,Quezon City,Immunization,72,3,8,88,Moderate
+SYN-1003,2024-01-22,Balingasa Health Center,Quezon City,Prenatal,58,2,8,74,Low
+SYN-1004,2024-01-22,Balingasa Health Center,Quezon City,Pediatric,64,2,8,82,Moderate
+SYN-1005,2024-01-22,Balingasa Health Center,Quezon City,Senior Care,52,2,6,66,Low
+SYN-1006,2024-01-22,Balingasa Health Center,Quezon City,Pharmacy Dispensing,84,3,8,96,Moderate
+SYN-1007,2024-01-22,Balingasa Health Center,Quezon City,Dental,56,2,6,70,Low
+SYN-1008,2024-01-22,Balingasa Health Center,Quezon City,Consultation,92,5,8,108,Moderate
+SYN-1009,2024-01-22,Balingasa Health Center,Quezon City,Immunization,68,3,8,86,Low
+SYN-1010,2024-01-22,Balingasa Health Center,Quezon City,Prenatal,60,2,8,78,Low
+SYN-1011,2024-01-22,Barangay Commonwealth Clinic,Quezon City,Consultation,104,5,8,116,High
+SYN-1012,2024-01-22,Barangay Commonwealth Clinic,Quezon City,Immunization,78,4,8,96,Moderate
+SYN-1013,2024-01-22,Barangay Commonwealth Clinic,Quezon City,Prenatal,62,2,8,80,Low
+SYN-1014,2024-01-22,Barangay Commonwealth Clinic,Quezon City,Pediatric,70,3,8,92,Moderate
+SYN-1015,2024-01-22,Barangay Commonwealth Clinic,Quezon City,Senior Care,54,2,6,68,Low
+SYN-1016,2024-01-22,Barangay Commonwealth Clinic,Quezon City,Pharmacy Dispensing,96,4,8,108,Moderate
+SYN-1017,2024-01-22,Barangay Commonwealth Clinic,Quezon City,Dental,58,2,6,74,Low
+SYN-1018,2024-01-22,Barangay Commonwealth Clinic,Quezon City,Consultation,110,6,8,126,High
+SYN-1019,2024-01-22,Barangay Commonwealth Clinic,Quezon City,Immunization,80,4,8,98,Moderate
+SYN-1020,2024-01-22,Barangay Commonwealth Clinic,Quezon City,Prenatal,64,2,8,84,Low
+SYN-1021,2024-01-22,Batasan Hills Health Center,Quezon City,Consultation,84,4,8,98,Moderate
+SYN-1022,2024-01-22,Batasan Hills Health Center,Quezon City,Immunization,70,3,8,82,Low
+SYN-1023,2024-01-22,Batasan Hills Health Center,Quezon City,Prenatal,58,2,8,74,Low
+SYN-1024,2024-01-22,Batasan Hills Health Center,Quezon City,Pediatric,66,2,8,84,Moderate
+SYN-1025,2024-01-22,Batasan Hills Health Center,Quezon City,Senior Care,50,2,6,64,Low
+SYN-1026,2024-01-22,Batasan Hills Health Center,Quezon City,Pharmacy Dispensing,78,3,8,90,Moderate
+SYN-1027,2024-01-22,Batasan Hills Health Center,Quezon City,Dental,54,2,6,66,Low
+SYN-1028,2024-01-22,Batasan Hills Health Center,Quezon City,Consultation,90,5,8,102,Moderate
+SYN-1029,2024-01-22,Batasan Hills Health Center,Quezon City,Immunization,74,3,8,84,Moderate
+SYN-1030,2024-01-22,Batasan Hills Health Center,Quezon City,Prenatal,58,2,8,74,Low
+SYN-1031,2024-01-22,Cubao Health Center,Quezon City,Consultation,152,6,8,166,High
+SYN-1032,2024-01-22,Cubao Health Center,Quezon City,Immunization,92,5,8,116,High
+SYN-1033,2024-01-22,Cubao Health Center,Quezon City,Prenatal,70,3,8,90,Moderate
+SYN-1034,2024-01-22,Cubao Health Center,Quezon City,Pediatric,76,3,8,94,Moderate
+SYN-1035,2024-01-22,Cubao Health Center,Quezon City,Senior Care,58,3,6,76,Low
+SYN-1036,2024-01-22,Cubao Health Center,Quezon City,Pharmacy Dispensing,146,5,8,158,High
+SYN-1037,2024-01-22,Cubao Health Center,Quezon City,Dental,64,3,6,82,Low
+SYN-1038,2024-01-22,Cubao Health Center,Quezon City,Consultation,158,7,8,174,High
+SYN-1039,2024-01-22,Cubao Health Center,Quezon City,Immunization,96,5,8,118,High
+SYN-1040,2024-01-22,Cubao Health Center,Quezon City,Prenatal,72,3,8,94,Moderate
+SYN-1041,2024-01-22,Project 4 Health Center,Quezon City,Consultation,96,5,8,106,Moderate
+SYN-1042,2024-01-22,Project 4 Health Center,Quezon City,Immunization,80,4,8,96,Moderate
+SYN-1043,2024-01-22,Project 4 Health Center,Quezon City,Prenatal,68,2,8,82,Low
+SYN-1044,2024-01-22,Project 4 Health Center,Quezon City,Pediatric,70,3,8,86,Moderate
+SYN-1045,2024-01-22,Project 4 Health Center,Quezon City,Senior Care,56,2,6,70,Low
+SYN-1046,2024-01-22,Project 4 Health Center,Quezon City,Pharmacy Dispensing,92,4,8,104,Moderate
+SYN-1047,2024-01-22,Project 4 Health Center,Quezon City,Dental,58,2,6,76,Low
+SYN-1048,2024-01-22,Project 4 Health Center,Quezon City,Consultation,102,6,8,114,Moderate
+SYN-1049,2024-01-22,Project 4 Health Center,Quezon City,Immunization,82,4,8,98,Moderate
+SYN-1050,2024-01-22,Project 4 Health Center,Quezon City,Prenatal,68,2,8,84,Low
+SYN-1051,2024-01-23,Balingasa Health Center,Quezon City,Consultation,90,4,8,100,Moderate
+SYN-1052,2024-01-23,Balingasa Health Center,Quezon City,Immunization,74,3,8,90,Moderate
+SYN-1053,2024-01-23,Balingasa Health Center,Quezon City,Prenatal,60,2,8,74,Low
+SYN-1054,2024-01-23,Balingasa Health Center,Quezon City,Pediatric,66,2,8,84,Moderate
+SYN-1055,2024-01-23,Balingasa Health Center,Quezon City,Senior Care,54,2,6,68,Low
+SYN-1056,2024-01-23,Balingasa Health Center,Quezon City,Pharmacy Dispensing,86,3,8,98,Moderate
+SYN-1057,2024-01-23,Balingasa Health Center,Quezon City,Dental,58,2,6,70,Low
+SYN-1058,2024-01-23,Balingasa Health Center,Quezon City,Consultation,94,5,8,110,Moderate
+SYN-1059,2024-01-23,Balingasa Health Center,Quezon City,Immunization,70,3,8,86,Low
+SYN-1060,2024-01-23,Balingasa Health Center,Quezon City,Prenatal,62,2,8,78,Low
+SYN-1061,2024-01-23,Barangay Commonwealth Clinic,Quezon City,Consultation,106,5,8,118,High
+SYN-1062,2024-01-23,Barangay Commonwealth Clinic,Quezon City,Immunization,80,4,8,96,Moderate
+SYN-1063,2024-01-23,Barangay Commonwealth Clinic,Quezon City,Prenatal,64,2,8,80,Low
+SYN-1064,2024-01-23,Barangay Commonwealth Clinic,Quezon City,Pediatric,72,3,8,94,Moderate
+SYN-1065,2024-01-23,Barangay Commonwealth Clinic,Quezon City,Senior Care,56,2,6,70,Low
+SYN-1066,2024-01-23,Barangay Commonwealth Clinic,Quezon City,Pharmacy Dispensing,98,4,8,110,Moderate
+SYN-1067,2024-01-23,Barangay Commonwealth Clinic,Quezon City,Dental,60,2,6,76,Low
+SYN-1068,2024-01-23,Barangay Commonwealth Clinic,Quezon City,Consultation,112,6,8,128,High
+SYN-1069,2024-01-23,Barangay Commonwealth Clinic,Quezon City,Immunization,82,4,8,100,Moderate
+SYN-1070,2024-01-23,Barangay Commonwealth Clinic,Quezon City,Prenatal,66,2,8,84,Low
+SYN-1071,2024-01-23,Batasan Hills Health Center,Quezon City,Consultation,86,4,8,100,Moderate
+SYN-1072,2024-01-23,Batasan Hills Health Center,Quezon City,Immunization,72,3,8,84,Low
+SYN-1073,2024-01-23,Batasan Hills Health Center,Quezon City,Prenatal,60,2,8,76,Low
+SYN-1074,2024-01-23,Batasan Hills Health Center,Quezon City,Pediatric,68,2,8,86,Moderate
+SYN-1075,2024-01-23,Batasan Hills Health Center,Quezon City,Senior Care,52,2,6,66,Low
+SYN-1076,2024-01-23,Batasan Hills Health Center,Quezon City,Pharmacy Dispensing,80,3,8,92,Moderate
+SYN-1077,2024-01-23,Batasan Hills Health Center,Quezon City,Dental,56,2,6,68,Low
+SYN-1078,2024-01-23,Batasan Hills Health Center,Quezon City,Consultation,92,5,8,104,Moderate
+SYN-1079,2024-01-23,Batasan Hills Health Center,Quezon City,Immunization,76,3,8,86,Moderate
+SYN-1080,2024-01-23,Batasan Hills Health Center,Quezon City,Prenatal,60,2,8,76,Low
+SYN-1081,2024-01-23,Cubao Health Center,Quezon City,Consultation,156,6,8,170,High
+SYN-1082,2024-01-23,Cubao Health Center,Quezon City,Immunization,94,5,8,118,High
+SYN-1083,2024-01-23,Cubao Health Center,Quezon City,Prenatal,74,3,8,92,Moderate
+SYN-1084,2024-01-23,Cubao Health Center,Quezon City,Pediatric,80,3,8,96,Moderate
+SYN-1085,2024-01-23,Cubao Health Center,Quezon City,Senior Care,60,3,6,78,Low
+SYN-1086,2024-01-23,Cubao Health Center,Quezon City,Pharmacy Dispensing,150,5,8,162,High
+SYN-1087,2024-01-23,Cubao Health Center,Quezon City,Dental,66,3,6,84,Low
+SYN-1088,2024-01-23,Cubao Health Center,Quezon City,Consultation,162,7,8,180,High
+SYN-1089,2024-01-23,Cubao Health Center,Quezon City,Immunization,98,5,8,120,High
+SYN-1090,2024-01-23,Cubao Health Center,Quezon City,Prenatal,76,3,8,96,Moderate
+SYN-1091,2024-01-23,Project 4 Health Center,Quezon City,Consultation,98,5,8,108,Moderate
+SYN-1092,2024-01-23,Project 4 Health Center,Quezon City,Immunization,82,4,8,98,Moderate
+SYN-1093,2024-01-23,Project 4 Health Center,Quezon City,Prenatal,70,2,8,84,Low
+SYN-1094,2024-01-23,Project 4 Health Center,Quezon City,Pediatric,72,3,8,88,Moderate
+SYN-1095,2024-01-23,Project 4 Health Center,Quezon City,Senior Care,58,2,6,72,Low
+SYN-1096,2024-01-23,Project 4 Health Center,Quezon City,Pharmacy Dispensing,94,4,8,106,Moderate
+SYN-1097,2024-01-23,Project 4 Health Center,Quezon City,Dental,60,2,6,78,Low
+SYN-1098,2024-01-23,Project 4 Health Center,Quezon City,Consultation,104,6,8,116,Moderate
+SYN-1099,2024-01-23,Project 4 Health Center,Quezon City,Immunization,84,4,8,100,Moderate
+SYN-1100,2024-01-23,Project 4 Health Center,Quezon City,Prenatal,70,2,8,86,Low
+SYN-1101,2024-01-24,Balingasa Health Center,Quezon City,Consultation,92,4,8,102,Moderate
+SYN-1102,2024-01-24,Balingasa Health Center,Quezon City,Immunization,76,3,8,92,Moderate
+SYN-1103,2024-01-24,Balingasa Health Center,Quezon City,Prenatal,62,2,8,76,Low
+SYN-1104,2024-01-24,Balingasa Health Center,Quezon City,Pediatric,68,2,8,86,Moderate
+SYN-1105,2024-01-24,Balingasa Health Center,Quezon City,Senior Care,56,2,6,70,Low
+SYN-1106,2024-01-24,Balingasa Health Center,Quezon City,Pharmacy Dispensing,88,3,8,100,Moderate
+SYN-1107,2024-01-24,Balingasa Health Center,Quezon City,Dental,60,2,6,72,Low
+SYN-1108,2024-01-24,Balingasa Health Center,Quezon City,Consultation,96,5,8,112,Moderate
+SYN-1109,2024-01-24,Balingasa Health Center,Quezon City,Immunization,72,3,8,88,Low
+SYN-1110,2024-01-24,Balingasa Health Center,Quezon City,Prenatal,64,2,8,80,Low
+SYN-1111,2024-01-24,Barangay Commonwealth Clinic,Quezon City,Consultation,108,5,8,120,High
+SYN-1112,2024-01-24,Barangay Commonwealth Clinic,Quezon City,Immunization,82,4,8,98,Moderate
+SYN-1113,2024-01-24,Barangay Commonwealth Clinic,Quezon City,Prenatal,66,2,8,82,Low
+SYN-1114,2024-01-24,Barangay Commonwealth Clinic,Quezon City,Pediatric,74,3,8,96,Moderate
+SYN-1115,2024-01-24,Barangay Commonwealth Clinic,Quezon City,Senior Care,58,2,6,72,Low
+SYN-1116,2024-01-24,Barangay Commonwealth Clinic,Quezon City,Pharmacy Dispensing,100,4,8,112,Moderate
+SYN-1117,2024-01-24,Barangay Commonwealth Clinic,Quezon City,Dental,62,2,6,78,Low
+SYN-1118,2024-01-24,Barangay Commonwealth Clinic,Quezon City,Consultation,114,6,8,130,High
+SYN-1119,2024-01-24,Barangay Commonwealth Clinic,Quezon City,Immunization,84,4,8,102,Moderate
+SYN-1120,2024-01-24,Barangay Commonwealth Clinic,Quezon City,Prenatal,68,2,8,86,Low
+SYN-1121,2024-01-24,Batasan Hills Health Center,Quezon City,Consultation,88,4,8,102,Moderate
+SYN-1122,2024-01-24,Batasan Hills Health Center,Quezon City,Immunization,74,3,8,86,Low
+SYN-1123,2024-01-24,Batasan Hills Health Center,Quezon City,Prenatal,62,2,8,78,Low
+SYN-1124,2024-01-24,Batasan Hills Health Center,Quezon City,Pediatric,70,2,8,88,Moderate
+SYN-1125,2024-01-24,Batasan Hills Health Center,Quezon City,Senior Care,54,2,6,68,Low
+SYN-1126,2024-01-24,Batasan Hills Health Center,Quezon City,Pharmacy Dispensing,82,3,8,94,Moderate
+SYN-1127,2024-01-24,Batasan Hills Health Center,Quezon City,Dental,58,2,6,70,Low
+SYN-1128,2024-01-24,Batasan Hills Health Center,Quezon City,Consultation,94,5,8,106,Moderate
+SYN-1129,2024-01-24,Batasan Hills Health Center,Quezon City,Immunization,78,3,8,88,Moderate
+SYN-1130,2024-01-24,Batasan Hills Health Center,Quezon City,Prenatal,62,2,8,78,Low
+SYN-1131,2024-01-24,Cubao Health Center,Quezon City,Consultation,160,6,8,174,High
+SYN-1132,2024-01-24,Cubao Health Center,Quezon City,Immunization,96,5,8,120,High
+SYN-1133,2024-01-24,Cubao Health Center,Quezon City,Prenatal,76,3,8,94,Moderate
+SYN-1134,2024-01-24,Cubao Health Center,Quezon City,Pediatric,82,3,8,98,Moderate
+SYN-1135,2024-01-24,Cubao Health Center,Quezon City,Senior Care,62,3,6,80,Low
+SYN-1136,2024-01-24,Cubao Health Center,Quezon City,Pharmacy Dispensing,154,5,8,166,High
+SYN-1137,2024-01-24,Cubao Health Center,Quezon City,Dental,68,3,6,86,Low
+SYN-1138,2024-01-24,Cubao Health Center,Quezon City,Consultation,166,7,8,184,High
+SYN-1139,2024-01-24,Cubao Health Center,Quezon City,Immunization,100,5,8,122,High
+SYN-1140,2024-01-24,Cubao Health Center,Quezon City,Prenatal,78,3,8,98,Moderate
+SYN-1141,2024-01-24,Project 4 Health Center,Quezon City,Consultation,100,5,8,110,Moderate
+SYN-1142,2024-01-24,Project 4 Health Center,Quezon City,Immunization,84,4,8,100,Moderate
+SYN-1143,2024-01-24,Project 4 Health Center,Quezon City,Prenatal,72,2,8,86,Low
+SYN-1144,2024-01-24,Project 4 Health Center,Quezon City,Pediatric,74,3,8,90,Moderate
+SYN-1145,2024-01-24,Project 4 Health Center,Quezon City,Senior Care,60,2,6,74,Low
+SYN-1146,2024-01-24,Project 4 Health Center,Quezon City,Pharmacy Dispensing,96,4,8,108,Moderate
+SYN-1147,2024-01-24,Project 4 Health Center,Quezon City,Dental,62,2,6,80,Low
+SYN-1148,2024-01-24,Project 4 Health Center,Quezon City,Consultation,106,6,8,118,Moderate
+SYN-1149,2024-01-24,Project 4 Health Center,Quezon City,Immunization,86,4,8,102,Moderate
+SYN-1150,2024-01-24,Project 4 Health Center,Quezon City,Prenatal,72,2,8,88,Low
+SYN-1151,2024-01-25,Balingasa Health Center,Quezon City,Consultation,94,4,8,104,Moderate
+SYN-1152,2024-01-25,Balingasa Health Center,Quezon City,Immunization,78,3,8,94,Moderate
+SYN-1153,2024-01-25,Balingasa Health Center,Quezon City,Prenatal,64,2,8,78,Low
+SYN-1154,2024-01-25,Balingasa Health Center,Quezon City,Pediatric,70,2,8,88,Moderate
+SYN-1155,2024-01-25,Balingasa Health Center,Quezon City,Senior Care,58,2,6,72,Low
+SYN-1156,2024-01-25,Balingasa Health Center,Quezon City,Pharmacy Dispensing,90,3,8,102,Moderate
+SYN-1157,2024-01-25,Balingasa Health Center,Quezon City,Dental,62,2,6,74,Low
+SYN-1158,2024-01-25,Balingasa Health Center,Quezon City,Consultation,98,5,8,114,Moderate
+SYN-1159,2024-01-25,Balingasa Health Center,Quezon City,Immunization,74,3,8,90,Low
+SYN-1160,2024-01-25,Balingasa Health Center,Quezon City,Prenatal,66,2,8,82,Low
+SYN-1161,2024-01-25,Barangay Commonwealth Clinic,Quezon City,Consultation,110,5,8,122,High
+SYN-1162,2024-01-25,Barangay Commonwealth Clinic,Quezon City,Immunization,84,4,8,100,Moderate
+SYN-1163,2024-01-25,Barangay Commonwealth Clinic,Quezon City,Prenatal,68,2,8,84,Low
+SYN-1164,2024-01-25,Barangay Commonwealth Clinic,Quezon City,Pediatric,76,3,8,98,Moderate
+SYN-1165,2024-01-25,Barangay Commonwealth Clinic,Quezon City,Senior Care,60,2,6,74,Low
+SYN-1166,2024-01-25,Barangay Commonwealth Clinic,Quezon City,Pharmacy Dispensing,102,4,8,114,Moderate
+SYN-1167,2024-01-25,Barangay Commonwealth Clinic,Quezon City,Dental,64,2,6,80,Low
+SYN-1168,2024-01-25,Barangay Commonwealth Clinic,Quezon City,Consultation,116,6,8,132,High
+SYN-1169,2024-01-25,Barangay Commonwealth Clinic,Quezon City,Immunization,86,4,8,104,Moderate
+SYN-1170,2024-01-25,Barangay Commonwealth Clinic,Quezon City,Prenatal,70,2,8,88,Low
+SYN-1171,2024-01-25,Batasan Hills Health Center,Quezon City,Consultation,90,4,8,104,Moderate
+SYN-1172,2024-01-25,Batasan Hills Health Center,Quezon City,Immunization,76,3,8,88,Low
+SYN-1173,2024-01-25,Batasan Hills Health Center,Quezon City,Prenatal,64,2,8,80,Low
+SYN-1174,2024-01-25,Batasan Hills Health Center,Quezon City,Pediatric,72,2,8,90,Moderate
+SYN-1175,2024-01-25,Batasan Hills Health Center,Quezon City,Senior Care,56,2,6,70,Low
+SYN-1176,2024-01-25,Batasan Hills Health Center,Quezon City,Pharmacy Dispensing,84,3,8,96,Moderate
+SYN-1177,2024-01-25,Batasan Hills Health Center,Quezon City,Dental,60,2,6,72,Low
+SYN-1178,2024-01-25,Batasan Hills Health Center,Quezon City,Consultation,96,5,8,108,Moderate
+SYN-1179,2024-01-25,Batasan Hills Health Center,Quezon City,Immunization,80,3,8,90,Moderate
+SYN-1180,2024-01-25,Batasan Hills Health Center,Quezon City,Prenatal,64,2,8,80,Low
+SYN-1181,2024-01-25,Cubao Health Center,Quezon City,Consultation,164,6,8,178,High
+SYN-1182,2024-01-25,Cubao Health Center,Quezon City,Immunization,98,5,8,122,High
+SYN-1183,2024-01-25,Cubao Health Center,Quezon City,Prenatal,78,3,8,96,Moderate
+SYN-1184,2024-01-25,Cubao Health Center,Quezon City,Pediatric,84,3,8,100,Moderate
+SYN-1185,2024-01-25,Cubao Health Center,Quezon City,Senior Care,64,3,6,82,Low
+SYN-1186,2024-01-25,Cubao Health Center,Quezon City,Pharmacy Dispensing,158,5,8,170,High
+SYN-1187,2024-01-25,Cubao Health Center,Quezon City,Dental,70,3,6,88,Low
+SYN-1188,2024-01-25,Cubao Health Center,Quezon City,Consultation,170,7,8,188,High
+SYN-1189,2024-01-25,Cubao Health Center,Quezon City,Immunization,102,5,8,124,High
+SYN-1190,2024-01-25,Cubao Health Center,Quezon City,Prenatal,80,3,8,100,Moderate
+SYN-1191,2024-01-25,Project 4 Health Center,Quezon City,Consultation,102,5,8,112,Moderate
+SYN-1192,2024-01-25,Project 4 Health Center,Quezon City,Immunization,86,4,8,102,Moderate
+SYN-1193,2024-01-25,Project 4 Health Center,Quezon City,Prenatal,74,2,8,88,Low
+SYN-1194,2024-01-25,Project 4 Health Center,Quezon City,Pediatric,76,3,8,92,Moderate
+SYN-1195,2024-01-25,Project 4 Health Center,Quezon City,Senior Care,62,2,6,76,Low
+SYN-1196,2024-01-25,Project 4 Health Center,Quezon City,Pharmacy Dispensing,98,4,8,110,Moderate
+SYN-1197,2024-01-25,Project 4 Health Center,Quezon City,Dental,64,2,6,82,Low
+SYN-1198,2024-01-25,Project 4 Health Center,Quezon City,Consultation,108,6,8,120,Moderate
+SYN-1199,2024-01-25,Project 4 Health Center,Quezon City,Immunization,88,4,8,104,Moderate
+SYN-1200,2024-01-25,Project 4 Health Center,Quezon City,Prenatal,74,2,8,88,Low
