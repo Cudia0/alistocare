@@ -16,6 +16,7 @@ This folder contains the data analysis materials for the AlistoCare BUSANALY fin
 | `healthcare_analytics_anonymized.csv` | Anonymized version (PII removed per RA 10173) | `03_Analysis Files/` |
 | `healthcare_analytics_cleaned.csv` | Cleaned dataset with parsed dates, derived fields (9,216 rows) | `03_Analysis Files/` |
 | `analysis_results.json` | Computed summary statistics and key metrics | `03_Analysis Files/` |
+| `AlistoCare_Transform.py` | Data transformation script (original → anonymized → cleaned) | `03_Analysis Files/` |
 | `AlistoCare_Analysis.xlsx` | Excel workbook with metadata, data dictionary, QA, KPIs, findings | `03_Analysis Files/` |
 | `AlistoCare_Analysis.ipynb` | Reproducible Python analysis notebook | `03_Analysis Files/` |
 | `AlistoCare_Analysis.py` | Standalone Python analysis script | `03_Analysis Files/` |

@@ -17,6 +17,7 @@ All files use a verified real-world dataset — no synthetic or fabricated recor
 
 | File | Description |
 |------|-------------|
+| `AlistoCare_Transform.py` | Data transformation script — original → anonymized → cleaned (Colab compatible) |
 | `healthcare_analytics_cleaned.csv` | Cleaned dataset with parsed dates and derived fields (9,216 rows, 19 columns) |
 | `healthcare_analytics_anonymized.csv` | Anonymized version (PII removed per RA 10173) |
 | `analysis_results.json` | Computed summary statistics and key metrics |

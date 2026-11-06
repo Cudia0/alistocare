@@ -81,9 +81,10 @@ All Markdown files in this project are cross-linked below for easy navigation:
 
 ## Code Compatibility
 
-- **`AlistoCare_Analysis.py`** — Google Colab compatible (file upload helper, no `__file__` dependency)
-- **`AlistoCare_Analysis.ipynb`** — Google Colab compatible (upload cell at setup)
-- Both scripts tested end-to-end in Colab: 9,216 rows loaded, all validation checks PASS, all analytics execute without errors
+- **`AlistoCare_Transform.py`** — Data transformation (original → anonymized → cleaned), Google Colab compatible
+- **`AlistoCare_Analysis.py`** — Analysis script, Google Colab compatible (file upload helper, no `__file__` dependency)
+- **`AlistoCare_Analysis.ipynb`** — Analysis notebook, Google Colab compatible (upload cell at setup)
+- All scripts tested end-to-end in Colab: 9,216 rows loaded, all validation checks PASS, all analytics execute without errors
 
 ---
 
