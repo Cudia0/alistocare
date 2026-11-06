@@ -71,6 +71,12 @@ No patient names, contact details, or direct identifiers remain in the analysis 
 3. **Predictive demonstration:** Wait time category classification using patient and operational variables
 4. **Prescriptive demonstration:** Staffing and capacity planning scenarios based on wait time patterns
 
+## Code Compatibility
+
+- **`AlistoCare_Analysis.py`** — Google Colab compatible (file upload helper, no `__file__` dependency)
+- **`AlistoCare_Analysis.ipynb`** — Google Colab compatible (upload cell at setup)
+- Both scripts tested end-to-end in Colab: 9,216 rows loaded, all validation checks pass, all analytics execute
+
 ## Data Status
 
 ✅ **Real dataset acquired and validated** — This analysis uses actual patient encounter data. No synthetic or fabricated records are included.
