@@ -176,7 +176,7 @@ No direct identifiers remain in the anonymized dataset.
 ## 13. Next Steps
 
 1. Use `healthcare_analytics_cleaned.csv` for all analysis
-2. Run `AlistoCare_Analysis.py` or `AlistoCare_Analysis.ipynb` to reproduce results
+2. Run `AlistoCare_Analysis.py` or `AlistoCare.ipynb` to reproduce results
 3. Update `AlistoCare_Analysis.xlsx` with computed findings
 4. Build dashboard from validated outputs
 5. Write final report with real-data findings and recommendations

@@ -17,7 +17,7 @@
 | analysis_results.json | 03_Analysis Files/ | YES | YES | PASS |
 | AlistoCare_Transform.py | 03_Analysis Files/ | YES | YES | PASS |
 | AlistoCare_Analysis.py | 03_Analysis Files/ | YES | YES | PASS |
-| AlistoCare_Analysis.ipynb | 03_Analysis Files/ | YES | YES | PASS |
+| AlistoCare.ipynb | 03_Analysis Files/ | YES | YES | PASS |
 | AlistoCare_Analysis.xlsx | 03_Analysis Files/ | YES | YES | PASS |
 | Analysis_Methodology.md | documentation/ | YES | YES | PASS |
 | Data_Dictionary.md | documentation/ | YES | YES | PASS |
@@ -86,7 +86,7 @@ All automated checks in this report pass on the real dataset:
 
 ## Code Compatibility
 
-Both `AlistoCare_Analysis.py` and `AlistoCare_Analysis.ipynb` are Google Colab compatible:
+Both `AlistoCare_Analysis.py` and `AlistoCare.ipynb` are Google Colab compatible:
 - Colab file upload helper for `healthcare_analytics_cleaned.csv`
 - No `__file__` dependency (works in Colab and local environments)
 - Tested end-to-end in Colab: loads 9,216 rows, all validation PASS, all analytics execute

@@ -151,7 +151,7 @@ Each visual answers a business question. A "How to use this dashboard" note will
 ## 11. Reproducibility
 
 - `AlistoCare_Analysis.py` — standalone script; loads CSV, cleans, computes all KPIs, saves results
-- `AlistoCare_Analysis.ipynb` — Jupyter notebook with same workflow in executable cells
+- `AlistoCare.ipynb` — Jupyter notebook with same workflow in executable cells
 - `AlistoCare_Analysis.xlsx` — Excel workbook with metadata, dictionary, QA, KPIs, findings
 - All scripts reference `healthcare_analytics_cleaned.csv` in the same folder
 

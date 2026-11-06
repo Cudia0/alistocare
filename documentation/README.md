@@ -18,7 +18,7 @@ This folder contains the data analysis materials for the AlistoCare BUSANALY fin
 | `analysis_results.json` | Computed summary statistics and key metrics | `03_Analysis Files/` |
 | `AlistoCare_Transform.py` | Data transformation script (original → anonymized → cleaned) | `03_Analysis Files/` |
 | `AlistoCare_Analysis.xlsx` | Excel workbook with metadata, data dictionary, QA, KPIs, findings | `03_Analysis Files/` |
-| `AlistoCare_Analysis.ipynb` | Reproducible Python analysis notebook | `03_Analysis Files/` |
+| `AlistoCare.ipynb` | Reproducible Python analysis notebook | `03_Analysis Files/` |
 | `AlistoCare_Analysis.py` | Standalone Python analysis script | `03_Analysis Files/` |
 | `Analysis_Methodology.md` | Methods, formulas, assumptions, limitations, reproducibility | `documentation/` |
 | `Data_Dictionary.md` | Field definitions, types, units, constraints | `documentation/` |
@@ -75,7 +75,7 @@ No patient names, contact details, or direct identifiers remain in the analysis 
 ## Code Compatibility
 
 - **`AlistoCare_Analysis.py`** — Google Colab compatible (file upload helper, no `__file__` dependency)
-- **`AlistoCare_Analysis.ipynb`** — Google Colab compatible (upload cell at setup)
+- **`AlistoCare.ipynb`** — Google Colab compatible (upload cell at setup)
 - Both scripts tested end-to-end in Colab: 9,216 rows loaded, all validation checks pass, all analytics execute
 
 ## Data Status
