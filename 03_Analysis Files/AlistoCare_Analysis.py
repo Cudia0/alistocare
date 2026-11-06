@@ -1,44 +1,43 @@
-#!/usr/bin/env python3
 """
 AlistoCare Analysis Script — BUSANALY Final Project
 ====================================================
 
-Standalone analysis script for the AlistoCare Health Center Queue Companion project.
+Google Colab COMPATIBLE version for testing and submission.
 
-STATUS: Real data analysis (Kaggle Healthcare Analytics Patient Flow Data, CC0).
-All results are computed from actual patient encounter data — no synthetic records.
+This script performs the complete AlistoCare analysis on real, anonymized
+patient encounter data from Kaggle (Healthcare Analytics Patient Flow Data,
+CC0 Public Domain). No synthetic or fabricated records are included.
 
-This script:
-1. Loads healthcare_analytics_cleaned.csv (real, anonymized data)
-2. Validates structure (rows, columns, duplicates, missingness, types, enums)
-3. Computes derived fields (wait_category, age_group, etc.)
-4. Runs descriptive analytics (wait time by department, day, hour)
-5. Runs diagnostic analytics (department comparisons, satisfaction correlation)
-6. Runs a predictive demonstration (wait time category classification)
-7. Runs a prescriptive demonstration (capacity planning scenarios)
-8. Saves results to CSV and prints a summary
+Compatibility:
+  - Google Colab: Upload healthcare_analytics_cleaned.csv to the session,
+    then run all cells. File paths use relative paths that work in Colab.
+  - Local: Run with `python AlistoCare_Analysis.py` from the same folder
+    as the CSV file.
 
-Usage:
-    python AlistoCare_Analysis.py
+Usage in Google Colab:
+  1. Upload healthcare_analytics_cleaned.csv to the Colab session files pane
+  2. Run this script cell by cell or all at once
+  3. Output files are saved to the current working directory
 
 Requirements:
-    pandas, openpyxl
+    pandas, scikit-learn, openpyxl
 """
 
-from pathlib import Path
-import sys
 import json
-import hashlib
+import sys
+from pathlib import Path
+
 import pandas as pd
 
 # ---------------------------------------------------------------------------
-# Configuration
+# Configuration — Colab compatible (no __file__ dependency)
 # ---------------------------------------------------------------------------
 
-DATA_FILE = Path(__file__).resolve().parent / "healthcare_analytics_cleaned.csv"
-ORIGINAL_FILE = Path(__file__).resolve().parent / "healthcare_analytics_patient_flow_data.csv"
-ANONYMIZED_FILE = Path(__file__).resolve().parent / "healthcare_analytics_anonymized.csv"
-OUTPUT_DIR = Path(__file__).resolve().parent / "analysis_output"
+# In Colab, __file__ is not defined. Use a configurable path that defaults
+# to the current working directory (where the uploaded CSV lives).
+DATA_FILE = Path("healthcare_analytics_cleaned.csv")
+OUTPUT_DIR = Path("analysis_output")
+
 MIN_ROWS = 1000
 MIN_COLUMNS = 8
 
@@ -50,6 +49,38 @@ VALID_DEPARTMENTS = {
 }
 VALID_WAIT_CATEGORIES = {"0-15 min", "16-30 min", "31-45 min", "46-60 min", "60+ min"}
 VALID_AGE_GROUPS = {"0-17", "18-30", "31-45", "46-60", "61-75", "76+"}
+
+# ---------------------------------------------------------------------------
+# Colab file upload helper
+# ---------------------------------------------------------------------------
+
+def upload_file_to_colab(filename: str = "healthcare_analytics_cleaned.csv"):
+    """
+    In Google Colab, prompt the user to upload the CSV file.
+    Returns True if the file exists after upload, False otherwise.
+    """
+    try:
+        from google.colab import files
+        print(f"📁 Please upload '{filename}' to this Colab session.")
+        uploaded = files.upload()
+        if filename in uploaded:
+            print(f"✅ {filename} uploaded successfully.")
+            return True
+        else:
+            print(f"❌ {filename} was not uploaded. Available files: {list(uploaded.keys())}")
+            return False
+    except ImportError:
+        # Not running in Colab — skip upload
+        return Path(filename).is_file()
+
+
+def ensure_data_file(path: Path) -> bool:
+    """Check if the data file exists; if not, offer Colab upload."""
+    if path.is_file():
+        return True
+    print(f"⚠️  Data file not found: {path.resolve()}")
+    return upload_file_to_colab(path.name)
+
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -470,7 +501,14 @@ def print_summary(validation: dict, descriptive: dict, diagnostic: dict,
 
 
 def main() -> None:
-    print(f"Loading data from: {DATA_FILE}")
+    """Main entry point — works in both Colab and local environments."""
+    # Ensure data file exists (Colab upload if needed)
+    if not ensure_data_file(DATA_FILE):
+        print(f"\n❌ Cannot proceed without {DATA_FILE.name}")
+        print("   Upload the file to this Colab session and re-run.")
+        sys.exit(1)
+
+    print(f"Loading data from: {DATA_FILE.resolve()}")
     df = load_data(DATA_FILE)
 
     print(f"Loaded {len(df):,} rows, {df.shape[1]} columns")
@@ -496,12 +534,8 @@ def main() -> None:
     # Print summary
     print_summary(validation, descriptive, diagnostic, predictive, prescriptive)
 
-    print(f"\nOutputs saved to: {OUTPUT_DIR}")
+    print(f"\nOutputs saved to: {OUTPUT_DIR.resolve()}")
 
 
-if __name__ == "__main__":
-    try:
-        main()
-    except Exception as exc:
-        print(f"ERROR: {exc}", file=sys.stderr)
-        sys.exit(1)
+# Colab-compatible: runs when cell is executed, no __main__ guard needed
+main()
