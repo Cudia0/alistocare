@@ -164,6 +164,15 @@ No direct identifiers remain in the anonymized dataset.
 
 **Dataset meets all BUSANALY Final Project requirements.**
 
+## Related Documentation
+
+- [Project Overview — Root README](../README.md)
+- [Project Proposal — BUSANALY Format](../02_ProjectProposal/Project_Proposal_AlistoCare.md)
+- [Analysis Folder README](../03_Analysis%20Files/README.md)
+- [Data Dictionary](Data_Dictionary.md)
+- [Analysis Methodology](Analysis_Methodology.md)
+- [Analysis QA Report](Analysis_QA_Report.md)
+
 ## 13. Next Steps
 
 1. Use `healthcare_analytics_cleaned.csv` for all analysis

@@ -75,6 +75,16 @@ No patient names, contact details, or direct identifiers remain in the analysis 
 
 ✅ **Real dataset acquired and validated** — This analysis uses actual patient encounter data. No synthetic or fabricated records are included.
 
+## Related Documentation
+
+- [Project Overview — Root README](../README.md)
+- [Project Proposal — BUSANALY Format](../02_ProjectProposal/Project_Proposal_AlistoCare.md)
+- [Analysis Folder README](../03_Analysis%20Files/README.md)
+- [Data Dictionary](Data_Dictionary.md)
+- [Analysis Methodology](Analysis_Methodology.md)
+- [Data Quality Report](Data_Quality_Report.md)
+- [Analysis QA Report](Analysis_QA_Report.md)
+
 ## Limitations
 
 - Dataset covers a single medium-sized hospital facility; may not represent Philippine community health centers nationwide

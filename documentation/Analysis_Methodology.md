@@ -155,6 +155,15 @@ Each visual answers a business question. A "How to use this dashboard" note will
 - `AlistoCare_Analysis.xlsx` — Excel workbook with metadata, dictionary, QA, KPIs, findings
 - All scripts reference `healthcare_analytics_cleaned.csv` in the same folder
 
+## Related Documentation
+
+- [Project Overview — Root README](../README.md)
+- [Project Proposal — BUSANALY Format](../02_ProjectProposal/Project_Proposal_AlistoCare.md)
+- [Analysis Folder README](../03_Analysis%20Files/README.md)
+- [Data Dictionary](Data_Dictionary.md)
+- [Data Quality Report](Data_Quality_Report.md)
+- [Analysis QA Report](Analysis_QA_Report.md)
+
 ## 12. Version History
 
 | Version | Date | Change | Author |
