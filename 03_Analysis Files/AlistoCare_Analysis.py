@@ -470,8 +470,8 @@ def print_summary(validation: dict, descriptive: dict, diagnostic: dict,
     print(f"Admission rate: {descriptive['admission_rate']:.1f}%")
     print(f"Satisfaction records: {descriptive['satisfaction_records']:,} ({descriptive['satisfaction_pct']:.1f}%)")
     print(f"Department records: {descriptive['department_records']:,} ({descriptive['department_pct']:.1f}%)")
-    print(f"Patients waiting >30 min: {descriptive['wait_over_30_share']}%")
-    print(f"Patients waiting >45 min: {descriptive['wait_over_45_share']}%")
+    print(f"Patients waiting >30 min: {diagnostic.get('wait_over_30_share', 'N/A')}%")
+    print(f"Patients waiting >45 min: {diagnostic.get('wait_over_45_share', 'N/A')}%")
     print()
 
     print("--- Diagnostic ---")
