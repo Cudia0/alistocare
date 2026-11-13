@@ -11,6 +11,10 @@
   const dataNote = document.getElementById('dataNote');
   const footer = document.getElementById('footer');
 
+  // Header action buttons
+  const btnImportCsv = document.getElementById('btnImportCsv');
+  const btnResetDefault = document.getElementById('btnResetDefault');
+
   // Filter inputs
   const fromDate = document.getElementById('fromDate');
   const toDate = document.getElementById('toDate');
@@ -28,6 +32,21 @@
   const kpiAdmission = document.getElementById('kpiAdmission');
   const kpiSat = document.getElementById('kpiSat');
 
+  // Insights modal
+  const insightsModal = document.getElementById('insightsModal');
+  const insightsTitle = document.getElementById('insightsTitle');
+  const insightsChart = document.getElementById('insightsChart');
+  const insightsText = document.getElementById('insightsText');
+  const insightsNote = document.getElementById('insightsNote');
+  const insightsClose = document.getElementById('insightsClose');
+
+  // Default cleaned dataset bundled with the repo
+  const DEFAULT_CSV_URL = 'healthcare_analytics_cleaned.csv';
+
+  // Storage key for persisting custom CSV across refreshes
+  const STORAGE_KEY = 'alistocare_custom_csv';
+  const STORAGE_NAME_KEY = 'alistocare_custom_csv_name';
+
   // State
   let rawData = [];       // all parsed rows
   let filteredData = [];  // rows after applying filters
@@ -37,7 +56,6 @@
   // ---------------------------------------------------------------------------
 
   function parseDateStr(dateStr, timeStr) {
-    // admission_date like "9/9/2024" (M/D/YYYY), admission_time like "9:25:00 AM"
     if (!dateStr) return null;
     const parts = String(dateStr).trim().split('/');
     if (parts.length !== 3) return null;
@@ -45,7 +63,6 @@
     const d = parseInt(parts[1], 10);
     const y = parseInt(parts[2], 10);
     if (isNaN(m) || isNaN(d) || isNaN(y)) return null;
-    // Per project rule: first component > 12 => DD/MM/YYYY, else MM/DD/YYYY
     let month, day;
     if (m > 12) { month = d; day = m; } else { month = m; day = d; }
     if (month < 1 || month > 12 || day < 1 || day > 31) return null;
@@ -83,6 +100,39 @@
   }
 
   // ---------------------------------------------------------------------------
+  // LocalStorage persistence for custom CSV
+  // ---------------------------------------------------------------------------
+
+  function saveCustomCsv(csvText, fileName) {
+    try {
+      localStorage.setItem(STORAGE_KEY, csvText);
+      localStorage.setItem(STORAGE_NAME_KEY, fileName);
+    } catch (e) {
+      console.warn('localStorage unavailable, custom CSV will not persist:', e);
+    }
+  }
+
+  function loadStoredCustomCsv() {
+    try {
+      const csvText = localStorage.getItem(STORAGE_KEY);
+      const fileName = localStorage.getItem(STORAGE_NAME_KEY);
+      if (csvText) return { csvText, fileName };
+    } catch (e) {
+      console.warn('localStorage read failed:', e);
+    }
+    return null;
+  }
+
+  function clearStoredCustomCsv() {
+    try {
+      localStorage.removeItem(STORAGE_KEY);
+      localStorage.removeItem(STORAGE_NAME_KEY);
+    } catch (e) {
+      console.warn('localStorage clear failed:', e);
+    }
+  }
+
+  // ---------------------------------------------------------------------------
   // Data loading
   // ---------------------------------------------------------------------------
 
@@ -105,20 +155,20 @@
           if (results.errors && results.errors.length) {
             console.warn('Parse warnings:', results.errors);
           }
-          loadData(results.data);
+          saveCustomCsv(text, file.name);
+          loadData(results.data, file.name);
         }
       });
     };
     reader.readAsText(file);
   });
 
-  function loadData(rows) {
+  function loadData(rows, sourceName = null) {
     if (!rows || !rows.length) {
       alert('The CSV file appears to be empty.');
       return;
     }
 
-    // Normalize + enrich rows
     const processed = rows.map(function (row) {
       const r = {};
       r.patient_id = String(row.patient_id || '').trim();
@@ -158,7 +208,6 @@
     rawData = processed;
     filteredData = processed.slice();
 
-    // Populate filter options
     const depts = [...new Set(processed.filter(d => d.department).map(d => d.department))].sort();
     depts.forEach(d => {
       const o = document.createElement('option');
@@ -175,7 +224,6 @@
       daySel.appendChild(o);
     });
 
-    // Date range defaults
     const dates = processed.filter(d => d.date).map(d => d.date);
     if (dates.length) {
       dates.sort();
@@ -189,7 +237,6 @@
 
     document.getElementById('ctxRecords').textContent = processed.length.toLocaleString() + ' encounters';
 
-    // Swap UI: hide skeleton+upload, show dashboard
     skeletonOverlay.style.display = 'none';
     filtersSection.style.display = 'grid';
     kpisSection.style.display = 'grid';
@@ -197,7 +244,6 @@
     dataNote.style.display = 'block';
     footer.style.display = 'block';
 
-    // Wire filter listeners
     [fromDate, toDate, departmentSel, daySel, admissionSel].forEach(function (el) {
       el.addEventListener('change', applyFilters);
     });
@@ -211,6 +257,31 @@
     });
 
     applyFilters();
+  }
+
+  // ---------------------------------------------------------------------------
+  // Default data loading
+  // ---------------------------------------------------------------------------
+
+  function loadDefaultData() {
+    fetch(DEFAULT_CSV_URL)
+      .then(function (response) {
+        if (!response.ok) throw new Error('Failed to load default dataset');
+        return response.text();
+      })
+      .then(function (text) {
+        Papa.parse(text, {
+          header: true,
+          dynamicTyping: true,
+          skipEmptyLines: true,
+          complete: function (results) {
+            loadData(results.data, 'healthcare_analytics_cleaned.csv');
+          }
+        });
+      })
+      .catch(function (err) {
+        console.error('Default data load failed:', err);
+      });
   }
 
   // ---------------------------------------------------------------------------
@@ -280,29 +351,159 @@
   }
 
   // ---------------------------------------------------------------------------
-  // Charts
+  // Charts (Plotly with click-to-insights)
   // ---------------------------------------------------------------------------
+
+  function showInsights(chartId, title, label, value, ctx) {
+    insightsTitle.textContent = title;
+    insightsChart.innerHTML = '';
+    insightsText.innerHTML = '';
+    insightsNote.textContent = '';
+
+    let html = '';
+    let note = '';
+
+    if (chartId === 'volumeChart') {
+      html = `<h4>Encounter volume — ${label}</h4>
+              <p>There were <strong>${fmtNum(value)}</strong> patient encounters in ${label}.</p>
+              <ul>
+                <li>This represents ${fmtPct((value / rawData.length) * 100)} of all ${rawData.length.toLocaleString()} encounters.</li>
+                <li>Monthly volume varies by department and day of week — use the filters above to drill down.</li>
+              </ul>`;
+      note = 'Data: All encounters within the selected date range.';
+    } else if (chartId === 'categoryChart') {
+      html = `<h4>Wait-time band — ${label}</h4>
+              <p>${fmtPct(value)} of encounters waited <strong>${label}</strong>.</p>
+              <ul>
+                <li>This wait band includes ${Math.round((value / 100) * filteredData.length)} encounters.</li>
+                <li>Longer waits correlate with admission — check the department filter for patterns.</li>
+              </ul>`;
+      note = 'Data: Encounters with a recorded wait-time category.';
+    } else if (chartId === 'departmentChart') {
+      html = `<h4>Department — ${label}</h4>
+              <p>Average wait: <strong>${value} minutes</strong> per encounter.</p>
+              <ul>
+                <li>Departments are ranked by average wait time (highest first).</li>
+                <li>Use this to identify where queue management improvements would have the most impact.</li>
+              </ul>`;
+      note = 'Data: Only encounters with a recorded department.';
+    } else if (chartId === 'hourChart') {
+      html = `<h4>Wait by hour — ${label}:00</h4>
+              <p>Average wait at this hour is <strong>${value} minutes</strong>.</p>
+              <ul>
+                <li>Peak and low hours help identify staffing and scheduling opportunities.</li>
+                <li>Interpret alongside encounter volume — low-volume hours may have outlier waits.</li>
+              </ul>`;
+      note = 'Data: Hourly average wait across all days in range.';
+    } else if (chartId === 'weekdayChart') {
+      html = `<h4>Encounters by weekday — ${label}</h4>
+              <p><strong>${fmtNum(value)}</strong> encounters on ${label}s.</p>
+              <ul>
+                <li>Weekday patterns help plan staffing rosters.</li>
+                <li>Weekend vs weekday differences may reflect reduced services.</li>
+              </ul>`;
+      note = 'Data: Encounter counts by day of week.';
+    } else if (chartId === 'satisfactionChart') {
+      html = `<h4>Satisfaction score — ${label}</h4>
+              <p>${fmtPct(value)} of scored encounters rated their experience <strong>${label}/10</strong>.</p>
+              <ul>
+                <li>Satisfaction is only recorded for a subset of encounters.</li>
+                <li>Low scores may correlate with longer waits — cross-check with wait-time filters.</li>
+              </ul>`;
+      note = 'Data: Only encounters with a recorded satisfaction score.';
+    }
+
+    insightsText.innerHTML = html;
+    insightsNote.textContent = note;
+
+    const modalChartData = [];
+    const modalLayout = {
+      margin: { t: 10, b: 30, l: 40, r: 10 },
+      showlegend: false,
+      height: 200,
+      xaxis: { title: null, tickangle: -45 },
+      yaxis: { title: null, rangemode: 'tozero' },
+    };
+
+    if (chartId === 'volumeChart') {
+      const keys = Object.keys(ctx.monthCounts || {}).sort();
+      modalChartData.push({ x: keys, y: keys.map(k => ctx.monthCounts[k]), type: 'bar', marker: { color: '#0E7C7B' } });
+      modalLayout.xaxis.title = 'Month';
+      modalLayout.yaxis.title = 'Encounters';
+    } else if (chartId === 'categoryChart') {
+      const order = ['0–15 min', '16–30 min', '31–45 min', '46–60 min', '60+ min'];
+      modalChartData.push({ labels: order, values: order.map(k => ctx.catCounts[k] || 0), type: 'pie', textinfo: 'label+percent', marker: { colors: ['#0E7C7B','#2E8B57','#985829','#E8833A','#CFE9E9'] } });
+      modalLayout.showlegend = false;
+    } else if (chartId === 'departmentChart') {
+      modalChartData.push({ x: ctx.deptValues, y: ctx.deptLabels, type: 'bar', orientation: 'h', marker: { color: '#0E7C7B' } });
+      modalLayout.xaxis.title = 'Avg wait (min)';
+      modalLayout.yaxis.title = 'Department';
+    } else if (chartId === 'hourChart') {
+      const hours = [];
+      for (let h = 0; h < 24; h++) hours.push(h);
+      modalChartData.push({ x: hours, y: hours.map(h => ctx.hourValues[h] || 0), type: 'bar', marker: { color: '#0E7C7B' } });
+      modalLayout.xaxis.title = 'Hour of day';
+      modalLayout.yaxis.title = 'Avg wait (min)';
+    } else if (chartId === 'weekdayChart') {
+      const order = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+      modalChartData.push({ x: order, y: order.map(d => ctx.weekdayCounts[d] || 0), type: 'bar', marker: { color: '#0E7C7B' } });
+      modalLayout.xaxis.title = 'Day of week';
+      modalLayout.yaxis.title = 'Encounters';
+    } else if (chartId === 'satisfactionChart') {
+      const scores = [];
+      for (let i = 0; i <= 10; i++) scores.push(i);
+      modalChartData.push({ x: scores, y: scores.map(s => ctx.satCounts[s] || 0), type: 'bar', marker: { color: '#985829' } });
+      modalLayout.xaxis.title = 'Satisfaction score (0–10)';
+      modalLayout.yaxis.title = 'Encounters';
+    }
+
+    if (modalChartData.length) {
+      Plotly.newPlot('insightsChart', modalChartData, modalLayout, { responsive: true });
+    }
+
+    insightsModal.style.display = 'flex';
+  }
+
+  function hideInsights() {
+    insightsModal.style.display = 'none';
+  }
+
+  insightsClose.addEventListener('click', hideInsights);
+  insightsModal.addEventListener('click', function (e) {
+    if (e.target === insightsModal) hideInsights();
+  });
 
   function renderVolumeChart() {
     const counts = {};
     filteredData.forEach(d => {
       if (!d.date) return;
-      const monthKey = d.date.slice(0, 7); // YYYY-MM
+      const monthKey = d.date.slice(0, 7);
       counts[monthKey] = (counts[monthKey] || 0) + 1;
-    }
-    );
+    });
     const keys = Object.keys(counts).sort();
+    const ctx = { monthCounts: counts };
+
     Plotly.newPlot('volumeChart', [{
       x: keys,
       y: keys.map(k => counts[k]),
       type: 'bar',
-      marker: { color: '#6E1C1A' }
+      marker: { color: '#0E7C7B' },
+      hovertemplate: '%{x}<br>Encounters: %{y}<extra></extra>',
+      customdata: keys.map(k => ({ chartId: 'volumeChart', label: k, value: counts[k] })),
     }], {
       margin: { t: 30, b: 50, l: 50, r: 20 },
       xaxis: { title: 'Month', tickangle: -45 },
       yaxis: { title: 'Encounters', rangemode: 'tozero' },
-      showlegend: false
+      showlegend: false,
+      clickmode: 'select',
     }, { responsive: true });
+
+    document.getElementById('volumeChart').on('plotly_click', function (ev) {
+      const pts = ev.points || [];
+      if (!pts.length || !pts[0].customdata) return;
+      const cd = pts[0].customdata;
+      showInsights('volumeChart', 'Encounter Volume — ' + cd.label, cd.label, cd.value, ctx);
+    });
   }
 
   function renderCategoryChart() {
@@ -311,17 +512,29 @@
     order.forEach(k => counts[k] = 0);
     filteredData.forEach(d => { if (counts[d.wait_category] !== undefined) counts[d.wait_category]++; });
     const total = filteredData.length;
+    const ctx = { catCounts: counts };
+
     Plotly.newPlot('categoryChart', [{
       labels: order,
       values: order.map(k => total ? (counts[k] / total) * 100 : 0),
       type: 'pie',
       textinfo: 'label+percent',
       insidetextorientation: 'radial',
-      marker: { colors: ['#432716', '#6E1C1A', '#985829', '#BA9457', '#F1D6A5'] }
+      marker: { colors: ['#0E7C7B', '#2E8B57', '#985829', '#E8833A', '#CFE9E9'] },
+      hovertemplate: '%{label}<br>%{percent}<extra></extra>',
+      customdata: order.map(k => ({ chartId: 'categoryChart', label: k, value: total ? (counts[k] / total) * 100 : 0 })),
     }], {
       margin: { t: 30, b: 30, l: 30, r: 30 },
-      showlegend: false
+      showlegend: false,
+      clickmode: 'select',
     }, { responsive: true });
+
+    document.getElementById('categoryChart').on('plotly_click', function (ev) {
+      const pts = ev.points || [];
+      if (!pts.length || !pts[0].customdata) return;
+      const cd = pts[0].customdata;
+      showInsights('categoryChart', 'Wait-Time Distribution — ' + cd.label, cd.label, cd.value, ctx);
+    });
   }
 
   function renderDepartmentChart() {
@@ -332,18 +545,30 @@
       cnts[d.department] = (cnts[d.department] || 0) + 1;
     });
     const depts = Object.keys(sums).sort((a, b) => sums[b] / cnts[b] - sums[a] / cnts[a]);
+    const ctx = { deptValues: depts.map(d => sums[d] / cnts[d]), deptLabels: depts.slice().reverse() };
+
     Plotly.newPlot('departmentChart', [{
       x: depts.map(d => sums[d] / cnts[d]).reverse(),
       y: depts.reverse(),
       type: 'bar',
       orientation: 'h',
-      marker: { color: '#6E1C1A' }
+      marker: { color: '#0E7C7B' },
+      hovertemplate: '%{y}<br>Avg wait: %{x:.1f} min<extra></extra>',
+      customdata: depts.map(d => ({ chartId: 'departmentChart', label: d, value: sums[d] / cnts[d] })),
     }], {
       margin: { t: 30, b: 40, l: 90, r: 20 },
       xaxis: { title: 'Avg wait (min)', rangemode: 'tozero' },
       yaxis: { title: 'Department', automargin: true },
-      showlegend: false
+      showlegend: false,
+      clickmode: 'select',
     }, { responsive: true });
+
+    document.getElementById('departmentChart').on('plotly_click', function (ev) {
+      const pts = ev.points || [];
+      if (!pts.length || !pts[0].customdata) return;
+      const cd = pts[0].customdata;
+      showInsights('departmentChart', 'Avg Wait by Department — ' + cd.label, cd.label, cd.value, ctx);
+    });
   }
 
   function renderHourChart() {
@@ -355,17 +580,31 @@
     });
     const hours = [];
     for (let h = 0; h < 24; h++) hours.push(h);
+    const hourValues = {};
+    hours.forEach(h => { hourValues[h] = cnts[h] ? sums[h] / cnts[h] : 0; });
+    const ctx = { hourValues };
+
     Plotly.newPlot('hourChart', [{
       x: hours,
-      y: hours.map(h => cnts[h] ? sums[h] / cnts[h] : 0),
+      y: hours.map(h => hourValues[h]),
       type: 'bar',
-      marker: { color: '#6E1C1A' }
+      marker: { color: '#0E7C7B' },
+      hovertemplate: '%{x}:00<br>Avg wait: %{y:.1f} min<extra></extra>',
+      customdata: hours.map(h => ({ chartId: 'hourChart', label: h, value: hourValues[h] })),
     }], {
       margin: { t: 30, b: 90, l: 50, r: 20 },
       xaxis: { title: 'Hour of day', title: { standoff: 25 }, tickmode: 'array', tickvals: hours, ticktext: hours.map(h => (h % 12 || 12) + (h >= 12 ? ' PM' : ' AM')) },
       yaxis: { title: 'Avg wait (min)', rangemode: 'tozero' },
-      showlegend: false
+      showlegend: false,
+      clickmode: 'select',
     }, { responsive: true });
+
+    document.getElementById('hourChart').on('plotly_click', function (ev) {
+      const pts = ev.points || [];
+      if (!pts.length || !pts[0].customdata) return;
+      const cd = pts[0].customdata;
+      showInsights('hourChart', 'Avg Wait by Hour — ' + cd.label + ':00', cd.label, cd.value, ctx);
+    });
   }
 
   function renderWeekdayChart() {
@@ -373,17 +612,28 @@
     const counts = {};
     order.forEach(d => counts[d] = 0);
     filteredData.forEach(d => { if (d.day_of_week && counts[d.day_of_week] !== undefined) counts[d.day_of_week]++; });
+
     Plotly.newPlot('weekdayChart', [{
       x: order,
       y: order.map(d => counts[d]),
       type: 'bar',
-      marker: { color: '#6E1C1A' }
+      marker: { color: '#0E7C7B' },
+      hovertemplate: '%{x}<br>Encounters: %{y}<extra></extra>',
+      customdata: order.map(d => ({ chartId: 'weekdayChart', label: d, value: counts[d] })),
     }], {
       margin: { t: 30, b: 110, l: 50, r: 20 },
       xaxis: { title: 'Day of week', title: { standoff: 25 }, tickangle: -45 },
       yaxis: { title: 'Encounters', rangemode: 'tozero' },
-      showlegend: false
+      showlegend: false,
+      clickmode: 'select',
     }, { responsive: true });
+
+    document.getElementById('weekdayChart').on('plotly_click', function (ev) {
+      const pts = ev.points || [];
+      if (!pts.length || !pts[0].customdata) return;
+      const cd = pts[0].customdata;
+      showInsights('weekdayChart', 'Encounters by Weekday — ' + cd.label, cd.label, cd.value, ctx);
+    });
   }
 
   function renderSatisfactionChart() {
@@ -396,17 +646,70 @@
       }
     });
     const total = filteredData.filter(d => d.satisfaction_score != null).length;
+    const ctx = { satCounts: scores };
+
     Plotly.newPlot('satisfactionChart', [{
       x: Object.keys(scores).map(Number),
       y: Object.keys(scores).map(s => total ? (scores[s] / total) * 100 : 0),
       type: 'bar',
-      marker: { color: '#985829' }
+      marker: { color: '#985829' },
+      hovertemplate: 'Score %{x}<br>%{y:.1f}%<extra></extra>',
+      customdata: Object.keys(scores).map(s => ({ chartId: 'satisfactionChart', label: s, value: total ? (scores[s] / total) * 100 : 0 })),
     }], {
       margin: { t: 30, b: 50, l: 50, r: 20 },
       xaxis: { title: 'Satisfaction score (0–10)', tickmode: 'linear', tick0: 0, dtick: 1 },
       yaxis: { title: 'Share of scored encounters', rangemode: 'tozero', ticksuffix: '%' },
-      showlegend: false
+      showlegend: false,
+      clickmode: 'select',
     }, { responsive: true });
+
+    document.getElementById('satisfactionChart').on('plotly_click', function (ev) {
+      const pts = ev.points || [];
+      if (!pts.length || !pts[0].customdata) return;
+      const cd = pts[0].customdata;
+      showInsights('satisfactionChart', 'Satisfaction Distribution — Score ' + cd.label, cd.label, cd.value, ctx);
+    });
   }
+
+  // ---------------------------------------------------------------------------
+  // Header action buttons
+  // ---------------------------------------------------------------------------
+
+  btnImportCsv.addEventListener('click', function () {
+    fileInput.value = '';
+    fileInput.click();
+  });
+
+  btnResetDefault.addEventListener('click', function () {
+    if (!confirm('Reset to the default cleaned dataset? Any custom CSV will be cleared.')) return;
+    clearStoredCustomCsv();
+    rawData = [];
+    filteredData = [];
+    departmentSel.innerHTML = '<option value="All">All departments</option>';
+    daySel.innerHTML = '<option value="All">All days</option>';
+    loadDefaultData();
+  });
+
+  // ---------------------------------------------------------------------------
+  // Initialize
+  // ---------------------------------------------------------------------------
+
+  function init() {
+    const stored = loadStoredCustomCsv();
+    if (stored) {
+      Papa.parse(stored.csvText, {
+        header: true,
+        dynamicTyping: true,
+        skipEmptyLines: true,
+        complete: function (results) {
+          loadData(results.data, stored.fileName || 'Custom CSV');
+        }
+      });
+    } else {
+      loadDefaultData();
+    }
+  }
+
+  init();
 
 })();
