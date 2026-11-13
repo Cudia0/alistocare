@@ -1,0 +1,21 @@
+<svg width="460" height="110" viewBox="0 0 460 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Text "Alisto" Dark Blue to Medium Blue -->
+    <linearGradient id="alistoTextGrad" x1="10" y1="20" x2="230" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0C2340" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+
+    <!-- Text "Care" Vibrant Light Blue -->
+    <linearGradient id="careTextGrad" x1="235" y1="20" x2="450" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#60A5FA" />
+    </linearGradient>
+  </defs>
+
+  <g id="AlistoCare-Wordmark">
+    <text x="230" y="82" text-anchor="middle" font-family="Montserrat, Poppins, Inter, Arial, sans-serif" font-weight="800" font-size="78" letter-spacing="-2">
+      <tspan fill="url(#alistoTextGrad)">Alisto</tspan><tspan fill="url(#careTextGrad)">Care</tspan>
+    </text>
+  </g>
+</svg>
