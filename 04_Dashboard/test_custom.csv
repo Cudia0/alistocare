@@ -1,0 +1,6 @@
+patient_id,admission_date,admission_time,gender,age,race,department,admission_flag,satisfaction_score,wait_time_minutes
+T001,1/15/2024,9:00:00 AM,Male,45,White,Cardiology,Admission,8,25
+T002,1/15/2024,10:30:00 AM,Female,30,Asian,General Practice,Not Admission,7,12
+T003,1/16/2024,2:15:00 PM,Male,60,African American,Orthopedics,Not Admission,6,55
+T004,1/16/2024,11:00:00 AM,Female,25,White,Renal,Admission,9,18
+T005,1/17/2024,3:45:00 PM,Male,70,Asian,Physiotherapy,Not Admission,5,40
