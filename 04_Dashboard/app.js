@@ -449,15 +449,15 @@
 
     if (chartId === 'volumeChart') {
       const keys = Object.keys(ctx.monthCounts || {}).sort();
-      modalChartData.push({ x: keys, y: keys.map(k => ctx.monthCounts[k]), type: 'bar', marker: { color: '#0E7C7B' } });
+      modalChartData.push({ x: keys, y: keys.map(k => ctx.monthCounts[k]), type: 'bar', marker: { color: '#037C6E' } });
       modalLayout.xaxis.title = 'Month';
       modalLayout.yaxis.title = 'Encounters';
     } else if (chartId === 'categoryChart') {
       const order = ['0–15 min', '16–30 min', '31–45 min', '46–60 min', '60+ min'];
-      modalChartData.push({ labels: order, values: order.map(k => ctx.catCounts[k] || 0), type: 'pie', textinfo: 'label+percent', marker: { colors: ['#0E7C7B','#2E8B57','#985829','#E8833A','#CFE9E9'] } });
+      modalChartData.push({ labels: order, values: order.map(k => ctx.catCounts[k] || 0), type: 'pie', textinfo: 'label+percent', marker: { colors: ['#037C6E', '#28A99E', '#985829', '#BA9457', '#DDF1F2'] } });
       modalLayout.showlegend = false;
     } else if (chartId === 'departmentChart') {
-      modalChartData.push({ x: ctx.deptValues, y: ctx.deptLabels, type: 'bar', orientation: 'h', marker: { color: '#0E7C7B' } });
+      modalChartData.push({ x: ctx.deptValues, y: ctx.deptLabels, type: 'bar', orientation: 'h', marker: { color: '#037C6E' } });
       modalLayout.xaxis.title = 'Avg wait (min)';
       modalLayout.yaxis.title = 'Department';
     } else if (chartId === 'hourChart') {
@@ -509,7 +509,7 @@
       x: keys,
       y: keys.map(k => counts[k]),
       type: 'bar',
-      marker: { color: '#0E7C7B' },
+      marker: { color: '#037C6E' },
       hovertemplate: '%{x}<br>Encounters: %{y}<extra></extra>',
       customdata: keys.map(k => ({ chartId: 'volumeChart', label: k, value: counts[k] })),
     }], {
@@ -542,7 +542,7 @@
       type: 'pie',
       textinfo: 'label+percent',
       insidetextorientation: 'radial',
-      marker: { colors: ['#0E7C7B', '#2E8B57', '#985829', '#E8833A', '#CFE9E9'] },
+      marker: { colors: ['#037C6E', '#28A99E', '#985829', '#BA9457', '#DDF1F2'] },
       hovertemplate: '%{label}<br>%{percent}<extra></extra>',
       customdata: order.map(k => ({ chartId: 'categoryChart', label: k, value: total ? (counts[k] / total) * 100 : 0, ctx: { catCounts: counts } })),
     }], {
@@ -574,7 +574,7 @@
       y: depts.reverse(),
       type: 'bar',
       orientation: 'h',
-      marker: { color: '#0E7C7B' },
+      marker: { color: '#037C6E' },
       hovertemplate: '%{y}<br>Avg wait: %{x:.1f} min<extra></extra>',
       customdata: depts.map(d => ({ chartId: 'departmentChart', label: d, value: sums[d] / cnts[d] })),
     }], {
@@ -610,7 +610,7 @@
       x: hours,
       y: hours.map(h => hourValues[h]),
       type: 'bar',
-      marker: { color: '#0E7C7B' },
+      marker: { color: '#037C6E' },
       hovertemplate: '%{x}:00<br>Avg wait: %{y:.1f} min<extra></extra>',
       customdata: hours.map(h => ({ chartId: 'hourChart', label: h, value: hourValues[h] })),
     }], {
@@ -639,7 +639,7 @@
       x: order,
       y: order.map(d => counts[d]),
       type: 'bar',
-      marker: { color: '#0E7C7B' },
+      marker: { color: '#037C6E' },
       hovertemplate: '%{x}<br>Encounters: %{y}<extra></extra>',
       customdata: order.map(d => ({ chartId: 'weekdayChart', label: d, value: counts[d], ctx: { weekdayCounts: counts } })),
     }], {

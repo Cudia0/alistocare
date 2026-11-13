@@ -1,19 +1,19 @@
 :root {
-  /* Light healthcare-compatible palette */
-  --primary: #0E7C7B;      /* teal - trust, calm, healthcare */
-  --primary-dark: #0B5F63;
-  --accent: #E8833A;       /* soft orange - warmth, attention */
-  --bg: #F8FAFA;           /* near-white off-white background */
+  /* Light healthcare-compatible palette — matches Penpot design */
+  --primary: #037C6E;      /* teal - trust, calm, healthcare (Penpot primary) */
+  --primary-dark: #167D91; /* dark teal-blue (Penpot) */
+  --accent: #BA9457;       /* gold - warmth, attention (Penpot accent) */
+  --bg: #F7FAFA;           /* near-white off-white background (Penpot bg) */
   --card: #FFFFFF;         /* pure white cards */
-  --ink: #1A2E2E;          /* dark teal-gray text */
-  --muted: #5B7A7A;        /* muted teal-gray */
-  --line: #D9E3E3;         /* light border */
+  --ink: #263B53;          /* dark blue-gray text (Penpot ink) */
+  --muted: #756B64;        /* muted gray (Penpot muted) */
+  --line: #E7DED4;         /* light border (Penpot line) */
   --white: #FFFFFF;
-  --soft: #E3EEEE;         /* light teal tint */
-  --success: #2E8B57;      /* sea green */
-  --warn: #D97706;         /* amber */
-  --danger: #C0392B;       /* soft red */
-  --shadow: rgba(14, 124, 123, 0.10);
+  --soft: #DDF1F2;         /* light teal tint (Penpot soft) */
+  --success: #28A99E;      /* sea green (Penpot) */
+  --warn: #985829;         /* amber brown (Penpot) */
+  --danger: #6E1C1A;       /* maroon red (Penpot) */
+  --shadow: rgba(3, 124, 110, 0.10);
 }
 
 * { box-sizing: border-box }
