@@ -1,0 +1,70 @@
+<svg width="600" height="540" viewBox="0 0 600 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Main Cross Gradient (Light Cyan to Teal) -->
+    <linearGradient id="baseCrossGrad" x1="160" y1="60" x2="430" y2="330" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#A8E6F0" />
+      <stop offset="55%" stop-color="#4AB1C4" />
+      <stop offset="100%" stop-color="#22798D" />
+    </linearGradient>
+
+    <!-- Upper Darker Teal Wave Gradient -->
+    <linearGradient id="upperWaveGrad" x1="250" y1="70" x2="420" y2="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#196678" />
+      <stop offset="100%" stop-color="#2D8B9E" />
+    </linearGradient>
+
+    <!-- Bottom Sweeping Light Teal Ribbon -->
+    <linearGradient id="bottomRibbonGrad" x1="180" y1="220" x2="360" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#87D8E5" />
+      <stop offset="100%" stop-color="#3598AC" />
+    </linearGradient>
+
+    <!-- Text "Alisto" Darker Gradient -->
+    <linearGradient id="alistoTextGrad" x1="80" y1="390" x2="310" y2="460" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1D7184" />
+      <stop offset="100%" stop-color="#155767" />
+    </linearGradient>
+
+    <!-- Text "Care" Lighter Gradient -->
+    <linearGradient id="careTextGrad" x1="315" y1="390" x2="520" y2="460" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2B8A9E" />
+      <stop offset="100%" stop-color="#53B8CA" />
+    </linearGradient>
+
+    <!-- Rounded Cross Silhouette Clip -->
+    <clipPath id="crossShapeClip">
+      <path d="M262 55C246.536 55 234 67.536 234 83V148H169C153.536 148 141 160.536 141 176V242C141 257.464 153.536 270 169 270H234V335C234 350.464 246.536 363 262 363H328C343.464 363 356 350.464 356 335V270H421C436.464 270 449 257.464 449 242V176C449 160.536 436.464 148 421 148H356V83C356 67.536 343.464 55 328 55H262Z" />
+    </clipPath>
+
+    <!-- True Negative Space Mask for Mother & Child Cutout -->
+    <mask id="motherChildCutoutMask">
+      <rect x="0" y="0" width="600" height="540" fill="white" />
+      <!-- Mother & Child Negative Space Cutout Path -->
+      <path d="M335 113C326 123 313 125 299 127C272 131 252 151 252 178C252 203 269 221 290 235C305 245 317 254 323 271C327 256 335 245 347 236C361 225 367 210 364 195C361 179 347 169 332 172C319 175 310 185 311 198C311 203 313 207 316 211C303 206 293 197 288 185C282 171 286 155 298 148C304 144 310 146 314 150C317 153 321 151 322 147C323 143 321 139 324 135C328 130 334 127 335 121C336 118 336 115 335 113Z" fill="black" />
+      <!-- Subtle Inner Hair/Neck Separation Curve -->
+      <path d="M284 138C268 147 260 165 263 184C266 200 278 213 292 222C281 211 273 197 272 181C271 163 276 148 284 138Z" fill="black" />
+    </mask>
+  </defs>
+
+  <!-- ICON GROUP -->
+  <g id="AlistoCare-Logo-Icon" clip-path="url(#crossShapeClip)" mask="url(#motherChildCutoutMask)">
+    <!-- 1. Base Cross Layer -->
+    <rect id="Cross-Background" x="141" y="55" width="308" height="308" fill="url(#baseCrossGrad)" />
+
+    <!-- 2. Upper-Right Darker Curved Overlay -->
+    <path id="Upper-Dark-Curve" d="M312 88C268 88 234 126 234 174C234 228 288 265 323 305C356 266 418 258 449 232V55H312V88Z" fill="url(#upperWaveGrad)" />
+
+    <!-- 3. Bottom-Left Sweeping Light Ribbon -->
+    <path id="Lower-Light-Ribbon" d="M141 242C205 236 278 262 316 312C324 323 327 342 323 363H234V270H141V242Z" fill="url(#bottomRibbonGrad)" />
+
+    <!-- 4. Right Bottom Corner Highlight -->
+    <path id="Right-Corner-Accent" d="M323 305C352 266 408 262 449 236V270H356V305H323Z" fill="#7CD3E2" opacity="0.75" />
+  </g>
+
+  <!-- WORDMARK GROUP (Editable Vector Text) -->
+  <g id="AlistoCare-Wordmark">
+    <text x="300" y="458" text-anchor="middle" font-family="Montserrat, Poppins, Inter, Arial, sans-serif" font-weight="800" font-size="76" letter-spacing="-2">
+      <tspan fill="url(#alistoTextGrad)">Alisto</tspan><tspan fill="url(#careTextGrad)">Care</tspan>
+    </text>
+  </g>
+</svg>
