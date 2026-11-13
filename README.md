@@ -2,7 +2,7 @@
 
 **BUSANALY: Business Analytics — Final Project**  
 **Group:** AlistoCare Analytics Team  
-**Status:** Dataset acquired, validated, and analyzed  
+**Status:** All deliverables complete  
 **Repository:** https://github.com/Cudia0/alistocare
 
 ---
@@ -37,8 +37,10 @@ AlistoCare is a proposed digital queue management system for community health ce
 alistocare/
 ├── 02_ProjectProposal/          Project proposal documents
 ├── 03_Analysis Files/           Analysis deliverables (BUSANALY Deliverable #4)
+├── 04_Dashboard/                Interactive HTML dashboard (HTML/CSS/JS)
 ├── data/                        Source datasets
-└── documentation/               Methodology, data dictionary, QA reports
+├── documentation/               Methodology, data dictionary, QA reports
+└── penpot_files/                Penpot design files (alistocare.penpot)
 ```
 
 ---
@@ -60,7 +62,13 @@ All Markdown files in this project are cross-linked below for easy navigation:
 - [Data Quality Report — Validation & Acceptance Gate](documentation/Data_Quality_Report.md)
 - [Analysis QA Report — Package Testing](documentation/Analysis_QA_Report.md)
 
-### 📁 Source Data
+### 🖥️ 04_Dashboard (Interactive Dashboard)
+- [Dashboard HTML](04_Dashboard/index.html) — Interactive HTML dashboard with KPI cards and charts
+- [Dashboard CSS](04_Dashboard/style.css) — Stylesheet
+- [Dashboard JS](04_Dashboard/app.js) — Chart rendering and interactivity
+
+### 🎨 Penpot Design Files
+- [alistocare.penpot](penpot_files/alistocare.penpot) — Penpot design file for the dashboard UI
 - Original Kaggle dataset: `data/healthcare_analytics_patient_flow_data.csv`
 - Anonymized dataset: `03_Analysis Files/healthcare_analytics_anonymized.csv`
 - Cleaned dataset: `03_Analysis Files/healthcare_analytics_cleaned.csv`
@@ -75,7 +83,7 @@ All Markdown files in this project are cross-linked below for easy navigation:
 | Project Proposal | Oct 22, 2026 | ✅ Completed |
 | Progress Check | Oct 27, 2026 | ⏳ Pending |
 | Analysis Files | Nov 3, 2026 | ✅ Completed (Colab tested) |
-| Dashboard | Nov 10, 2026 | ⏳ Pending |
+| Dashboard | Nov 10, 2026 | ✅ Completed (HTML/CSS/JS + Penpot design) |
 | Business Report | TBD | ⏳ Pending |
 | Management Presentation | TBD | ⏳ Pending |
 
@@ -114,4 +122,4 @@ All Markdown files in this project are cross-linked below for easy navigation:
 ---
 
 **Maintained by:** AlistoCare Analytics Team  
-**Last updated:** November 6, 2026
+**Last updated:** November 12, 2026
