@@ -69,6 +69,7 @@ All Markdown files in this project are cross-linked below for easy navigation:
 
 ### 🎨 Penpot Design Files
 - [alistocare.penpot](penpot_files/alistocare.penpot) — Penpot design file for the dashboard UI
+- [alistocare_penpot.pdf](penpot_files/alistocare_penpot.pdf) — Exported Penpot dashboard (PDF)
 - Original Kaggle dataset: `data/healthcare_analytics_patient_flow_data.csv`
 - Anonymized dataset: `03_Analysis Files/healthcare_analytics_anonymized.csv`
 - Cleaned dataset: `03_Analysis Files/healthcare_analytics_cleaned.csv`
