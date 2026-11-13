@@ -495,7 +495,7 @@
       xaxis: { title: 'Month', tickangle: -45 },
       yaxis: { title: 'Encounters', rangemode: 'tozero' },
       showlegend: false,
-      clickmode: 'select',
+      clickmode: 'event+select',
     }, { responsive: true });
 
     document.getElementById('volumeChart').on('plotly_click', function (ev) {
@@ -526,14 +526,14 @@
     }], {
       margin: { t: 30, b: 30, l: 30, r: 30 },
       showlegend: false,
-      clickmode: 'select',
+      clickmode: 'event+select',
     }, { responsive: true });
 
     document.getElementById('categoryChart').on('plotly_click', function (ev) {
       const pts = ev.points || [];
       if (!pts.length || !pts[0].customdata) return;
       const cd = pts[0].customdata;
-      showInsights('categoryChart', 'Wait-Time Distribution — ' + cd.label, cd.label, cd.value, ctx);
+      showInsights('categoryChart', 'Wait-Time Distribution — ' + (cd.label || pts[0].label), cd.label, cd.value, cd.ctx);
     });
   }
 
@@ -560,7 +560,7 @@
       xaxis: { title: 'Avg wait (min)', rangemode: 'tozero' },
       yaxis: { title: 'Department', automargin: true },
       showlegend: false,
-      clickmode: 'select',
+      clickmode: 'event+select',
     }, { responsive: true });
 
     document.getElementById('departmentChart').on('plotly_click', function (ev) {
@@ -596,7 +596,7 @@
       xaxis: { title: 'Hour of day', title: { standoff: 25 }, tickmode: 'array', tickvals: hours, ticktext: hours.map(h => (h % 12 || 12) + (h >= 12 ? ' PM' : ' AM')) },
       yaxis: { title: 'Avg wait (min)', rangemode: 'tozero' },
       showlegend: false,
-      clickmode: 'select',
+      clickmode: 'event+select',
     }, { responsive: true });
 
     document.getElementById('hourChart').on('plotly_click', function (ev) {
@@ -619,20 +619,20 @@
       type: 'bar',
       marker: { color: '#0E7C7B' },
       hovertemplate: '%{x}<br>Encounters: %{y}<extra></extra>',
-      customdata: order.map(d => ({ chartId: 'weekdayChart', label: d, value: counts[d] })),
+      customdata: order.map(d => ({ chartId: 'weekdayChart', label: d, value: counts[d], ctx: { weekdayCounts: counts } })),
     }], {
       margin: { t: 30, b: 110, l: 50, r: 20 },
       xaxis: { title: 'Day of week', title: { standoff: 25 }, tickangle: -45 },
       yaxis: { title: 'Encounters', rangemode: 'tozero' },
       showlegend: false,
-      clickmode: 'select',
+      clickmode: 'event+select',
     }, { responsive: true });
 
     document.getElementById('weekdayChart').on('plotly_click', function (ev) {
       const pts = ev.points || [];
       if (!pts.length || !pts[0].customdata) return;
       const cd = pts[0].customdata;
-      showInsights('weekdayChart', 'Encounters by Weekday — ' + cd.label, cd.label, cd.value, ctx);
+      showInsights('weekdayChart', 'Encounters by Weekday — ' + cd.label, cd.label, cd.value, cd.ctx);
     });
   }
 
@@ -654,13 +654,13 @@
       type: 'bar',
       marker: { color: '#985829' },
       hovertemplate: 'Score %{x}<br>%{y:.1f}%<extra></extra>',
-      customdata: Object.keys(scores).map(s => ({ chartId: 'satisfactionChart', label: s, value: total ? (scores[s] / total) * 100 : 0 })),
+      customdata: Object.keys(scores).map(s => ({ chartId: 'satisfactionChart', label: s, value: total ? (scores[s] / total) * 100 : 0, ctx: { satCounts: scores } })),
     }], {
       margin: { t: 30, b: 50, l: 50, r: 20 },
       xaxis: { title: 'Satisfaction score (0–10)', tickmode: 'linear', tick0: 0, dtick: 1 },
       yaxis: { title: 'Share of scored encounters', rangemode: 'tozero', ticksuffix: '%' },
       showlegend: false,
-      clickmode: 'select',
+      clickmode: 'event+select',
     }, { responsive: true });
 
     document.getElementById('satisfactionChart').on('plotly_click', function (ev) {
