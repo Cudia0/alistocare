@@ -264,9 +264,10 @@
   // ---------------------------------------------------------------------------
 
   function loadDefaultData() {
-    fetch(DEFAULT_CSV_URL)
+    const url = DEFAULT_CSV_URL + '?v=' + new Date().getTime(); // cache-bust
+    fetch(url)
       .then(function (response) {
-        if (!response.ok) throw new Error('Failed to load default dataset');
+        if (!response.ok) throw new Error('Failed to load default dataset (HTTP ' + response.status + ')');
         return response.text();
       })
       .then(function (text) {
@@ -281,6 +282,27 @@
       })
       .catch(function (err) {
         console.error('Default data load failed:', err);
+        // Retry once after a short delay
+        setTimeout(function () {
+          fetch(url)
+            .then(function (response) {
+              if (!response.ok) throw new Error('Retry failed (HTTP ' + response.status + ')');
+              return response.text();
+            })
+            .then(function (text) {
+              Papa.parse(text, {
+                header: true,
+                dynamicTyping: true,
+                skipEmptyLines: true,
+                complete: function (results) {
+                  loadData(results.data, 'healthcare_analytics_cleaned.csv');
+                }
+              });
+            })
+            .catch(function (err2) {
+              console.error('Default data retry failed:', err2);
+            });
+        }, 2000);
       });
   }
 
