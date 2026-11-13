@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AlistoCare | Patient Flow Analytics</title>
+<script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <div class="mark">A</div>
+    <div>
+      <h1>AlistoCare</h1>
+      <div class="sub">Patient Flow &amp; Wait Time Analytics</div>
+    </div>
+  </div>
+  <div class="context">
+    <span>BUSANALY Final Project</span>
+    <span>Real Kaggle encounter dataset · 2023–2024</span>
+    <span id="ctxRecords">— encounters</span>
+  </div>
+</header>
+
+<main>
+
+  <!-- Filters (hidden until data loaded) -->
+  <section id="filters" class="filters" style="display:none" aria-label="Dashboard filters">
+    <div>
+      <label for="fromDate">From date</label>
+      <input type="date" id="fromDate">
+    </div>
+    <div>
+      <label for="toDate">To date</label>
+      <input type="date" id="toDate">
+    </div>
+    <div>
+      <label for="department">Department</label>
+      <select id="department"><option value="All">All departments</option></select>
+    </div>
+    <div>
+      <label for="day">Day of week</label>
+      <select id="day"><option value="All">All days</option></select>
+    </div>
+    <div>
+      <label for="admission">Admission status</label>
+      <select id="admission"><option value="All">All statuses</option><option>Admission</option><option>Not Admission</option></select>
+    </div>
+    <button id="reset">Reset filters</button>
+  </section>
+
+  <!-- KPI cards (hidden until data loaded) -->
+  <section id="kpis" class="kpis" aria-live="polite" style="display:none">
+    <div class="kpi"><div class="name">Patient encounters</div><div class="value" id="kpiCount">—</div><div class="note" id="kpiCountNote">Filtered records</div></div>
+    <div class="kpi"><div class="name">Average wait</div><div class="value" id="kpiAvg">—</div><div class="note">Minutes per encounter</div></div>
+    <div class="kpi"><div class="name">Median wait</div><div class="value" id="kpiMedian">—</div><div class="note">Minutes per encounter</div></div>
+    <div class="kpi"><div class="name">Wait over 30 min</div><div class="value" id="kpiLong">—</div><div class="note">Share of filtered encounters</div></div>
+    <div class="kpi"><div class="name">Admission rate</div><div class="value" id="kpiAdmission">—</div><div class="note">Admission / all encounters</div></div>
+    <div class="kpi"><div class="name">Avg satisfaction</div><div class="value" id="kpiSat">—</div><div class="note">Available scores only</div></div>
+  </section>
+
+  <!-- Charts grid (hidden until data loaded) -->
+  <section id="charts" class="grid" style="display:none">
+    <article class="panel"><h3>Encounter volume over time</h3><p class="hint">Monthly encounter counts within the selected date range.</p><div id="volumeChart" class="chart"></div></article>
+    <article class="panel"><h3>Wait-time distribution</h3><p class="hint">Share of encounters in each wait-time band.</p><div id="categoryChart" class="chart"></div></article>
+    <article class="panel"><h3>Average wait by department</h3><p class="hint">Only encounters with a recorded department.</p><div id="departmentChart" class="chart"></div></article>
+    <article class="panel"><h3>Average wait by hour</h3><p class="hint">Hourly averages; interpret alongside encounter count.</p><div id="hourChart" class="chart"></div></article>
+    <article class="panel"><h3>Encounter volume by weekday</h3><p class="hint">Counts by day of week, ordered Monday to Sunday.</p><div id="weekdayChart" class="chart"></div></article>
+    <article class="panel"><h3>Patient satisfaction distribution</h3><p class="hint">Available scores only. Most encounters have no score.</p><div id="satisfactionChart" class="chart"></div></article>
+  </section>
+
+  <div class="note-box" id="dataNote" style="display:none">
+    <strong>Data interpretation:</strong> Satisfaction and department fields are incomplete. Their charts use available observations only. Missing department values are excluded from department-level analysis. This dashboard describes observed patterns and does not establish causation or prove AlistoCare effectiveness.
+  </div>
+
+  <footer id="footer" style="display:none">
+    Source: Healthcare Analytics Patient Flow Data, Hassan Jameel Ahmed, Kaggle, CC0 Public Domain.<br>
+    Dashboard uses anonymized encounter-level fields only; patient identifiers and names are not embedded.<br>
+    Date parsing rule: first component greater than 12 → DD/MM/YYYY; otherwise MM/DD/YYYY convention retained.
+  </footer>
+
+</main>
+
+<!-- Skeleton loading overlay (shown initially, removed after upload) -->
+<div id="skeletonOverlay" class="skeleton-overlay">
+  <div class="skeleton-header">
+    <div class="skeleton-line wide"></div>
+    <div class="skeleton-line narrow"></div>
+  </div>
+  <div class="upload-card" style="background:white;border-radius:16px;padding:32px;text-align:center;max-width:560px;margin:24px auto;border:1px solid var(--line);box-shadow:0 2px 12px #43271608;">
+    <div class="upload-icon">⬇</div>
+    <h2 style="color:var(--brown);margin:0 0 10px;">Upload cleaned dataset</h2>
+    <p style="color:var(--muted);font-size:14px;line-height:1.5;margin:0 0 22px;">Select <code style="color:var(--maroon);font-family:ui-monospace,SFMono-Regular,Menlo,monospace;">healthcare_analytics_cleaned.csv</code> to load patient encounter data and display the dashboard.</p>
+    <label class="file-label">
+      <input type="file" id="fileInput" accept=".csv">
+      Choose CSV file
+    </label>
+    <div class="upload-hint" style="font-size:11px;color:var(--muted);margin-top:6px;">File is read entirely in your browser — nothing is uploaded to a server.</div>
+  </div>
+  <div class="skeleton-filters">
+    <div class="skeleton-line"></div>
+    <div class="skeleton-line"></div>
+    <div class="skeleton-line"></div>
+    <div class="skeleton-line"></div>
+    <div class="skeleton-line"></div>
+    <div class="skeleton-line short"></div>
+  </div>
+  <div class="skeleton-kpis">
+    <div class="skeleton-kpi"><div class="skeleton-line"></div><div class="skeleton-line big"></div><div class="skeleton-line short"></div></div>
+    <div class="skeleton-kpi"><div class="skeleton-line"></div><div class="skeleton-line big"></div><div class="skeleton-line short"></div></div>
+    <div class="skeleton-kpi"><div class="skeleton-line"></div><div class="skeleton-line big"></div><div class="skeleton-line short"></div></div>
+    <div class="skeleton-kpi"><div class="skeleton-line"></div><div class="skeleton-line big"></div><div class="skeleton-line short"></div></div>
+    <div class="skeleton-kpi"><div class="skeleton-line"></div><div class="skeleton-line big"></div><div class="skeleton-line short"></div></div>
+    <div class="skeleton-kpi"><div class="skeleton-line"></div><div class="skeleton-line big"></div><div class="skeleton-line short"></div></div>
+  </div>
+  <div class="skeleton-charts">
+    <div class="skeleton-panel"><div class="skeleton-line title"></div><div class="skeleton-line hint"></div><div class="skeleton-chart-placeholder"></div></div>
+    <div class="skeleton-panel"><div class="skeleton-line title"></div><div class="skeleton-line hint"></div><div class="skeleton-chart-placeholder"></div></div>
+    <div class="skeleton-panel"><div class="skeleton-line title"></div><div class="skeleton-line hint"></div><div class="skeleton-chart-placeholder"></div></div>
+    <div class="skeleton-panel"><div class="skeleton-line title"></div><div class="skeleton-line hint"></div><div class="skeleton-chart-placeholder"></div></div>
+    <div class="skeleton-panel"><div class="skeleton-line title"></div><div class="skeleton-line hint"></div><div class="skeleton-chart-placeholder"></div></div>
+    <div class="skeleton-panel"><div class="skeleton-line title"></div><div class="skeleton-line hint"></div><div class="skeleton-chart-placeholder"></div></div>
+  </div>
+  <div class="skeleton-footer"><div class="skeleton-line"></div><div class="skeleton-line short"></div><div class="skeleton-line short"></div></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
