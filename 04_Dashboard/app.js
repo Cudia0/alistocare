@@ -544,7 +544,7 @@
       insidetextorientation: 'radial',
       marker: { colors: ['#0E7C7B', '#2E8B57', '#985829', '#E8833A', '#CFE9E9'] },
       hovertemplate: '%{label}<br>%{percent}<extra></extra>',
-      customdata: order.map(k => ({ chartId: 'categoryChart', label: k, value: total ? (counts[k] / total) * 100 : 0 })),
+      customdata: order.map(k => ({ chartId: 'categoryChart', label: k, value: total ? (counts[k] / total) * 100 : 0, ctx: { catCounts: counts } })),
     }], {
       margin: { t: 30, b: 30, l: 30, r: 30 },
       showlegend: false,
